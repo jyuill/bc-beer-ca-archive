@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagedata>
+<month val="jun 2005" total="47">
+<item str="Windows 2000" cnt="40" />
+<item str="http: /www.google.com/bot.html" cnt="3" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="2" />
+<item str="Windows 98" cnt="1" />
+<item str="Macintosh" cnt="1" />
+</month>
+<month val="jul 2005" total="5086">
+<item str="Windows 2000" cnt="2656" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="717" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="460" />
+<item str="http: /www.google.com/bot.html" cnt="331" />
+<item str="Macintosh" cnt="256" />
+<item str="Windows 98" cnt="121" />
+<item str="wn.dlc@looksmart.net" cnt="104" />
+<item str="http: /www.authoritativeweb.com/crawl" cnt="85" />
+<item str="Windows ME" cnt="72" />
+<item str="Windows NT" cnt="27" />
+<item str="Linux i686" cnt="25" />
+<item str="i686 Linux" cnt="22" />
+<item str="wn-14.zyborg@looksmart.net" cnt="12" />
+<item str="http: /www.picsearch.com/bot.html" cnt="10" />
+<item str="www.walhello.com" cnt="6" />
+<item str="Linux i586" cnt="5" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="5" />
+<item str="http: /www.emeraldshield.com/webbot.aspx" cnt="4" />
+<item str="Windows 95" cnt="4" />
+<item str="wn-12.zyborg@looksmart.net" cnt="3" />
+<item str="http: /www.baidu.com/search/spider.htm" cnt="3" />
+<item str="compatible" cnt="2" />
+<item str="http: /www.fybersearch.com/fyberspider.php" cnt="2" />
+<item str="version 0.1 beta - http: /www.dumbfind.com/dumbot.html" cnt="2" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="1" />
+</month>
+<month val="aug 2005" total="6377">
+<item str="Windows 2000" cnt="3118" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="1014" />
+<item str="http: /www.google.com/bot.html" cnt="488" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="460" />
+<item str="Macintosh" cnt="273" />
+<item str="Windows 98" cnt="265" />
+<item str="http: /www.authoritativeweb.com/crawl" cnt="217" />
+<item str="Windows ME" cnt="99" />
+<item str="Windows NT" cnt="52" />
+<item str="wn-14.zyborg@looksmart.net" cnt="50" />
+<item str="i686 Linux" cnt="48" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="26" />
+<item str="for information visit http: /about.zoominfo.com/PublicSite/NextGenSearchBot.asp" cnt="25" />
+<item str="Windows 95" cnt="20" />
+<item str="Linux i686" cnt="13" />
+<item str="000000000" cnt="11" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="11" />
+<item str="Windows XP" cnt="10" />
+<item str="Nutch" cnt="6" />
+<item str="http: /www.picsearch.com/bot.html" cnt="5" />
+<item str="SunOS sun4u" cnt="4" />
+<item str="http: /www.baidu.com/search/spider.htm" cnt="4" />
+<item str="version 0.1 beta - http: /www.dumbfind.com/dumbot.html" cnt="4" />
+<item str="compatible" cnt="3" />
+<item str="igougocrawler" cnt="2" />
+</month>
+<month val="sep 2005" total="7457">
+<item str="Windows 2000" cnt="3293" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="913" />
+<item str="http: /www.google.com/bot.html" cnt="824" />
+<item str="http: /www.omni-explorer.com" cnt="624" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="535" />
+<item str="Windows 98" cnt="319" />
+<item str="Macintosh" cnt="231" />
+<item str="http: /www.authoritativeweb.com/crawl" cnt="168" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="87" />
+<item str="Windows ME" cnt="82" />
+<item str="i686 Linux" cnt="51" />
+<item str="Windows NT" cnt="35" />
+<item str="Linux i686" cnt="21" />
+<item str="Windows 95" cnt="20" />
+<item str="Windows XP" cnt="20" />
+<item str="compatible" cnt="10" />
+<item str="Nutch" cnt="8" />
+<item str="http: /www.picsearch.com/bot.html" cnt="8" />
+<item str="http: /www.tutorgig.info " cnt="6" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="5" />
+<item str="aipbot" cnt="4" />
+<item str="www.walhello.com" cnt="3" />
+<item str="http: /www.baidu.com/search/spider.htm" cnt="3" />
+<item str="GUI" cnt="2" />
+<item str="perl" cnt="2" />
+</month>
+<month val="oct 2005" total="7526">
+<item str="Windows 2000" cnt="3078" />
+<item str="http: /www.google.com/bot.html" cnt="1563" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="1023" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="634" />
+<item str="Windows 98" cnt="245" />
+<item str="Macintosh" cnt="156" />
+<item str="http: /www.authoritativeweb.com/crawl" cnt="87" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="73" />
+<item str="Windows XP" cnt="65" />
+<item str="Windows ME" cnt="61" />
+<item str="i686 Linux" cnt="59" />
+<item str="wn.dlc@looksmart.net" cnt="42" />
+<item str="Linux i686" cnt="38" />
+<item str="Windows NT" cnt="21" />
+<item str="http: /www.picsearch.com/bot.html" cnt="16" />
+<item str="aipbot" cnt="7" />
+<item str="wn-14.zyborg@looksmart.net" cnt="6" />
+<item str="www.walhello.com" cnt="4" />
+<item str="http: /www.baidu.com/search/spider.htm" cnt="2" />
+<item str="http: /majestic12.co.uk/bot.php? " cnt="2" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="2" />
+<item str="Windows 95" cnt="1" />
+<item str="http: /www.answerbus.com/" cnt="1" />
+<item str="http: /www.turnitin.com/robot/crawlerinfo.html" cnt="1" />
+<item str="GUI" cnt="1" />
+</month>
+<month val="nov 2005" total="6443">
+<item str="Windows 2000" cnt="2823" />
+<item str="http: /www.google.com/bot.html" cnt="1337" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="959" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="409" />
+<item str="Macintosh" cnt="283" />
+<item str="Windows 98" cnt="169" />
+<item str="wn-14.zyborg@looksmart.net" cnt="65" />
+<item str="i686 Linux" cnt="62" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="61" />
+<item str="wn.dlc@looksmart.net" cnt="45" />
+<item str="Windows ME" cnt="30" />
+<item str="Windows 95" cnt="29" />
+<item str="Rufus Web Miner" cnt="27" />
+<item str="Windows NT" cnt="18" />
+<item str="mms dash mmcrawler dash support at yahoo dash inc dot com" cnt="5" />
+<item str="www.walhello.com" cnt="4" />
+<item str="http: /www.picsearch.com/bot.html" cnt="4" />
+<item str="http: /misc.yahoo.com.cn/help.html" cnt="3" />
+<item str="http: /www.authoritativeweb.com/crawl" cnt="3" />
+<item str="Linux x86_64" cnt="2" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="2" />
+<item str="http: /majestic12.co.uk/bot.php? " cnt="2" />
+<item str="Linux i686" cnt="1" />
+<item str="compatible" cnt="1" />
+<item str="http: /www.turnitin.com/robot/crawlerinfo.html" cnt="1" />
+</month>
+<month val="dec 2005" total="76">
+<item str="http: /www.google.com/bot.html" cnt="30" />
+<item str="Windows 2000" cnt="14" />
+<item str="Macintosh" cnt="12" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="7" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="6" />
+<item str="Windows" cnt="6" />
+<item str="i686 Linux" cnt="1" />
+</month>
+<month val="jan 2006" total="7743">
+<item str="Windows 2000" cnt="3152" />
+<item str="http: /www.google.com/bot.html" cnt="1379" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="1003" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="942" />
+<item str="Macintosh" cnt="535" />
+<item str="Windows 98" cnt="273" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="87" />
+<item str="Windows" cnt="84" />
+<item str="Windows ME" cnt="83" />
+<item str="i686 Linux" cnt="32" />
+<item str="Windows XP" cnt="20" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="10" />
+<item str="www.walhello.com" cnt="8" />
+<item str="mms dash mmcrawler dash support at yahoo dash inc dot com" cnt="7" />
+<item str="Linux i686" cnt="5" />
+<item str="Windows 95" cnt="4" />
+<item str="compatible" cnt="4" />
+<item str="perl" cnt="4" />
+<item str="Windows NT" cnt="3" />
+<item str="http: /www.picsearch.com/bot.html" cnt="3" />
+<item str="http: /www.btbot.com/btbot.html" cnt="2" />
+<item str="SBIder" cnt="2" />
+<item str="http: /www.emeraldshield.com/webbot.aspx" cnt="2" />
+<item str="wn-14.zyborg@looksmart.net" cnt="1" />
+<item str="MSIE 5.5" cnt="1" />
+</month>
+<month val="feb 2006" total="8411">
+<item str="Windows 2000" cnt="3743" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="1262" />
+<item str="http: /www.google.com/bot.html" cnt="1224" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="991" />
+<item str="Macintosh" cnt="335" />
+<item str="Windows 98" cnt="151" />
+<item str="Windows ME" cnt="65" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="61" />
+<item str="wn.dlc@looksmart.net" cnt="25" />
+<item str="Windows XP" cnt="20" />
+<item str="i686 Linux" cnt="19" />
+<item str="http: /www.picsearch.com/bot.html" cnt="17" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="13" />
+<item str="Nutch" cnt="10" />
+<item str="mms dash mmcrawler dash support at yahoo dash inc dot com" cnt="8" />
+<item str="Linux i686" cnt="6" />
+<item str="Windows NT" cnt="5" />
+<item str="http: /majestic12.co.uk/bot.php? " cnt="4" />
+<item str="4.83" cnt="3" />
+<item str="perl" cnt="3" />
+<item str="larbin2.6.3@unspecified.mail" cnt="2" />
+<item str="SBIder" cnt="2" />
+<item str="http: /irl.cs.tamu.edu/crawler" cnt="2" />
+<item str="http: /64.5.245.11/faq/faq.html" cnt="1" />
+<item str="wn-14.zyborg@looksmart.net" cnt="1" />
+</month>
+<month val="mar 2006" total="4933">
+<item str="Windows 2000" cnt="1735" />
+<item str="http: /help.yahoo.com/help/us/ysearch/slurp" cnt="869" />
+<item str="http: /www.google.com/bot.html" cnt="685" />
+<item str="http: /www.omni-explorer.com" cnt="663" />
+<item str="http: /search.msn.com/msnbot.htm" cnt="603" />
+<item str="Macintosh" cnt="111" />
+<item str="Windows 98" cnt="30" />
+<item str="wn.dlc@looksmart.net" cnt="25" />
+<item str="http: /sp.ask.com/docs/about/tech_crawling.html" cnt="24" />
+<item str="i686 Linux" cnt="18" />
+<item str="Windows XP" cnt="10" />
+<item str="Windows ME" cnt="9" />
+<item str="wn-14.zyborg@looksmart.net" cnt="9" />
+<item str="compatible" cnt="7" />
+<item str="Linux i686" cnt="6" />
+<item str="mms dash mmcrawler dash support at yahoo dash inc dot com" cnt="4" />
+<item str="Nutch" cnt="3" />
+<item str="SBIder" cnt="2" />
+<item str="http: /wortschatz.uni-leipzig.de/findlinks/" cnt="2" />
+<item str="Windows 95" cnt="2" />
+<item str="larbin2.6.3@unspecified.mail" cnt="1" />
+<item str="http: /www.turnitin.com/robot/crawlerinfo.html" cnt="1" />
+</month>
+</usagedata>

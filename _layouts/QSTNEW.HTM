@@ -1,0 +1,1133 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" FP_GENERATED="TRUE">
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+document.write('<ows:HTMLBase/>');
+var strBinUrl="../_vti_bin/";
+</Script>
+    <META Name="GENERATOR" Content="Microsoft SharePoint">
+    <META Name="ProgId" Content="FrontPage.Editor.Document">
+    <META Name="Microsoft SharePoint Content Type" Content="Dynamic">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <Title ID=onetidTitle>Create New Question</Title>
+    <SCRIPT src="../_vti_bin/owsbrows.js"></SCRIPT>
+    <Link REL="stylesheet" Type="text/css" HREF="styles/ows.css">
+<script><!--
+if (browseris.mac && !browseris.ie5up)
+{
+    var ms_maccssfpfixup = "styles/owsmac.css";
+    document.write("<link rel='stylesheet' Type='text/css' href='" + ms_maccssfpfixup + "'>");
+}
+//--></script>
+<meta name="Microsoft Theme" content="none, default">
+<meta name="Microsoft Border" content="none, default">
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/owsredir.js"></Script>
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+RedirectToFrame("%5flayouts%2fQSTNEW%2eHTM","../_vti_bin/owssvr.dll");
+</Script>
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/ows.js"></Script>
+</HEAD>
+<SCRIPT>
+function BodyOnLoad()
+{
+    window.focus();
+    self.document.frmFieldData.DisplayName.select();
+    self.document.frmFieldData.DisplayName.focus();
+}
+</SCRIPT>
+<BODY marginheight=0 marginwidth=0 scroll="yes" onload="BodyOnLoad()">
+<!--webbot bot="ListXML" S-XML="<ows:SetVar Name='vBaseType' Scope='Request'><ows:ListProperty Select='BaseType'/></ows:SetVar>" tag="BODY" startspan --><ows:XML><ows:SetVar Name='vBaseType' Scope='Request'><ows:ListProperty Select='BaseType'/></ows:SetVar></ows:XML><!--webbot bot="ListXML" i-checksum="56396" endspan -->
+<!--webbot bot="ListMiscXML" ID="webbot01" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+<ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb001">Document Library</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb002">document library</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb002a">this document library</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"><HTML ID="tpweb003">This document library will be removed and all its files will be permanently deleted. </HTML></ows:SetVar> </Case> <Case Value="3"> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb004">Discussion Board</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb005">discussion board</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb005a">this discussion board</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"></ows:SetVar> </Case> <Case Value="4"> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb006">Survey</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb007">survey</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb007a">this survey</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"></ows:SetVar> </Case> <Default> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb008">List</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb009">list</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb009a">this list</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"></ows:SetVar> </Default> </ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+<SCRIPT>
+var helperFrm = new OWSForm("frmFieldData", true, <ows:ScriptQuote><HttpVDir/><HTML>/_layouts/</HTML></ScriptQuote>);
+helperFrm.stFieldPrefix = "";
+</SCRIPT>
+<!--webbot bot="ListMiscXML" ID="webbot100" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->		  
+<ows:XML>
+<HTML><![CDATA[<SCRIPT>]]></HTML>
+<HTML><![CDATA[ helperFrm.dopt.chDateSep = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="29"/></ScriptQuote><HTML><![CDATA[; helperFrm.dopt.chTimeSep = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="30"/></ScriptQuote><HTML><![CDATA[; helperFrm.dopt.SetTimeFormat(]]></HTML><LocaleInfo LCTYPE="35"/><HTML><![CDATA[); helperFrm.dopt.SetDateOrder(]]></HTML><LocaleInfo LCTYPE="33"/><HTML><![CDATA[); helperFrm.dopt.SetDOW(]]></HTML><ows:LocaleInfo LCTYPE="4108"/> <HTML><![CDATA[); helperFrm.dopt.stAM = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="40"/></ScriptQuote><HTML><![CDATA[; helperFrm.dopt.stPM = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="41"/></ScriptQuote><HTML><![CDATA[; helperFrm.dopt.TimeMarkPosn = ]]></HTML><LocaleInfo LCTYPE="4101"/><HTML><![CDATA[; ]]></HTML>
+<HTML><![CDATA[ helperFrm.nopt.chDigSep = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="15"/></ScriptQuote><HTML><![CDATA[; helperFrm.nopt.chDecimal = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="14"/></ScriptQuote><HTML><![CDATA[; helperFrm.nopt.chMinus = ]]></HTML><ScriptQuote><LocaleInfo LCTYPE="81"/></ScriptQuote><HTML><![CDATA[; helperFrm.nopt.iNegNumber = ]]></HTML><LocaleInfo LCTYPE="4112"/><HTML><![CDATA[; helperFrm.nopt.SetGrouping(]]></HTML><ScriptQuote><LocaleInfo LCTYPE="16"/></ScriptQuote><HTML><![CDATA[); ]]></HTML>
+<HTML><![CDATA[</SCRIPT>]]></HTML>
+</ows:XML>
+<!--webbot bot="ListMiscXML" endspan -->
+<Script><!--
+    var L_alert1_Text = "You must provide a name for this field.";
+    var L_alert3a_text = "The ";
+    var L_alert3b_text = "question";
+    var L_alert3c_text = " name you chose is already in use.  Please choose another name.";
+    var L_alert3_Text = L_alert3a_text + L_alert3b_text + L_alert3c_text;
+    var L_alert4_Text = "Minimum value";
+    var L_alert5_Text = "Maximum value";
+    var L_alert7_Text = "Default value";
+    var L_alert6_Text = "Please enter a valid Maximum and Minimum value.  The Minimum must be less than or equal to the Maximum.";
+    var L_alert9_Text = "Please enter a valid Default value.  It must not be greater than the Maximum value.";
+    var L_alert8_Text = "Please enter a valid Default value.  It must not be less than the Minimum value.";
+    var L_alert10_Text = "Maximum number of characters";
+    var L_alert11_Text = "Please enter a valid Default value.  It must not be greater than the maximum number of characters.";
+    var L_alert12_Text = "Number of Lines to Display";
+    var L_alert13_Text = "A Choice field requires at least one choice.  Please try again.";
+    var L_alert14_Text = "Please enter a valid choice value.  It must not be greater than 255 characters.";
+    var L_alert15_Text = "The default value for a Choice field must be chosen from amongst the specified choices.  Please try again.";
+    var L_alert16_Text = "This question has already been added to the survey.  Please choose a different question.";
+    function DoDelete(){
+        var L_Delete_text = "This question will be removed and all the responses to that question will be permanently deleted. Do you want to delete this question?";
+        if (confirm(L_Delete_text))
+        {
+            window.parent.location = '<ows:HttpPath/>&Cmd=DeleteField&List=<ows:List/>&Field=' + <ows:ScriptQuote><GetVar Name="Field"/></ows:ScriptQuote> + '&NextUsing=_layouts/SurvEdit.htm' + '&owshiddenversion=' + <ows:ScriptQuote><ListProperty Select="Version"/></ows:ScriptQuote>;
+        }
+        return false;
+    }
+    function GetFieldType() {
+        var type = document.frmFieldData.Type;
+        for (i = 0; i < type.length; i ++ ) {
+            if (type[i].checked) {
+                return type[i].value;
+            }
+        }
+        return "";
+    }
+    function GetRadioButtonValue (frmElem) {
+        for (i = 0; i < frmElem.length; i++ ) {
+            if (frmElem[i].checked) {
+                return frmElem[i].value;
+            }
+        }
+	return "";
+    }
+    function GetLookupList () {
+        var listSel = document.frmFieldData.LookupList;
+        return GetSelectedValue(listSel);
+    }
+    function GetLookupField () {
+        var fieldSel = document.frmFieldData.LookupField;
+        return GetSelectedValue(fieldSel);
+    }
+    function Selected(sCurList, sName){
+        if (sCurList==sName) {
+            return " selected";
+        }
+        return "";
+    }
+    function UpdatePage(typeVal) {
+        
+        var sArg = "&FieldTypeParam=";
+        var sFieldNameArg = "&DisplayNameParam=";
+        var sLookup = "Lookup";
+        var sLLArg = "&LookupListParam=";
+        var sLLVal = "";
+        var sURL = window.location + "";
+        
+        
+        var nameval = escapeProperly(document.frmFieldData.DisplayName.value);
+        var sDescriptionArg = "";
+        var descval = "";
+        var dwArgPos = sURL.indexOf(sArg);
+        if (dwArgPos!=-1) {
+            sURL = sURL.substr(0,dwArgPos);
+        }
+        if (typeVal == sLookup) {
+            sLLVal = GetLookupList();
+            if (sLLVal.length != 0)
+                sLLVal = sLLArg + sLLVal;
+        }
+        var sNewUrl = sURL + sArg + typeVal + sFieldNameArg + nameval + sDescriptionArg + descval + sLLVal;
+        if (sNewUrl.length > 2040)
+            
+            
+            document.location.replace(sURL + sArg + typeVal + sLLVal);
+        else
+            document.location.replace(sNewUrl);
+    }
+    function SimpleHTMLEncode( str )
+    {
+        var re;
+        str = str.toString();
+        re = /&/g;
+        str = str.replace(re, "&amp;");
+        re = /</g;
+        str = str.replace(re, "&lt;");
+        re = />/g;
+        str = str.replace(re, "&gt;");
+        re = /\"/g;
+        str = str.replace(re, "&quot;");
+        re = /'/g;
+        str = str.replace(re, "&apos;");
+        return str;
+    }
+    function SubmitPage() {
+        var frm = document.frmFieldData;
+        var Name        = TrimSpaces( frm.Name.value        );
+        var DisplayName = TrimSpaces( frm.DisplayName.value );
+        var FromBaseType= "";
+        var DisplaySize = "";
+        var Type        = GetFieldType(); 
+        
+        
+        if (! helperFrm.FValidate(true))
+            return false;
+        
+        if (Type=="Boolean" || Type=="Lookup") {
+            var Required    = "";
+        }
+        else {
+            var Required    = frm.Required[0].checked ? "TRUE" : "";
+        }
+        if (DisplayName.length < 1)
+        {
+            alert(L_alert1_Text);
+            frm.DisplayName.focus();
+            return false;
+        }
+        if (Type=="Lookup") {
+            var LookupList  = GetLookupList();
+            var LookupField = GetLookupField();
+        }
+        if (Type=="Choice") {
+            var Format      = frm.Format     ? GetRadioButtonValue(frm.Format) : "";
+        }
+        else {
+            var Format      = frm.Format     ? GetSelectedValue(frm.Format)      : "";
+        }
+        if (Type=="Boolean") {
+            var Default     = frm.Default    ? GetSelectedValue(frm.Default) : "";
+        }
+        else if (Type=="DateTime") {
+            var Default = "";
+            if (frm.Default) {
+        		if (frm.Default[2].checked) {
+        			if (fld.date)
+        			    Default = DateOptions.StISODate(fld.date);
+        			else {
+        			    
+        			    frm.Default[0].checked = true;
+        			    Default =  frm.Default[0].value;
+        			}
+        	    } else
+        	        Default =  GetRadioButtonValue(frm.Default);
+            }
+        }
+        else {
+            var Default     = frm.Default    ? TrimSpaces(frm.Default.value): "";
+        }
+        if (doesFieldNameConflict(DisplayName))
+        {
+            alert(L_alert16_Text);
+            frm.DisplayName.focus();
+            return false;
+        }
+        
+        var Description = frm.Description ? TrimSpaces( frm.Description.value ): "";
+        var NumLines    = frm.NumLines    ? frm.NumLines.value : "";
+        var MaxLength   = frm.MaxLength   ? frm.MaxLength.value : "";
+        var Choices     = frm.Choices     ? frm.Choices.value  : "";
+        var AddToDefVw  = "ON";
+        var Min         = frm.Min        ? frm.Min.value : "";
+        var Max         = frm.Max        ? frm.Max.value : "";
+        var Decimals    = frm.Max        ? TrimSpaces( GetSelectedValue(frm.Decimals) ): "";
+        var Percentage  = frm.Percentage ? (frm.Percentage.checked==1 ? "TRUE" : "") : "";
+        var LCID        = frm.LCID       ?             GetSelectedValue(frm.LCID) : "";
+        var DefaultURLDesc = frm.DefaultURLDesc ? TrimSpaces(frm.DefaultURLDesc.value): "";
+        if (Type=="Number" || Type=="Currency")
+        {
+            if (Max != "" && Min != "" && (Max - 0) < (Min - 0))
+            {
+               AlertAndSetFocus(L_alert6_Text, frm[FrmLocalFieldName("Min")] );
+               return false;
+            }
+            else if (Min != "" && Default != "" && (Default - 0) < (Min - 0))
+            {
+                AlertAndSetFocus(L_alert8_Text, frm[FrmLocalFieldName("Default")]);
+                return false;
+            }
+            if (Max != "" && Default != "" && (Default - 0) > (Max - 0))
+            {
+                AlertAndSetFocus(L_alert9_Text, frm[FrmLocalFieldName("Default")]);
+                return false;
+            }
+        }
+        else if (Type=="Text")
+        {
+            if (MaxLength != "" && Default.length > (MaxLength - 0))
+            {
+                AlertAndSetFocus(L_alert11_Text, frm.Default);
+                return false;
+            }
+        }
+        var Schema = ('< Field ' +
+            (Name         ? 'Name="'        + SimpleHTMLEncode(Name)         + '" ' : '') +
+            (FromBaseType ? 'FromBaseType="'+ SimpleHTMLEncode(FromBaseType) + '" ' : '') +
+            (DisplaySize  ? 'DisplaySize="' + DisplaySize                    + '" ' : '') +
+            (Type         ? 'Type="'        + SimpleHTMLEncode(Type)         + '" ' : '') +
+            (LookupList   ? 'List="'        + SimpleHTMLEncode(LookupList)   + '" ' : '') +
+            (LookupField  ? 'ShowField="'   + SimpleHTMLEncode(LookupField)  + '" ' : '') +
+            (DisplayName  ? 'DisplayName="' + SimpleHTMLEncode(DisplayName)  + '" ' : '') +
+            (Description  ? 'Description="' + SimpleHTMLEncode(Description)  + '" ' : '') +
+            (Required     ? 'Required="'    + SimpleHTMLEncode(Required)     + '" ' : '') +
+            (NumLines     ? 'NumLines="'    + SimpleHTMLEncode(NumLines)     + '" ' : '') +
+            (Format       ? 'Format="'      + SimpleHTMLEncode(Format)       + '" ' : '') +
+            (MaxLength    ? 'MaxLength="'   + MaxLength                      + '" ' : '') +
+            (Min          ? 'Min="'         + Min                            + '" ' : '') +
+            (Max          ? 'Max="'         + Max                            + '" ' : '') +
+            (Percentage   ? 'Percentage="'  + Percentage                     + '" ' : '') +
+            (Decimals     ? 'Decimals="'    + Decimals                       + '" ' : '') +
+            (LCID         ? 'LCID="'        + LCID                           + '" ' : '') +
+            (Type=="Note" ? 'Sortable="FALSE" '                                     : '') +
+            (DefaultURLDesc ? 'DefaultURLDesc="' + SimpleHTMLEncode(DefaultURLDesc) + '" ' : '') +
+            '>'
+        );
+        if(Default) {
+            Schema += '<Default>' + SimpleHTMLEncode(Default) + '</Default>';
+        }
+        if(Type == "Choice")  {
+            if (TrimSpaces(Choices) == "")
+            {
+                alert(L_alert13_Text);
+                frm.Choices.focus();
+                return false;
+            }
+            var ChoicesArr = Choices.split( /[\r\n]+/ig );
+            var bFoundMatchWithDefault = false;
+            Schema += '<CHOICES>';
+            for( i = 0; i < ChoicesArr.length; i ++ ) {
+                var Choice = TrimSpaces( ChoicesArr[i] );
+                if(Choice) {
+                    if(Choice.length > 255)
+                    {
+                        alert(L_alert14_Text);
+                        frm.Choices.focus();
+                        return false;
+                    }
+                    if (Default == Choice)
+                        bFoundMatchWithDefault = true;
+                    Schema += '<CHOICE>' + SimpleHTMLEncode(Choice) + '</CHOICE>';
+                }
+            }
+            Schema += '</CHOICES>';
+            if (Default && !bFoundMatchWithDefault)
+            {
+                alert(L_alert15_Text);
+                frm.Default.focus();
+                return false;
+            }
+        }
+        Schema += '</Field>';
+        document.frmSubmit.FieldName.value        = DisplayName;
+        document.frmSubmit.FieldXML.value         = Schema;
+        document.frmSubmit.AddToDefaultView.value = AddToDefVw;
+        document.frmSubmit.submit();
+        return true;
+    }
+    
+    
+    var g_FieldName = new Array;
+    <ows:ForEach Select="/FIELDS/Field">
+    <HTML><![CDATA[
+	g_FieldName[]]></HTML><ScriptQuote><Property Select="DisplayName"/></ScriptQuote><HTML><![CDATA[.toLowerCase()] = 1;
+    ]]></HTML>
+    </ows:ForEach>
+//--></Script>
+<TABLE class="ms-main" CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="100%" HEIGHT="100%">
+    <!-- Banner -->
+    
+ <TR> 
+  <TD COLSPAN=3 WIDTH=100%> 
+  <!--Top bar-->
+  <table class="ms-bannerframe" border="0" cellspacing="0" cellpadding="3" width="100%">
+   <tr>
+    <td nowrap valign="middle" align="left"><img ID=onetidHeadbnnr0 alt="Logo" src="images/logo.gif" width="28" height="30"></td>
+      <td class=ms-banner width=99% nowrap ID="HBN100" valign="middle" align="left">
+       <!--webbot bot="Navigation" 
+                S-Type="sequence" 
+                S-Orientation="horizontal" 
+                S-Rendering="html" 
+                S-Btn-Nml="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sel="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sep="&amp;nbsp;|&amp;nbsp;"
+                B-Include-Home="FALSE" 
+                B-Include-Up="FALSE" 
+                S-Btn-Nobr="FALSE" 
+                U-Page="sid:1002"
+                S-Target startspan --><a ID='onettopnavbar1007' href='AllLibs.htm'>Documents</a>&nbsp;|&nbsp;<a ID='onettopnavbar1008' href='discusns.htm'>Discussion Boards</a>&nbsp;|&nbsp;<a ID='onettopnavbar1009' href='viewlsts.htm'>Lists</a>&nbsp;|&nbsp;<a ID='onettopnavbar1010' href='create.htm'>Create</a>&nbsp;|&nbsp;<a ID='onettopnavbar1011' href='settings.htm'>Site Settings</a>&nbsp;|&nbsp;<a ID='onettopnavbar1012' href='javascript:HelpWindow()'>Help</a><!--webbot bot="Navigation" i-checksum="39757" endspan -->
+    </td>
+   </tr>
+  </table>
+  </TD> 
+ </TR>
+    <tr> <td colspan=3> <table width=100% border=0 class="ms-titleareaframe" cellpadding=0> <tr> <td style="padding-bottom: 0px"> <table cellpadding=0 cellspacing=0 border=0> <tr> <td align=center nowrap width="105" height="46"> <img ID=onetidtpweb1 src="images/survey.gif" alt="Icon" width="49" height="49"> </td> <td width=27>&nbsp;</td> <td nowrap> <table cellpadding=0 cellspacing=0> <tr> <td nowrap class="ms-titlearea"> <!--webbot bot="ProjectProperty" S-Select="Title" preview="&lt;em&gt;[ProjectProperty]&lt;/em&gt;" startspan --><ows:XML><ProjectProperty Select="Title" HTMLEncode="TRUE"/></ows:XML><!--webbot bot="ProjectProperty" i-checksum="63261" endspan --> </td> </tr> <tr> <td ID=onetidPageTitle class="ms-pagetitle"><!--webbot bot="ListProperty" S-Select="LinkTitle" B-HTMLEncode="FALSE" preview="&lt;em&gt;[ListProperty]&lt;/em&gt;" startspan --><ows:XML><ListProperty Select="LinkTitle"/></ows:XML><!--webbot bot="ListProperty" i-checksum="9167" endspan -->: <LocID ID="fldguts01">Add Question</LocID></td> </tr> </table> </td> <td>&nbsp</td> </tr> </table> <table cellpadding=0 cellspacing=0 border=0 width=100%> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td class="ms-sectionline" height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> </table> </td> </tr> </table> </td> </tr>
+    <!-- Navigation -->
+    
+<TR valign=top> 
+  <TD height=100% class=ms-nav> 
+    <TABLE height=100% class=ms-navframe CELLPADDING=0 CELLSPACING=4 BORDER=0 width=130px> 
+      <tr valign=top>
+        <td width=99%>&nbsp;</td>
+        <td class=ms-verticaldots>&nbsp;</td> 
+      </tr>
+     </TABLE> 
+  </TD>
+    <!-- Contents -->
+    <TD><img src="images/blank.gif" height=1 width=3></TD>
+    <TD width=100%>
+     <TABLE  border="0" cellpadding="0" cellspacing="0" width="100%" id="AutoNumber1">
+          <TR>
+       <TD valign=top colspan="3" height="26">
+             <TABLE cellpadding=0 border=0><TR><TD class="ms-descriptiontext" ID="fldeditguts100">Use this page to add a question to this survey.</TD></TR></TABLE>
+            </TD>
+         </TR>
+<!--New form UI-->
+<TR>
+ <TD>
+<!--webbot bot="ListMiscXML" ID="webbot101" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+ <ows:SetVar Name="vDisplayName" Scope="Request"><GetVar Name="DisplayNameParam"/></ows:SetVar>
+ <ows:SetVar Name="vRequired"    Scope="Request">FALSE</ows:SetVar>
+ <ows:SetVar Name="vDescription" Scope="Request"><GetVar Name="DescriptionParam"/></ows:SetVar>
+ <ows:SetVar Name="vFieldType"   Scope="Request"><GetVar Name="FieldTypeParam"/></ows:SetVar>
+ <ows:SetVar Name="vNumLines"    Scope="Request">5</ows:SetVar>
+ <ows:SetVar Name="vFormat"      Scope="Request">1</ows:SetVar>
+ <ows:SetVar Name="vMaxLength"   Scope="Request">100</ows:SetVar>
+ <ows:SetVar Name="vLookupList"   Scope="Request"><GetVar Name="LookupListParam"/></ows:SetVar>
+ <ows:SetVar Name="vLookupField"  Scope="Request"><GetVar Name="LookupFieldParam"/></ows:SetVar>
+ <ows:SetVar Name="vLCID"        Scope="Request"><DataFormatLCID/></ows:SetVar>
+ <ows:Switch>
+ <Expr><GetVar Name="vFieldType"/></Expr>
+ <Case Value="">
+  <SetVar Name="vFieldType" Scope="Request">Choice</SetVar>
+  <SetVar Name="vFormat" Scope="Request">RadioButtons</SetVar>
+ </Case>
+ </ows:Switch>
+ <ows:Switch>
+   <Expr><GetVar Name="DisplayNameParam"/></Expr>
+   <Case Value=""><SetVar Name="vDisplayName" Scope="Request"><HTML ID="fldeditguts050">Type your question here...</HTML></SetVar></Case>
+</ows:Switch>
+<ows:Switch>
+   <Expr><GetVar Name="vMaxLength"/></Expr>
+   <Case Value="">
+   <Switch>
+      <Expr><GetVar Name="vFieldType"/></Expr>
+      <Case Value="Text">
+          <SetVar Name="vMaxLength" Scope="Request">255</SetVar>
+      </Case>
+   </Switch>
+   </Case>
+</ows:Switch>
+<ows:Switch>
+   <Expr><GetVar Name="vNumLines"/></Expr>
+   <Case Value="">
+   <Switch>
+      <Expr><GetVar Name="vFieldType"/></Expr>
+      <Case Value="Note">
+          <SetVar Name="vNumLines" Scope="Request">5</SetVar>
+      </Case>
+   </Switch>
+   </Case>
+</ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+<script><!--
+    function doesFieldNameConflict( strName )
+    {
+        if (g_FieldName[strName.toLowerCase()])
+            return true;
+        else
+            return false;
+    }
+    function clearOutDefault()
+    {
+        
+        
+        var frm = document.frmFieldData;
+        var Choices = frm.Choices ? frm.Choices.value : "";
+        var ChoicesArr  = Choices.split( /[\r\n]+/ig );
+        var Default     = frm.Default    ? TrimSpaces(frm.Default.value): "";
+        for (i = 0; i < ChoicesArr.length; i++)
+        {
+            if (ChoicesArr[i] == Default)
+                return;
+        }
+        
+        if (Default != "")
+        {
+            if (ChoicesArr.length > 0)
+                frm.Default.value = ChoicesArr[0];
+            else
+                frm.Default.value = "";
+        }
+    }
+//--></script>
+<TABLE  border="0" width="100%" cellspacing="0" cellpadding="0">
+<FORM name=frmFieldData method=post style="margin: 0" onSubmit="return false;">
+<!--webbot bot="ListMiscXML" ID="webbot102" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+<INPUT type="hidden" value='<ows:GetVar Name="vName"/>' name="Name">
+<!--webbot bot="ListMiscXML" endspan -->
+<!-- Name and Type-->
+        <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="5"></TD>
+            <TD class="ms-descriptiontext" rowspan="5" valign="top" align="left" ID="align02">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD height=28 valign=top class="ms-sectionheader" ID=onetidFldEditGuts1>Question and Type</TD></TR>
+                    <TR><TD id=onetidNewColumnDescription class="ms-descriptiontext">Type your question and select the type of answer.</TD></TR>
+                    <TR><TD><img src="images/blank.gif" height=1 width=100></TD></TR>
+                </TABLE>
+            </TD>
+        <TR><TD height=3 colspan=2 class="ms-authoringcontrols"><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" ID=onetidFldEditGuts2>Question:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD>
+<!--webbot bot="ListMiscXML" ID="webbot103" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+                     <TEXTAREA cols=40 rows=3 name="DisplayName" size=30><ows:GetVar Name="vDisplayName" HTMLEncode="TRUE"/></TEXTAREA>
+<!--webbot bot="ListMiscXML" endspan -->
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            <TD class="ms-authoringcontrols" ID=onetidFldEditGuts3>The type of answer to this question is:
+                <FONT size=3>&nbsp;</FONT><BR>
+                <TABLE border=0 cellspacing=2>
+                    <TR>
+                        <TD width=1><img src="images/blank.gif" height=1 width=1></TD>
+                        <TD>
+                            <TABLE width=100% cellpadding=0 cellspacing=1 border=0>
+                                <TR>
+                                    <TD align="center" class="ms-authoringcontrols" nowrap>
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Text</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Text')" type="radio" value="Text" id=onetidTypeText name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Text')" type="radio" value="Text" id=onetidTypeText name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeText">Single line of text</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" class="ms-authoringcontrols" nowrap>
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Note</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Note')" type="radio" value="Note" id=onetidTypeMultiText name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Note')" type="radio" value="Note" id=onetidTypeMultiText name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeMultiText">Multiple lines of text</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols">
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Number</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Number')" type="radio" value="Number" id=onetidTypeNumber name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Number')" type="radio" value="Number" id=onetidTypeNumber name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeNumber">Number (1, 1.0, 100)</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols">
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Currency</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Currency')" type="radio" value="Currency" id=onetidTypeCurrency name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Currency')" type="radio" value="Currency" id=onetidTypeCurrency name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeCurrency">Currency ($, &yen;, &pound;)</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols">
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>DateTime</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('DateTime')" type="radio" value="DateTime" id=onetidTypeDateTime name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('DateTime')" type="radio" value="DateTime" id=onetidTypeDateTime name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeDateTime">Date and Time (11/02/2001 12:15)</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols">
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Lookup</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Lookup')" type="radio" value="Lookup" id=onetidTypeLookup name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Lookup')" type="radio" value="Lookup" id=onetidTypeLookup name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeLookup">Lookup (information already on this site)</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols">
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Choice</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Choice')" type="radio" value="Choice" id=onetidTypeChoice name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Choice')" type="radio" value="Choice" id=onetidTypeChoice name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeChoice">Choice (menu to choose from)</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols">
+                                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFieldType"/></Expr1> <Expr2>Boolean</Expr2> <Then><HTML><![CDATA[ <INPUT onClick="UpdatePage('Boolean')" type="radio" value="Boolean" id=onetidTypeBoolean name="Type" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT onClick="UpdatePage('Boolean')" type="radio" value="Boolean" id=onetidTypeBoolean name="Type"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                                    </TD>
+                                    <TD align="left" class="ms-authoringcontrols" id="L_onetidTypeTrueFalse">Yes/No (check box)</TD>
+                                </TR>
+                                <TR>
+                                    <TD align="center" nowrap class="ms-authoringcontrols"></TD>
+                                    <TD align="left" class="ms-authoringcontrols" ID=align101></TD>
+                                </TR>
+                            </TABLE>
+                        </TD>
+                    </TR>
+                </TABLE>
+            </TD>
+        </TR>
+      <TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+<!--Optional settings -->
+    <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD nowrap></TD>
+        <TD class="ms-descriptiontext" valign="top" align="left" ID="align03">
+            <TABLE border=0 cellpadding=1 cellspacing=0>
+                <TR><TD height=28 valign=top class=ms-sectionheader id=onetidNewColumnOption>Optional settings for your question</TD></TR>
+                <TR><TD class="ms-propertysheet" id=onetidNewColumnOption2>Specify detailed options for the type of answer you selected.
+				<A HREF="/_vti_bin/help/wsrTypes.htm" TARGET=_blank>Show me more information.</A></TD></TR>
+            </TABLE>
+        </TD>
+<!--webbot bot="ListMiscXML" ID="webbot106" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+<ows:Switch>
+    <Expr><GetVar Name="vFieldType"/></Expr>
+    <Case Value="Boolean"/>
+    <Case Value="Lookup"/>
+    <Default ExpandXML="TRUE">
+    <HTML><![CDATA[
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidTypeRequiredData>
+			Require a response to this question:
+		<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                    ]]></HTML>
+                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vRequired"/></Expr1> <Expr2>TRUE</Expr2> <Then><HTML><![CDATA[ <INPUT type="radio" name="Required" value="TRUE" id=onetidRequiredTrue CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT type="radio" name="Required" value="TRUE" id=onetidRequiredTrue> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                    <HTML><![CDATA[
+                    </TD>
+                    <TD class="ms-authoringcontrols" id=onetidYes>Yes&nbsp;&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                    ]]></HTML>
+                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vRequired"/></Expr1> <Expr2>TRUE</Expr2> <Then><HTML><![CDATA[ <INPUT type="radio" name="Required" value="FALSE" id=onetidRequiredFalse> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT type="radio" name="Required" value="FALSE" id=onetidRequiredFalse CHECKED> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                    <HTML><![CDATA[
+                    </TD>
+                    <TD class="ms-authoringcontrols" id=onetidNo>No</TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    ]]></HTML>
+</Default>
+</ows:Switch>
+<ows:Switch><Expr><GetVar Name="vFieldType"/></Expr>
+<Case ExpandXML="TRUE" Value="Note">
+<HTML><![CDATA[
+    <!-- Note -->
+    <TR>
+        <TD colspan=2></TD>
+        <TD class="ms-authoringcontrols">&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidMaxLines>Number of Lines to Display:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD><SCRIPT>fld = new NumberField(helperFrm,"NumLines",L_alert12_Text,"<ows:GetVar Name="vNumLines"/>");fld.wMin = "1";fld.wMax = "1000";fld.BuildUI();</SCRIPT></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="TRUE" Value="Boolean">
+<HTML><![CDATA[
+    <!-- Boolean -->
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidTypeDefaultBooleanValue>Default value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                        <select name="Default">
+                        ]]></HTML>
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDefault"/></Expr1> <Expr2>1</Expr2> <Then><HTML><![CDATA[ <OPTION value="1" id="onetidTrue" SELECTED> <LocID value="1" id="onetidTrue">Yes</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1" id="onetidTrue"> <LocID value="1" id="onetidTrue">Yes</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDefault"/></Expr1> <Expr2>0</Expr2> <Then><HTML><![CDATA[ <OPTION value="0" id="onetidFalse" SELECTED> <LocID value="0" id="onetidFalse">No</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="0" id="onetidFalse"> <LocID value="0" id="onetidFalse">No</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <HTML><![CDATA[
+                        </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="TRUE" Value="URL">
+<HTML><![CDATA[
+    <!-- URL -->
+    <TR>
+        <TD colspan=2 rowspan=2></TD>
+        <TD class="ms-authoringcontrols">&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidFormatUrl>Format URL as:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                        <select name="Format">
+                        ]]></HTML>
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFormat"/></Expr1> <Expr2>Hyperlink</Expr2> <Then><HTML><![CDATA[ <OPTION value="Hyperlink" id="onetidHyperlink" SELECTED> <LocID value="Hyperlink" id="onetidHyperlink">Hyperlink</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="Hyperlink" id="onetidHyperlink"> <LocID value="Hyperlink" id="onetidHyperlink">Hyperlink</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vFormat"/></Expr1> <Expr2>Image</Expr2> <Then><HTML><![CDATA[ <OPTION value="Image" id="onetidImage" SELECTED> <LocID value="Image" id="onetidImage">Picture</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="Image" id="onetidImage"> <LocID value="Image" id="onetidImage">Picture</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <HTML><![CDATA[
+                        </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="TRUE" Value="Number">
+<HTML><![CDATA[
+    <!-- Number -->
+    <TR>
+        <TD colspan=2 rowspan=7></TD>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidMinMaxValue>You can specify a minimum and maximum allowed value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols" id=onetidMin>Min: <SCRIPT>fld = new NumberField(helperFrm,"Min", L_alert4_Text,"<ows:GetVar Name="vMin"/>");fld.wMin = "";fld.wMax = "";fld.BuildUI();</SCRIPT></TD>
+                    <TD class="ms-authoringcontrols" id=onetidMax>&nbsp;Max: <SCRIPT>fld = new NumberField(helperFrm,"Max",L_alert5_Text,"<ows:GetVar Name="vMax"/>");fld.wMin = "";fld.wMax = "";fld.BuildUI();</SCRIPT></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDecimalPlaces>Number of decimal places:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD nowrap class="ms-authoringcontrols">
+                    <select name="Decimals">
+                        ]]></HTML>
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>Automatic</Expr2> <Then><HTML><![CDATA[ <OPTION value="" id="onetidAutomatic" SELECTED> <LocID value="" id="onetidAutomatic">Automatic</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="" id="onetidAutomatic"> <LocID value="" id="onetidAutomatic">Automatic</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>0</Expr2> <Then><HTML><![CDATA[ <OPTION value="0" id="onetid0" SELECTED> <LocID value="0" id="onetid0">0</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="0" id="onetid0"> <LocID value="0" id="onetid0">0</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>1</Expr2> <Then><HTML><![CDATA[ <OPTION value="1" id="onetid1" SELECTED> <LocID value="1" id="onetid1">1</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1" id="onetid1"> <LocID value="1" id="onetid1">1</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>2</Expr2> <Then><HTML><![CDATA[ <OPTION value="2" id="onetid2" SELECTED> <LocID value="2" id="onetid2">2</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2" id="onetid2"> <LocID value="2" id="onetid2">2</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>3</Expr2> <Then><HTML><![CDATA[ <OPTION value="3" id="onetid3" SELECTED> <LocID value="3" id="onetid3">3</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="3" id="onetid3"> <LocID value="3" id="onetid3">3</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>4</Expr2> <Then><HTML><![CDATA[ <OPTION value="4" id="onetid4" SELECTED> <LocID value="4" id="onetid4">4</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="4" id="onetid4"> <LocID value="4" id="onetid4">4</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>5</Expr2> <Then><HTML><![CDATA[ <OPTION value="5" id="onetid5" SELECTED> <LocID value="5" id="onetid5">5</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="5" id="onetid5"> <LocID value="5" id="onetid5">5</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <HTML><![CDATA[
+                    </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" height=35 width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDefaultNumberValue>Default value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD><SCRIPT>fld = new NumberField(helperFrm,"Default", L_alert7_Text,"<ows:GetVar Name="vDefault"/>");fld.wMin = "";fld.wMax = "";fld.BuildUI();</SCRIPT></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols">
+            <TABLE border=0 cellspacing=0 cellpadding=0>
+             <tr>
+                <TD class="ms-authoringcontrols">
+                ]]></HTML>
+                <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vPercentage"/></Expr1> <Expr2>TRUE</Expr2> <Then><HTML><![CDATA[ <INPUT type="checkbox" name="Percentage" id=onetidPercentage CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT type="checkbox" name="Percentage" id=onetidPercentage> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                <HTML><![CDATA[
+                </TD>
+               <td class="ms-authoringcontrols" id=onetidShowPercentage>&nbsp;Show as percentage (for example, 50%)</td>
+             </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="TRUE" Value="Currency">
+<HTML><![CDATA[
+    <!-- Number -->
+    <TR>
+        <TD colspan=2 rowspan=7></TD>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidMinMaxCurrency>You can specify a minimum and maximum allowed value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols" id=onetidMin>Min: <SCRIPT>fld = new NumberField(helperFrm,"Min", L_alert4_Text,"<ows:GetVar Name="vMin"/>");fld.wMin = "";fld.wMax = "";fld.BuildUI();</SCRIPT></TD>
+                    <TD class="ms-authoringcontrols" id=onetidMax>&nbsp;Max: <SCRIPT>fld = new NumberField(helperFrm,"Max",L_alert5_Text,"<ows:GetVar Name="vMax"/>");fld.wMin = "";fld.wMax = "";fld.BuildUI();</SCRIPT></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidCurrencyDecimal>Number of decimal places:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD nowrap class="ms-authoringcontrols">
+                    <select name="Decimals">
+                        ]]></HTML>
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>Automatic</Expr2> <Then><HTML><![CDATA[ <OPTION value="" id="onetidCurrencyAutomatic" SELECTED> <LocID value="" id="onetidCurrencyAutomatic">Automatic</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="" id="onetidCurrencyAutomatic"> <LocID value="" id="onetidCurrencyAutomatic">Automatic</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>0</Expr2> <Then><HTML><![CDATA[ <OPTION value="0" id="onetidCurrency0" SELECTED> <LocID value="0" id="onetidCurrency0">0</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="0" id="onetidCurrency0"> <LocID value="0" id="onetidCurrency0">0</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>1</Expr2> <Then><HTML><![CDATA[ <OPTION value="1" id="onetidCurrency1" SELECTED> <LocID value="1" id="onetidCurrency1">1</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1" id="onetidCurrency1"> <LocID value="1" id="onetidCurrency1">1</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>2</Expr2> <Then><HTML><![CDATA[ <OPTION value="2" id="onetidCurrency2" SELECTED> <LocID value="2" id="onetidCurrency2">2</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2" id="onetidCurrency2"> <LocID value="2" id="onetidCurrency2">2</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>3</Expr2> <Then><HTML><![CDATA[ <OPTION value="3" id="onetidCurrency3" SELECTED> <LocID value="3" id="onetidCurrency3">3</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="3" id="onetidCurrency3"> <LocID value="3" id="onetidCurrency3">3</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>4</Expr2> <Then><HTML><![CDATA[ <OPTION value="4" id="onetidCurrency4" SELECTED> <LocID value="4" id="onetidCurrency4">4</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="4" id="onetidCurrency4"> <LocID value="4" id="onetidCurrency4">4</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><GetVar Name="vDecimals"/></Expr1> <Expr2>5</Expr2> <Then><HTML><![CDATA[ <OPTION value="5" id="onetidCurrency5" SELECTED> <LocID value="5" id="onetidCurrency5">5</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="5" id="onetidCurrency5"> <LocID value="5" id="onetidCurrency5">5</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <HTML><![CDATA[
+                    </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDefaultCurrencyValue>Default value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD><SCRIPT>fld = new NumberField(helperFrm,"Default", L_alert7_Text,"<ows:GetVar Name="vDefault"/>");fld.wMin = "";fld.wMax = "";fld.BuildUI();</SCRIPT></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidCurrencyFormat>Currency format:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD nowrap class="ms-authoringcontrols">
+                    <SELECT name="LCID">
+                        ]]></HTML>
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>11274</Expr2> <Then><HTML><![CDATA[ <OPTION value="11274" id="onetidCurrency1" SELECTED> <LocID value="11274" id="onetidCurrency1">$&nbsp;1.254 (Argentina)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="11274" id="onetidCurrency1"> <LocID value="11274" id="onetidCurrency1">$&nbsp;1.254 (Argentina)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>3081</Expr2> <Then><HTML><![CDATA[ <OPTION value="3081" id="onetidCurrency2" SELECTED> <LocID value="3081" id="onetidCurrency2">$1&#044;254 (Australia)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="3081" id="onetidCurrency2"> <LocID value="3081" id="onetidCurrency2">$1&#044;254 (Australia)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>3079</Expr2> <Then><HTML><![CDATA[ <OPTION value="3079" id="onetidCurrency3" SELECTED> <LocID value="3079" id="onetidCurrency3">öS 1.254 (Austria)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="3079" id="onetidCurrency3"> <LocID value="3079" id="onetidCurrency3">öS 1.254 (Austria)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2060</Expr2> <Then><HTML><![CDATA[ <OPTION value="2060" id="onetidCurrency4" SELECTED> <LocID value="2060" id="onetidCurrency4">1.254 FB (Belgium)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2060" id="onetidCurrency4"> <LocID value="2060" id="onetidCurrency4">1.254 FB (Belgium)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2067</Expr2> <Then><HTML><![CDATA[ <OPTION value="2067" id="onetidCurrency5" SELECTED> <LocID value="2067" id="onetidCurrency5">1.254 BF (Belgium)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2067" id="onetidCurrency5"> <LocID value="2067" id="onetidCurrency5">1.254 BF (Belgium)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>16394</Expr2> <Then><HTML><![CDATA[ <OPTION value="16394" id="onetidCurrency6" SELECTED> <LocID value="16394" id="onetidCurrency6">$b 1.254 (Bolivia)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="16394" id="onetidCurrency6"> <LocID value="16394" id="onetidCurrency6">$b 1.254 (Bolivia)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1046</Expr2> <Then><HTML><![CDATA[ <OPTION value="1046" id="onetidCurrency7" SELECTED> <LocID value="1046" id="onetidCurrency7">R$ 1.254 (Brazil)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1046" id="onetidCurrency7"> <LocID value="1046" id="onetidCurrency7">R$ 1.254 (Brazil)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>3084</Expr2> <Then><HTML><![CDATA[ <OPTION value="3084" id="onetidCurrency8" SELECTED> <LocID value="3084" id="onetidCurrency8">1&nbsp;254 $ (Canada)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="3084" id="onetidCurrency8"> <LocID value="3084" id="onetidCurrency8">1&nbsp;254 $ (Canada)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>4105</Expr2> <Then><HTML><![CDATA[ <OPTION value="4105" id="onetidCurrency9" SELECTED> <LocID value="4105" id="onetidCurrency9">$1&#044;254 (Canada)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="4105" id="onetidCurrency9"> <LocID value="4105" id="onetidCurrency9">$1&#044;254 (Canada)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>13322</Expr2> <Then><HTML><![CDATA[ <OPTION value="13322" id="onetidCurrency10" SELECTED> <LocID value="13322" id="onetidCurrency10">$ 1.254 (Chile)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="13322" id="onetidCurrency10"> <LocID value="13322" id="onetidCurrency10">$ 1.254 (Chile)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>9226</Expr2> <Then><HTML><![CDATA[ <OPTION value="9226" id="onetidCurrency11" SELECTED> <LocID value="9226" id="onetidCurrency11">$ 1.254 (Colombia)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="9226" id="onetidCurrency11"> <LocID value="9226" id="onetidCurrency11">$ 1.254 (Colombia)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>5130</Expr2> <Then><HTML><![CDATA[ <OPTION value="5130" id="onetidCurrency12" SELECTED> <LocID value="5130" id="onetidCurrency12">C1.254 (Costa Rica)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="5130" id="onetidCurrency12"> <LocID value="5130" id="onetidCurrency12">C1.254 (Costa Rica)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1029</Expr2> <Then><HTML><![CDATA[ <OPTION value="1029" id="onetidCurrency13" SELECTED> <LocID value="1029" id="onetidCurrency13">1&nbsp;254 K&#269; (Czech Republic)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1029" id="onetidCurrency13"> <LocID value="1029" id="onetidCurrency13">1&nbsp;254 K&#269; (Czech Republic)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1030</Expr2> <Then><HTML><![CDATA[ <OPTION value="1030" id="onetidCurrency14" SELECTED> <LocID value="1030" id="onetidCurrency14">kr 1.254 (Denmark)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1030" id="onetidCurrency14"> <LocID value="1030" id="onetidCurrency14">kr 1.254 (Denmark)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>7178</Expr2> <Then><HTML><![CDATA[ <OPTION value="7178" id="onetidCurrency15" SELECTED> <LocID value="7178" id="onetidCurrency15">RD$1&#044;254 (Dominican Republic)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="7178" id="onetidCurrency15"> <LocID value="7178" id="onetidCurrency15">RD$1&#044;254 (Dominican Republic)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>12298</Expr2> <Then><HTML><![CDATA[ <OPTION value="12298" id="onetidCurrency16" SELECTED> <LocID value="12298" id="onetidCurrency16">S/. 1.254 (Ecuador)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="12298" id="onetidCurrency16"> <LocID value="12298" id="onetidCurrency16">S/. 1.254 (Ecuador)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>17418</Expr2> <Then><HTML><![CDATA[ <OPTION value="17418" id="onetidCurrency17" SELECTED> <LocID value="17418" id="onetidCurrency17">C1254 (El Salvador)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="17418" id="onetidCurrency17"> <LocID value="17418" id="onetidCurrency17">C1254 (El Salvador)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>-1</Expr2> <Then><HTML><![CDATA[ <OPTION value="-1" id="onetidCurrency18" SELECTED> <LocID value="-1" id="onetidCurrency18">&#8364; 1&#044;254 (European Union)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="-1" id="onetidCurrency18"> <LocID value="-1" id="onetidCurrency18">&#8364; 1&#044;254 (European Union)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>-2</Expr2> <Then><HTML><![CDATA[ <OPTION value="-2" id="onetidCurrency18" SELECTED> <LocID value="-2" id="onetidCurrency18">1&#044;254 &#8364; (European Union)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="-2" id="onetidCurrency18"> <LocID value="-2" id="onetidCurrency18">1&#044;254 &#8364; (European Union)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1035</Expr2> <Then><HTML><![CDATA[ <OPTION value="1035" id="onetidCurrency19" SELECTED> <LocID value="1035" id="onetidCurrency19">1&nbsp;254 mk (Finland)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1035" id="onetidCurrency19"> <LocID value="1035" id="onetidCurrency19">1&nbsp;254 mk (Finland)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1036</Expr2> <Then><HTML><![CDATA[ <OPTION value="1036" id="onetidCurrency20" SELECTED> <LocID value="1036" id="onetidCurrency20">1&nbsp;254 F (France)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1036" id="onetidCurrency20"> <LocID value="1036" id="onetidCurrency20">1&nbsp;254 F (France)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1031</Expr2> <Then><HTML><![CDATA[ <OPTION value="1031" id="onetidCurrency21" SELECTED> <LocID value="1031" id="onetidCurrency21">1.254 DM (Germany)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1031" id="onetidCurrency21"> <LocID value="1031" id="onetidCurrency21">1.254 DM (Germany)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1032</Expr2> <Then><HTML><![CDATA[ <OPTION value="1032" id="onetidCurrency22" SELECTED> <LocID value="1032" id="onetidCurrency22">1.254 &#916;&#961;&#967; (Greece)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1032" id="onetidCurrency22"> <LocID value="1032" id="onetidCurrency22">1.254 &#916;&#961;&#967; (Greece)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>4106</Expr2> <Then><HTML><![CDATA[ <OPTION value="4106" id="onetidCurrency23" SELECTED> <LocID value="4106" id="onetidCurrency23">Q1&#044;254 (Guatemala)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="4106" id="onetidCurrency23"> <LocID value="4106" id="onetidCurrency23">Q1&#044;254 (Guatemala)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>18442</Expr2> <Then><HTML><![CDATA[ <OPTION value="18442" id="onetidCurrency24" SELECTED> <LocID value="18442" id="onetidCurrency24">L. 1254 (Honduras)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="18442" id="onetidCurrency24"> <LocID value="18442" id="onetidCurrency24">L. 1254 (Honduras)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>3076</Expr2> <Then><HTML><![CDATA[ <OPTION value="3076" id="onetidCurrency25" SELECTED> <LocID value="3076" id="onetidCurrency25">HK$1&#044;254 (Hong Kong)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="3076" id="onetidCurrency25"> <LocID value="3076" id="onetidCurrency25">HK$1&#044;254 (Hong Kong)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1038</Expr2> <Then><HTML><![CDATA[ <OPTION value="1038" id="onetidCurrency26" SELECTED> <LocID value="1038" id="onetidCurrency26">1&nbsp;254 Ft (Hungary)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1038" id="onetidCurrency26"> <LocID value="1038" id="onetidCurrency26">1&nbsp;254 Ft (Hungary)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>6153</Expr2> <Then><HTML><![CDATA[ <OPTION value="6153" id="onetidCurrency27" SELECTED> <LocID value="6153" id="onetidCurrency27">IR£1&#044;254 (Ireland)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="6153" id="onetidCurrency27"> <LocID value="6153" id="onetidCurrency27">IR£1&#044;254 (Ireland)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1040</Expr2> <Then><HTML><![CDATA[ <OPTION value="1040" id="onetidCurrency28" SELECTED> <LocID value="1040" id="onetidCurrency28">L. 1.254 (Italy)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1040" id="onetidCurrency28"> <LocID value="1040" id="onetidCurrency28">L. 1.254 (Italy)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1041</Expr2> <Then><HTML><![CDATA[ <OPTION value="1041" id="onetidCurrency29" SELECTED> <LocID value="1041" id="onetidCurrency29">¥1&#044;254 (Japan)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1041" id="onetidCurrency29"> <LocID value="1041" id="onetidCurrency29">¥1&#044;254 (Japan)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1042</Expr2> <Then><HTML><![CDATA[ <OPTION value="1042" id="onetidCurrency30" SELECTED> <LocID value="1042" id="onetidCurrency30">&#8361;1&#044;254 (Korea)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1042" id="onetidCurrency30"> <LocID value="1042" id="onetidCurrency30">&#8361;1&#044;254 (Korea)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2058</Expr2> <Then><HTML><![CDATA[ <OPTION value="2058" id="onetidCurrency31" SELECTED> <LocID value="2058" id="onetidCurrency31">$1&#044;254 (Mexico)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2058" id="onetidCurrency31"> <LocID value="2058" id="onetidCurrency31">$1&#044;254 (Mexico)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1043</Expr2> <Then><HTML><![CDATA[ <OPTION value="1043" id="onetidCurrency32" SELECTED> <LocID value="1043" id="onetidCurrency32">fl 1.254 (Netherlands)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1043" id="onetidCurrency32"> <LocID value="1043" id="onetidCurrency32">fl 1.254 (Netherlands)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>5129</Expr2> <Then><HTML><![CDATA[ <OPTION value="5129" id="onetidCurrency33" SELECTED> <LocID value="5129" id="onetidCurrency33">$1&#044;254 (New Zealand)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="5129" id="onetidCurrency33"> <LocID value="5129" id="onetidCurrency33">$1&#044;254 (New Zealand)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>19466</Expr2> <Then><HTML><![CDATA[ <OPTION value="19466" id="onetidCurrency34" SELECTED> <LocID value="19466" id="onetidCurrency34">C$ 1254 (Nicaragua)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="19466" id="onetidCurrency34"> <LocID value="19466" id="onetidCurrency34">C$ 1254 (Nicaragua)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1044</Expr2> <Then><HTML><![CDATA[ <OPTION value="1044" id="onetidCurrency35" SELECTED> <LocID value="1044" id="onetidCurrency35">kr 1&nbsp;254 (Norway)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1044" id="onetidCurrency35"> <LocID value="1044" id="onetidCurrency35">kr 1&nbsp;254 (Norway)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>6154</Expr2> <Then><HTML><![CDATA[ <OPTION value="6154" id="onetidCurrency36" SELECTED> <LocID value="6154" id="onetidCurrency36">B/. 1&#044;254 (Panama)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="6154" id="onetidCurrency36"> <LocID value="6154" id="onetidCurrency36">B/. 1&#044;254 (Panama)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>15370</Expr2> <Then><HTML><![CDATA[ <OPTION value="15370" id="onetidCurrency37" SELECTED> <LocID value="15370" id="onetidCurrency37">Gs 1.254 (Paraguay)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="15370" id="onetidCurrency37"> <LocID value="15370" id="onetidCurrency37">Gs 1.254 (Paraguay)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2052</Expr2> <Then><HTML><![CDATA[ <OPTION value="2052" id="onetidCurrency38" SELECTED> <LocID value="2052" id="onetidCurrency38">&#65509;1&#044;254 (People&#039;s Republic of China)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2052" id="onetidCurrency38"> <LocID value="2052" id="onetidCurrency38">&#65509;1&#044;254 (People&#039;s Republic of China)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>10250</Expr2> <Then><HTML><![CDATA[ <OPTION value="10250" id="onetidCurrency39" SELECTED> <LocID value="10250" id="onetidCurrency39">S/. 1&#044;254 (Peru)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="10250" id="onetidCurrency39"> <LocID value="10250" id="onetidCurrency39">S/. 1&#044;254 (Peru)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1045</Expr2> <Then><HTML><![CDATA[ <OPTION value="1045" id="onetidCurrency40" SELECTED> <LocID value="1045" id="onetidCurrency40">1&nbsp;254 z&#322; (Poland)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1045" id="onetidCurrency40"> <LocID value="1045" id="onetidCurrency40">1&nbsp;254 z&#322; (Poland)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2070</Expr2> <Then><HTML><![CDATA[ <OPTION value="2070" id="onetidCurrency41" SELECTED> <LocID value="2070" id="onetidCurrency41">1.254 Esc. (Portugal)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2070" id="onetidCurrency41"> <LocID value="2070" id="onetidCurrency41">1.254 Esc. (Portugal)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1049</Expr2> <Then><HTML><![CDATA[ <OPTION value="1049" id="onetidCurrency43" SELECTED> <LocID value="1049" id="onetidCurrency43">1&nbsp;254&#1088;. (Russia)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1049" id="onetidCurrency43"> <LocID value="1049" id="onetidCurrency43">1&nbsp;254&#1088;. (Russia)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>4100</Expr2> <Then><HTML><![CDATA[ <OPTION value="4100" id="onetidCurrency44" SELECTED> <LocID value="4100" id="onetidCurrency44">$1&#044;254 (Singapore)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="4100" id="onetidCurrency44"> <LocID value="4100" id="onetidCurrency44">$1&#044;254 (Singapore)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1051</Expr2> <Then><HTML><![CDATA[ <OPTION value="1051" id="onetidCurrency45" SELECTED> <LocID value="1051" id="onetidCurrency45">1&nbsp;254 Sk (Slovakia)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1051" id="onetidCurrency45"> <LocID value="1051" id="onetidCurrency45">1&nbsp;254 Sk (Slovakia)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1060</Expr2> <Then><HTML><![CDATA[ <OPTION value="1060" id="onetidCurrency46" SELECTED> <LocID value="1060" id="onetidCurrency46">1.254 SIT (Slovenia)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1060" id="onetidCurrency46"> <LocID value="1060" id="onetidCurrency46">1.254 SIT (Slovenia)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>7177</Expr2> <Then><HTML><![CDATA[ <OPTION value="7177" id="onetidCurrency47" SELECTED> <LocID value="7177" id="onetidCurrency47">R 1&#044;254 (South Africa)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="7177" id="onetidCurrency47"> <LocID value="7177" id="onetidCurrency47">R 1&#044;254 (South Africa)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1034</Expr2> <Then><HTML><![CDATA[ <OPTION value="1034" id="onetidCurrency48" SELECTED> <LocID value="1034" id="onetidCurrency48">1.254 pta (Spain)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1034" id="onetidCurrency48"> <LocID value="1034" id="onetidCurrency48">1.254 pta (Spain)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1053</Expr2> <Then><HTML><![CDATA[ <OPTION value="1053" id="onetidCurrency49" SELECTED> <LocID value="1053" id="onetidCurrency49">1.254 kr (Sweden)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1053" id="onetidCurrency49"> <LocID value="1053" id="onetidCurrency49">1.254 kr (Sweden)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2055</Expr2> <Then><HTML><![CDATA[ <OPTION value="2055" id="onetidCurrency50" SELECTED> <LocID value="2055" id="onetidCurrency50">SFr. 1&#039;254 (Switzerland)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2055" id="onetidCurrency50"> <LocID value="2055" id="onetidCurrency50">SFr. 1&#039;254 (Switzerland)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1028</Expr2> <Then><HTML><![CDATA[ <OPTION value="1028" id="onetidCurrency52" SELECTED> <LocID value="1028" id="onetidCurrency52">NT$1&#044;254 (Taiwan)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1028" id="onetidCurrency52"> <LocID value="1028" id="onetidCurrency52">NT$1&#044;254 (Taiwan)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1055</Expr2> <Then><HTML><![CDATA[ <OPTION value="1055" id="onetidCurrency53" SELECTED> <LocID value="1055" id="onetidCurrency53">1.254 TL (Turkey)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1055" id="onetidCurrency53"> <LocID value="1055" id="onetidCurrency53">1.254 TL (Turkey)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>2057</Expr2> <Then><HTML><![CDATA[ <OPTION value="2057" id="onetidCurrency54" SELECTED> <LocID value="2057" id="onetidCurrency54">£1&#044;254 (United Kingdom)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="2057" id="onetidCurrency54"> <LocID value="2057" id="onetidCurrency54">£1&#044;254 (United Kingdom)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>1033</Expr2> <Then><HTML><![CDATA[ <OPTION value="1033" id="onetidCurrency55" SELECTED> <LocID value="1033" id="onetidCurrency55">$1&#044;254 (United States)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="1033" id="onetidCurrency55"> <LocID value="1033" id="onetidCurrency55">$1&#044;254 (United States)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>14346</Expr2> <Then><HTML><![CDATA[ <OPTION value="14346" id="onetidCurrency56" SELECTED> <LocID value="14346" id="onetidCurrency56">$U 1.254 (Uruguay)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="14346" id="onetidCurrency56"> <LocID value="14346" id="onetidCurrency56">$U 1.254 (Uruguay)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vLCID"/></Expr1> <Expr2>8202</Expr2> <Then><HTML><![CDATA[ <OPTION value="8202" id="onetidCurrency57" SELECTED> <LocID value="8202" id="onetidCurrency57">Bs 1.254 (Venezuela)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="8202" id="onetidCurrency57"> <LocID value="8202" id="onetidCurrency57">Bs 1.254 (Venezuela)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <HTML><![CDATA[
+                    </SELECT>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="True" Value="Lookup">
+<HTML><![CDATA[
+    <!-- Lookup -->
+        <TD class="ms-authoringcontrols">&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidLookupList>Get information from:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                        <select name="LookupList" onchange="UpdatePage('Lookup')">
+                        
+                        ]]></HTML>
+                        <ows:ForEach Select="/LISTS/List">
+                        <Switch><Expr><GetVar Name="vLookupList"/></Expr>
+                        <Case Value="">
+                        <SetVar Name="vLookupList" Scope="Request"><Property Select="Name"/></SetVar>
+                        </Case>
+                        </Switch>
+                        <ows:IfEqual>
+							<Expr1><GetVar Name="vLookupList"/></Expr1>
+							<Expr2><Property Select="Name"/></Expr2>
+							<Then>
+							<HTML><![CDATA[<OPTION value="]]></HTML><Property Select="Name"/><HTML><![CDATA[" name="OptionLookupList" SELECTED> ]]></HTML><Limit Len="20" MoreText="..." HTMLEncode="TRUE"><Property Select="Title"/></Limit><HTML><![CDATA[</OPTION> ]]></HTML>
+							</Then>
+							<Else>
+							<HTML><![CDATA[<OPTION value="]]></HTML><Property Select="Name"/><HTML><![CDATA[" name="OptionLookupList"> ]]></HTML><Limit Len="20" MoreText="..." HTMLEncode="TRUE"><Property Select="Title"/></Limit><HTML><![CDATA[</OPTION> ]]></HTML>
+							</Else>
+							</ows:IfEqual>
+                        </ows:ForEach>
+                        
+                        <HTML><![CDATA[
+                        </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD colspan=2>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" height=35 width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id="onetidLookupListField">In this column:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                        <select name="LookupField">
+                        
+                        ]]></HTML>
+                        <ows:XML>
+                        <SetVar Scope="Request" Name="vOldList"><List/></SetVar>
+                        <SetList><GetVar Name="vLookupList"/></SetList>
+                        <ForEach Select="/FIELDS/Field">
+                        <Switch><Expr><Property Select="Type"/></Expr>
+                        <Case Value="Counter">
+							<HTML><![CDATA[<OPTION value="]]></HTML><Property Select="Name"/><HTML><![CDATA[" name="OptionLookupField">]]></HTML>
+							<Property HTMLEncode="TRUE" Select="DisplayName"/>
+							<HTML><![CDATA[</OPTION>]]></HTML>
+						</Case>
+                        <Case Value="Text">
+							<IfEqual>
+							<Expr1><Property Select="Name"/>
+							</Expr1><Expr2>Title</Expr2>
+							<Then>
+							<HTML><![CDATA[<OPTION value="]]></HTML><Property Select="Name"/><HTML><![CDATA[" SELECTED name="OptionLookupField">]]></HTML>
+							</Then>
+							<Else>
+							<HTML><![CDATA[<OPTION value="]]></HTML><Property Select="Name"/><HTML><![CDATA[" name="OptionLookupField">]]></HTML>
+							</Else>
+							</IfEqual>
+							<Property HTMLEncode="TRUE" Select="DisplayName"/>
+							<HTML><![CDATA[</OPTION>]]></HTML>
+                        </Case>
+                        </Switch>
+                        </ForEach>
+                        <SetList><GetVar Name="vOldList"/></SetList>
+                        </ows:XML>
+                        
+                        <HTML><![CDATA[
+                        </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="TRUE" Value="Choice">
+<HTML><![CDATA[
+    <!-- CHOICE -->
+    <TR>
+        <TD colspan=2></TD>
+        <TD class="ms-authoringcontrols">&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidEnterChoice>Type each choice on a separate line:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD>
+                        <TEXTAREA name="Choices" rows=4 cols=30 onblur="clearOutDefault()" id=onetidEnterChoice123>Enter Choice #1
+Enter Choice #2
+Enter Choice #3</TEXTAREA>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><td colspan=2 rowspan=3><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDisplayChoice>Display choices using:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                    ]]></HTML>
+                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vFormat"/></Expr1> <Expr2>RadioButtons</Expr2> <Then><HTML><![CDATA[ <INPUT type="radio" name="Format" value="Dropdown" id=onetidChoiceDD> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT type="radio" name="Format" value="Dropdown" id=onetidChoiceDD CHECKED> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                    <HTML ID="030">Drop-Down Menu</HTML>
+                    <HTML><![CDATA[
+                    </TD>
+                    <TD class="ms-authoringcontrols">
+                    ]]></HTML>
+                    <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vFormat"/></Expr1> <Expr2>RadioButtons</Expr2> <Then><HTML><![CDATA[ <INPUT type="radio" name="Format" value="RadioButtons" id=onetidChoiceRadio CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT type="radio" name="Format" value="RadioButtons" id=onetidChoiceRadio> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                    <HTML ID="031">Radio Buttons</HTML>
+                    <HTML><![CDATA[
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD colspan=2></TD>
+        <TD class="ms-authoringcontrols" height=35 width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDefaultChoiceValue>Default value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD>
+                        <INPUT type="text" name="Default" value='Enter Choice #1' id="onetidIODefChoiceValue">
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Case ExpandXML="TRUE" Value="DateTime">
+<HTML><![CDATA[
+    <!-- DateTime -->
+    <TR>
+        <TD colspan=2 rowspan=3></TD>
+        <TD class="ms-authoringcontrols">&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDateTimeFormat>Date and time format:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                        <select name="Format">
+                        ]]></HTML>
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vFormat"/></Expr1> <Expr2>DateOnly</Expr2> <Then><HTML><![CDATA[ <OPTION value="DateOnly" id="onetidDateOnly" SELECTED> <LocID value="DateOnly" id="onetidDateOnly">Date Only (e.g. 5/29/2001)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="DateOnly" id="onetidDateOnly"> <LocID value="DateOnly" id="onetidDateOnly">Date Only (e.g. 5/29/2001)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:GetVar Name="vFormat"/></Expr1> <Expr2>DateTime</Expr2> <Then><HTML><![CDATA[ <OPTION value="DateTime" id="onetidDateTime" SELECTED> <LocID value="DateTime" id="onetidDateTime">Date & Time (e.g. 5/29/2001 4:26pm)</LocID></OPTION> ]]></HTML></Then> <Else><HTML><![CDATA[ <OPTION value="DateTime" id="onetidDateTime"> <LocID value="DateTime" id="onetidDateTime">Date & Time (e.g. 5/29/2001 4:26pm)</LocID> </OPTION> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan -->
+                        <HTML><![CDATA[
+                        </select>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDefaultDateTime>Default value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD class="ms-authoringcontrols">
+                        <INPUT type="radio" name="Default" value="" id="onetidIONoDate" CHECKED> (None)  <br>
+                        <INPUT type="radio" name="Default" value="[today]" id="onetidIOTodayDate">  Today&#039;s Date <br>
+                        <INPUT type="radio" name="Default" value="<ows:GetVar Name='vDefault' HTMLEncode='TRUE'/>" id="onetidIOLiteralDefaultDate">
+                        <SPAN onmousedown = CheckDPRadioButton()><SCRIPT>
+                            function CheckDPRadioButton() {
+                                document.frmFieldData.Default[2].checked = true;
+                            };
+                            var frm = helperFrm;
+                            var defaultDate = document.frmFieldData.Default[2].value;
+                            
+                            if (defaultDate == "") {
+                                document.frmFieldData.Default[0].checked = true;
+                                fld = new DateField(frm,"Date",L_alert7_Text,"");
+                            } else if (defaultDate == "[today]") {
+                                document.frmFieldData.Default[1].checked = true;
+                                fld = new DateField(frm,"Date",L_alert7_Text,"");
+                            } else {
+                                document.frmFieldData.Default[2].checked = true;
+                                fld = new DateField(frm,"Date",L_alert7_Text,defaultDate);
+                            }
+                            fld.frm.stImagesPath += "images\\";   
+                            fld.BuildUI();
+                        </SCRIPT></SPAN>
+                    </TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Case>
+<Default ExpandXML="TRUE">
+<HTML><![CDATA[
+    <!-- Default (text) -->
+    <TR>
+        <TD colspan=2 rowspan=2></TD>
+        <TD class="ms-authoringcontrols">&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidTextMaxChar>Maximum number of characters:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD><SCRIPT>fld = new NumberField(helperFrm,"MaxLength", L_alert10_Text,"<ows:GetVar Name="vMaxLength"/>");fld.wMin = "1";fld.wMax = "255";fld.BuildUI();</SCRIPT></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+    <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+    <TR>
+        <TD colspan=2></TD>
+        <TD class="ms-authoringcontrols" height=35 width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidDefaultTextValue>Default value:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT id=onetidIODefTextValue type=text maxlength=255 name=Default value="<ows:GetVar Name='vDefault' HTMLEncode='TRUE'/>"></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+]]></HTML>
+</Default>
+</ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+    <TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+</FORM>
+<!--webbot bot="ListMiscXML" ID="webbot110" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+<FORM  name=frmSubmit METHOD="POST" ACTION='<ows:HttpPath/>&Cmd=NewField&List=<ows:List/>&NextUsing=_layouts/SurvEdit.htm'>
+    <INPUT type="hidden" name="FieldName"        value=''>
+    <INPUT type="hidden" name="FieldXML"         value=''>
+    <INPUT type="hidden" name="AddToDefaultView" value='NO' >
+    <INPUT type="hidden" name="owshiddenversion" value='<ows:ListProperty Select="Version"/>'>
+<!--OK/Cancel-->
+    <TR><TD colspan=4 valign=top height=25><hr size=1></TD></TR>
+    <TR>
+        <TD align=right colspan=4 ID="align01">
+        <INPUT ID=onetidSaveItem   Type="button" Value="       OK       " onclick="SubmitPage();">
+        <INPUT ID=onetidCancelItem Type="button" Value="   Cancel   " onclick="window.parent.location.href='<ows:HttpVDir/>/_layouts/SurvEdit.htm?List=<ows:ListProperty Select='Name'/>';">
+        </TD>
+    </TR>
+    <tr>
+     <td colspan=4 height=60>&nbsp;</td>
+    </tr>
+</FORM>
+<!--webbot bot="ListMiscXML" endspan -->
+<script>
+</script>
+</TABLE>
+</TD>
+<TD width=10px>&nbsp;</TD>
+</TR>
+<!--End form's table-->
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

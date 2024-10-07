@@ -1,0 +1,427 @@
+/* Styling for standard xhtml tags */
+
+body         { font-family: Arial; 
+    font-size: 100%; background-color: #FFFFFF; 
+    color: #000000; margin-top: 5px;}
+
+/* Font sizes - relative to BODY */
+div, span	{font-size: .94em}
+p    { font-size: .94em; text-align: Justify; margin-top: 5px; margin-bottom: 6px}
+table  { font-size: .94em; text-align: left }
+.smaller {font-size: .88em } /* For smaller fonts size */
+.norm {font-size: 1em} /* For normal font size - use for DIVs within other DIVs */
+.bigger {font-size: 1.05em} /* For bigger than normal font size */
+/*.smaller {font-size: 11px}*/
+
+h1.old           { font-family: Comic Sans MS; font-size: 1.24em; text-align: Center; font-style: 
+               italic; margin-top: 6px; margin-bottom: 1px } 
+h1			{ font-family: Arial; font-size: 1.25em; font-weight: bold; 
+	margin-bottom: 3px; margin-top: 3px;
+	 }
+h1.bselect {display: inline}
+				                 
+h2           {
+	text-align: left;
+	font-family: Arial;
+	font-size: 1.14em;
+	/*font-size: 14px;*/
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 5px;
+	background-color: orange; /*#990000;*/
+	color: #FFFF99; /* #FFCC33 */
+	/* background-image: url(images/beerbkgnd.jpg);*/
+	padding-left: 6px;
+	width: 99%;
+}
+table h2 {font-size: 1.18em} /* offsets effects of H2 shrinking inside table */
+h2.home {color: #000000; margin-top: 20px; background-color: #FFFFFF; text-align: center; background-image: none}
+h2.home2 {color: #000000; margin-top: 2px; background-color: #FFFFFF; text-align: center; background-image: none}
+h2.newspage  {margin-top: 10px; margin-bottom: -5px}
+
+h3           { font-family: Arial; font-size: 1.12em; font-style: italic; font-weight: bold; 
+				text-align: left; margin-top: 4px; margin-bottom: 2px }
+h3.nonital
+{
+    font-style: normal;
+}
+h3.color
+{
+    color: #cc6600;
+    background-color: #ffff99;
+    width: 99%;
+}
+h4
+{
+    font-family: Arial;
+    font-size: 1.02em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    text-align: left;
+    background-color: #f0e68c;
+}
+h4.clean
+{
+    background-color: Transparent;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    color: #660000;
+}
+h5           { font-family: Blackadder ITC }
+
+/* Basic formatting */
+.bld { font-weight: bold; }
+.ital { font-style: italic }
+
+span.visitor  {
+	font-weight: bold;
+	font-style: italic;
+}
+
+span.btype {
+	font-size: 1.1em;
+	/*text-transform: uppercase;*/
+	/* For some reason border prevents extra line from being added 
+        when there is a star rating image. */
+	border: solid thin white;
+}
+p.short		{ font-family: Arial; font-size: .94em; margin-top: 0; margin-bottom: 0 }
+
+.serving    { font-family: Comic Sans MS; text-align: Center; font-size: 1.1em; font-style: 
+               italic; margin-bottom: 5px  }
+p.guide    { text-align: Center; /*font-size: 1.2em*/}
+p.lists     {text-align: center; margin-top: 15px}
+p.return     { font-family: Arial; font-style: italic }
+
+
+hr           { margin-bottom: 2; margin-top: 2 }
+
+/* Link styles */
+a:link            { color: #990000 }
+a:hover      { color: #FF9900; font-weight: bold }
+a:active     { color: #CC3300 }
+a:visited    { color: #CC6600 }
+
+a.new:link		{ color: #990000 }
+a.new:hover  { color: #FFCC00; font-weight: bold }
+a.new:active	{ color: #CC3300 }
+a.new:visited { color: #CC6600 }
+
+a.admin:link {text-decoration: none; }
+a.admin:hover {color: #990000; font-weight: normal}
+a.admin:visited {text-decoration: none}
+
+/* Prevents borders from appearing around image links */
+a img {border: none}
+
+/* DIV establishes outer shell for page at set width */
+div#outer  {position: relative; margin-left: auto; margin-right: auto;  
+	width: 785px; /*border: 1px solid thin black*/ }
+div#outeradmin {width: 100%; /*border: solid thin black*/}
+
+/* DIV at top of page holding logo and slogan */
+.top	{position: relative; width: 100%; 
+	background-color: white; text-align: center; /*border: 1px solid thin black */}
+.logo   {width: 625px; height: 100px; margin-bottom: 0px}  
+	/* Logo style currently in use */
+.logo2  {
+	width: 100%;
+	height: 70px;
+	padding: 0px;
+	margin-bottom: 1px;
+}
+
+/* Navigation section starts with DIV to hold entire section */
+div.navsection { position: relative; z-index: 1; height: 20px;
+	 /* border: 1px solid thin black; */  }
+
+/* Navigation tabs in user control */
+.tab1 { font-family: Arial; font-size: 10pt;
+	background-color: white;
+	border-top: 2px outset #999999;
+	border-right: 2px outset #999999;
+	border-bottom: 2px none #999999;
+	border-left: 2px outset #999999;
+	text-align: center;
+	position: absolute;
+	width: 80px;
+	height: 25px;
+	padding: 2px;
+	top: 7px /*125px*/;
+	z-index: 1;
+	}
+.tab2 {position: absolute; top: 8px; left: 770px; height: 25px; width: 10px; 
+		padding-top: 5px; text-align: right;
+		/*border: solid thin black*/}
+.tabOn { font-family: Arial; font-size: 10pt;
+	background-color: orange;
+	border-top: 2px outset #999999;
+	border-right: 2px outset #999999;
+	border-bottom: 2px none;
+	border-left: 2px outset #999999;
+	text-align: center;
+	position: absolute;
+	width: 80px;
+	height: 19px;
+	padding: 2px;
+	top: 5px /*123px*/;
+	z-index: 13 
+	}	
+
+	/* Link styles for Nav Bar */
+div.navsection a {display: block}
+a.tabnav:link		{ color: #990000; text-decoration: none }
+a.tabnav:active     { color: #CC3300;  text-decoration: none  }
+a.tabnav:visited { color: #CC6600; text-decoration: none }
+a.tabnav:hover      { font-weight: bold; /*color: #FFCC00;*/ text-decoration: none}
+	/* special formatting for current page in navigation tabs */
+a.tabpage:link { color: #FFFFFF; font-weight: bold; text-decoration: none }
+a.tabpage:visited { color: #FFFF99; font-weight: bold; text-decoration: none }
+	
+	
+	/* Nav menu setup - bar underneath navigation tabs (watch width) */
+div#belowNavbar	{font-family: Arial, Helvetica, sans-serif; font-size: 10pt; 
+				background-color: orange;
+				position: relative; 
+				height: 28px; top: 28px;
+				border: 2px; border-color: #999999; border-style: outset; border-bottom-style: none; 
+				z-index: 10; width: 99.5%; /*781px*/}
+div.navbar3	{font-family: Arial; font-size: 10pt; 
+				background-color: orange;
+				position: relative; 
+				height: 28px; top: 28px; 
+				border: 2px; border-color: #999999; border-style: outset; border-bottom-style: none; 
+				z-index: 10; width: 99.5%; /*781px*/}
+
+div#subNav	{position: absolute; text-align: right; left: 300px; top: 5px; width: 470px}				
+div#subNav span { color: #FFF; margin: 0px; padding: 
+               0px; line-height: 20px; display: inline }
+div#subNav span a { text-decoration: none; padding-left: 10px; padding-right: 10px; 
+               padding-top: 5px; padding-bottom: 4px; display: inline}
+div#subNav span a:link { color: #FFF; }
+/* div#subNav span a:visited { color: #CCC;  }
+div#subNav span a:hover { font-weight: bold; color: #FFF; background-color: #3366FF;  }*/
+
+/* Social button position - within email address user control */
+div.socialbutton {position: absolute; z-index: 20; top: 7px; left: 8px}
+	/* Email address user control position */
+span.mail	{font-family: Arial; font-size: .95em; position: relative; 
+				width: 300; height: 30px; top: 7px; left: 95px; z-index:12}
+span.sdate	{font-family: Arial; font-size: .95px; position: relative; 
+				width: 170; height: 30px; top: 7px; left: 300px; text-align: right; z-index:12;  }
+
+	/* link style for email address at top of page; display: inline needed to override 
+	display: block in 'div.navsection a' class*/
+a.mail  	{display: inline} /* this should be enough but doesn't seem to be*/
+a.mail:link		{ color: #990000; text-decoration: none; display: inline}
+a.mail:active     { color: #CC3300;  text-decoration: none; display: inline  }
+a.mail:visited { color: #CC6600; text-decoration: none; display: inline}
+a.mail:hover      { font-weight: bold; color: #990000; text-decoration: none}
+
+/* link style for search link on home page */
+a.srch:link
+{
+    color: #990000;
+}
+a.srch:active
+{
+    color: #cc3300;
+}
+a.srch:visited
+{
+    color: #990000;
+}
+a.srch:hover
+{
+    font-weight: bold;
+}
+
+/* DIV for Main Content Area for Home page */
+div.mainbox {position: relative; BORDER-RIGHT: orange 2px outset; 
+				Margin-top: 0px;
+				PADDING-RIGHT: 5px; 
+				PADDING-TOP: 8px; 
+				BORDER-LEFT: orange 2px outset; PADDING-LEFT: 5px; 
+        		BORDER-BOTTOM: orange 2px outset; PADDING-BOTTOM: 10px; 
+        		WIDTH: 771px; height: 100%; TOP: 28px; LEFT: 0px; 
+				BACKGROUND-COLOR: white;
+         		TEXT-ALIGN: left;
+				/*border-top: solid thin red; */
+				/*z-index: 150;*/
+				}
+  /* As above, but with height set to make it longer */
+div.mainboxC {text-align: center } 
+ /* Footer at bottom of each page */
+a.ft {text-decoration: none}  
+div#ft {position: relative; top: 35px; font-size: .76em; text-align: right}
+
+/* Table for What's New section on Home */
+div.lftn {float: left; width: 61%; margin-bottom: 0px}
+div.rhtn  {float: right; width: 38%; margin-top: -1px; margin-right: 2px; margin-bottom: 0px}
+
+.leftcol {width: 60px; vertical-align: top; text-align: right}
+.leftcolv
+{
+    width: 100%;
+    text-align: left;
+    background-color: #f0e68c;
+}
+/* .rightcol {width: 690px }
+.rightcolv {width: 630px } */
+
+    /* Feature section */
+.fimage {float:left; padding-top: 3px;padding-right:6px; padding-bottom:2px}
+
+/* Main style for datalists */
+.dlmain  {position: relative; width: 775; top: 7px; padding: 3px; text-align: left}
+.dlhome {font-size: .94em}
+span.softdate
+{
+    color: #ffffff;
+    font-size: 0.9em;
+    color: #666666;
+} /* Softer color smaller text showing updates */
+
+/* Holds brewery logo */
+div.blogo {position: absolute; top: -6px; left: 350px; width: 50%; text-align: right;}
+.brewlogo  {position: relative; height: 75px; top: 0px; z-index: 50;/*border: 1px solid gold*/}   /* specifies size of brewery logo image */
+
+/* Visitor Comments on Brewery Page */
+.comment
+{
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+/* Table cells for brewery and brand user comment forms */
+.attop       { vertical-align: top }
+
+/* Table with selection buttons on Home page */
+.selection  {width: 750px; position: relative; left: 10px; margin-top: -12px}
+.btn {width: 30px }
+.criteria  {font-weight: bold}
+
+/* Datalist of Brewery names on brewery.aspx */
+span.sp  {width: 100px}
+span.br  {width: 250px}
+span.ct  {width: 200px}
+span.rg  {width: 100px}
+
+/* For Datagrid on brands.aspx */
+.noborder {
+	border-width: 0px; border-style: none; border-color: white;
+}
+
+/* For centering text */
+.mid {text-align: center; }
+/* For bolding text - usually in spans */
+.strong {font-weight: bold;}
+
+.tblcenter {margin-left: auto; margin-right: auto}
+
+/* News and Events subjects on news.aspx */
+p.moreinfo {margin-top: 5px; margin-bottom: 10px}
+span.more {font-style: italic}
+
+/* Showing filter for brands */
+div.filter {text-align: center; font-size: .95em; margin-bottom: 0px}
+.shortform {
+	margin-bottom: 0px;
+}
+
+/* Panels on comment forms */
+.comment {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/*border: thin solid #000000;*/
+}
+
+/* Creating side-by-side divs for News, Events */
+div.lft {float: left; width: 48%;}
+div.rht  {float: right; width: 49%; margin-right: 2px}
+	/* extends surrounding div by forcing a clear after the float */
+div.clr
+{
+    display: block;
+    clear: both; /* Ensures div clears both float divs above */
+    line-height: 0px;
+    height: 0px; 
+    visibility: hidden;
+    /*border: solid thin green; */
+}
+
+/* Beer poster */
+.poster {
+	float: left;
+	margin: 2px 10px 2px 2px;
+	font-size: .9em;
+	/*border: none;*/
+}
+.posterad {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	width: 89px;
+	height: 80px;
+	z-index: 0;
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif; /*Arial;*/
+	font-size: .8em;
+	text-align: center;
+	/* border: 1px solid blue;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFCC00;
+	text-align: center;
+	line-height: 20px;
+	background-image: url(images/store/posterad.jpg);*/
+}
+.stats
+{
+    position: absolute;
+    top: 12px;
+    left: 647px;
+    width: 128px;
+    height: auto;
+    font-size: .9em;
+}
+
+/* Temporary home page for technical difficulties */
+.temp { font-style: italic;
+		font-weight: bold;
+		font-size: 1em;
+}
+
+/* For Netscape experiment */
+h1.net			{ font-family: Comic Sans MS; font-size: 14pt; text-align: Center; font-style: 
+               italic; margin-top: -5; margin-bottom: -15 }
+
+
+/* Styles for old BCBG site */
+/* Table properties for navigation table at top of home page */ 
+.tabletop		{width: 775; background-color: white; height: 235px; }
+   /* Table at top of regular pages */
+.topreg			{width: 775; padding: 0px; background-color: white }
+   
+/* Directory table at top of home page */
+table.big			{width: 750; text-align: Justify; }
+.directory {width: 350; font-family: Arial; font-size: 12pt; }
+.whatnew		{ width: 400; font-family: Comic Sans MS; font-size: 20px; color: #FF9900}
+.newbox		{ width: 400; font-family: Arial; font-size: 17px; font-weight: bold; text-align: left }
+.forum			{ width: 350; font-family: Arial; font-size: 20px; font-weight: bold; color: #FF9900}
+.forum2		{ font-family: Arial; font-size: 20px; color: #000000}
+
+/* Main page area */
+table.main   { width: 775px; padding: 10px; text-align: justify; font-family: Arial; font-size: 12px; 
+               background-color: #FFFFFF }
+ 
+/* Narrow used in experimental page defaultnarrow.htm */
+table.narrow		{width: 640; }
+.nav         { font-family: Arial; font-size: 10pt; font-weight: bold }
+dt           { font-family: Arial; font-size: 10pt }
+dd           { font-family: Arial; font-size: 10pt }
+
+
+               

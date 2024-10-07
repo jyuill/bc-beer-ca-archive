@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+  <Advertisements>
+       <Ad>
+          <ImageUrl>images/store/posterad.jpg</ImageUrl>
+          <NavigateUrl>store.aspx</NavigateUrl>
+          <AlternateText>B.C. Beer Poster!</AlternateText>
+          <Keyword>Beer poster</Keyword>
+          <Impressions>1</Impressions>
+       </Ad>
+	    <Ad>
+          <ImageUrl>images/store/posterad2.jpg</ImageUrl>
+          <NavigateUrl>store.aspx</NavigateUrl>
+          <AlternateText>B.C. Beer Poster!</AlternateText>
+          <Keyword>Beer poster</Keyword>
+          <Impressions>2</Impressions>
+       </Ad>
+	    <Ad>
+          <ImageUrl>images/store/posterad3.jpg</ImageUrl>
+          <NavigateUrl>store.aspx</NavigateUrl>
+          <AlternateText>B.C. Beer Poster!</AlternateText>
+          <Keyword>Beer poster</Keyword>
+          <Impressions>1</Impressions>
+       </Ad>
+	     <Ad>
+          <ImageUrl>images/store/posterad4.jpg</ImageUrl>
+          <NavigateUrl>store.aspx</NavigateUrl>
+          <AlternateText>B.C. Beer Poster!</AlternateText>
+          <Keyword>Beer poster</Keyword>
+          <Impressions>1</Impressions>
+       </Ad>
+  </Advertisements>
+
+
+

@@ -1,0 +1,466 @@
+body {
+   margin:       0;
+}
+.ms-main{
+   border-right: 50px solid #5f8ac5; 
+}
+.ms-toolbar {
+   font-family:   verdana;
+   font-size:  .68em;
+   text-decoration: none;
+   color:      #3366CC; 
+}
+.ms-viewselect a:link{
+   font-size: 8pt;
+   font-family:   Verdana, sans-serif;
+   color: #003399;
+}
+select {
+   font-size: 8pt;
+   font-family:   Verdana, sans-serif;
+}
+hr {
+   color: #3366cc;
+   height: 2px;
+}
+.ms-formlabel  {
+   text-align: left;
+   font-family: verdana;
+   font-size: .7em;
+   font-weight: normal;
+   color: #808080;
+}
+.ms-formdescription A {
+   color: #3366cc;
+   text-decoration: none;
+}
+.ms-formtable .ms-formbody{
+   line-height: 1.3em;
+}
+.ms-radiotext {
+   cursor:default;
+   text-align: left;
+   font-family: verdana;
+   font-size: 10pt;
+   height: 19px;
+}
+.ms-formbody {
+   text-align: left;
+   font-family: verdana;
+   font-size: .7em;
+   vertical-align: top;
+}
+.ms-formdescription
+{
+   font-family: verdana;
+   font-size: 8pt;
+   color: #808080;
+}
+.ms-searchbox {
+width: 100%;
+display:inline;
+}
+table.ms-form th {
+   color:        #003399;
+   font-family:   verdana;
+   font-size:    8pt;
+   font-weight:  normal;
+   text-align:   left;
+   vertical-align: top;
+}
+table.ms-form td {
+   font-size:    8pt;
+   width:         100%;
+   vertical-align: top;
+}
+.ms-long {
+   font-size:    8pt;
+   font-family:  Verdana, sans-serif;
+   width:        375px;
+}
+.ms-input {
+   font-size:    8pt;
+   font-family:  Verdana, sans-serif;
+}
+.ms-bannerframe { 
+   background-color: #5f8ac5;  
+   border-bottom: 4 solid #FFCC00; 
+}
+  
+.ms-banner a:link {
+   font-family:  Verdana, serif;
+   font-size:    9pt;
+   color:        white;
+   font-weight:  normal;
+   text-decoration: none;
+   }
+   
+.ms-banner a:visited {
+   font-family:  Verdana, serif;
+   font-size:    9pt;
+   color:        white;
+   font-weight:  normal;
+   text-decoration: none;
+   }
+   
+.ms-banner {
+   color: white;
+   font-size:    9pt;
+   font-family:  verdana;
+}
+.ms-nav td {
+   font-family:  Verdana, sans-serif;
+   font-size:    8pt;
+   font-weight: normal;
+}
+.ms-nav th  {
+   font-size:    8pt;
+   font-family:  Verdana, sans-serif;
+   font-weight:  normal;
+   text-align:   left;
+   color:        black;
+}
+.ms-navframe {
+   border-left: 4px solid #FFCC00; 
+	 border-right: none;
+}
+.ms-verticaldots {
+   background-image: url(../images/bluedot.gif);
+   background-position: top right;
+   background-repeat: repeat-y;
+}
+.ms-nav a {
+   text-decoration: none;
+   font-family:  Verdana, sans-serif;
+   font-size:    8pt;
+   font-weight: normal;
+   color: #3366cc;
+}
+.ms-nav a:link {
+}
+.ms-nav a:hover {
+   text-decoration: underline;
+   color:        #798073;
+}
+.ms-nav a:visited {
+   color:       #3366cc;
+}
+.ms-titlearea { 
+   font-family:   verdana;
+   font-size:     9pt;
+}
+.ms-titleareaframe {
+   color: black; 
+   border-left: 4px solid #FFCC00; 
+	 border-right: none;
+}
+.ms-pagetitle {
+   color: black; 
+   font-family: arial;
+   font-size: 14pt;
+}
+.ms-pagetitle a {
+   text-decoration:none;
+   color: black;  
+}
+.ms-pagetitle a:hover {
+   text-decoration: underline;
+}
+.ms-wvsel
+{
+   color: #3366cc;
+}
+.ms-selected
+{
+        background-color: #5f8ac5;
+        color: white;
+}
+.ms-selected SPAN
+{
+        color: white;
+}
+.ms-filedialog td
+{
+   height: 16px;
+}
+.ms-descriptiontext 
+{
+   color: black;
+   font-family: verdana; font-size: 8pt;
+}
+.ms-separator 
+{
+   color: #444444;
+   font-size: 10pt;
+}
+.ms-authoringcontrols
+{
+   background-color: #F2F2F2;
+   font-family: verdana;
+   font-size: 8pt;
+}
+.ms-sectionheader
+{
+   color: #3366cc;
+   font-family: arial;
+   font-size: 12pt;
+   font-weight: bold;
+}
+.ms-sectionline
+{
+   background-color: #5f8ac5;
+}
+.ms-propertysheet {
+   font-family: verdana;
+   font-size: .7em;
+   
+}
+.ms-propertysheet th {
+   font-family: verdana;
+   font-size: 8pt;
+   color: gray;
+   font-weight: normal;
+}
+.ms-propertysheet a {
+   text-decoration: none;
+   color: #3366cc;
+}
+.ms-propertysheet a:hover {
+   text-decoration: underline;
+   color: #ff3300;
+}
+.ms-itemheader a {
+   font-size: 11pt;
+   font-family: arial;
+   font-weight: bold;
+   color: #3366cc;
+   text-decoration: none;
+}
+.ms-discussiontitle {
+   font-size: .7em;
+   font-family: verdana;
+   color: black;
+   font-weight: bold;
+}
+.ms-vh {
+   font-family: verdana;
+   font-size: .68em;
+   color: #808080;
+   text-align: left;
+   text-decoration: none;
+   font-weight: normal;
+   vertical-align: top;
+}
+.ms-vh a {
+   color: #808080;
+   text-decoration: none;
+}
+.ms-vh a:hover {
+   text-decoration: underline;
+}
+.ms-vb{
+   font-family: verdana;
+   font-size: .68em;
+   height: 18px;
+   vertical-align: top;
+}
+.ms-vb a {
+   color: #3366cc;
+   text-decoration: none;
+}
+.ms-vb a:hover {
+   color: #ff3300;
+   text-decoration: underline;
+}
+.ms-vb a:visited {
+   color: #000066;
+   text-decoration: none;
+}
+.ms-vb a:visited:hover {
+   color: #ff3300;
+   text-decoration: underline;
+}
+.ms-homepagetitle {
+   font-family: arial;
+   font-size: 12pt;
+   color: black;
+   font-weight: bold;
+   text-decoration: none;
+}
+.ms-addnew {
+   font-weight: normal;
+   font-family: verdana;
+   font-size: .68em;
+   color: #3366cc;
+   text-decoration: none;
+}
+.ms-cal {
+border-collapse:collapse;
+table-layout:fixed;
+font-family: Verdana;
+cursor:default;
+}
+.ms-caltop {
+border-top:1px solid black;
+border-left:1px solid black;
+border-right:1px solid black;
+vertical-align:top;
+font-size: 10pt;
+width: 14%;
+height:30px;
+}
+.ms-calhead {
+border:none;
+text-align:center;
+background-color: #5f8ac5;
+color: white;
+font-size: 16pt;
+font-family: Arial;
+padding: 2px;
+}
+.ms-caldow {
+border-top:1px solid black;
+border-left:1px solid black;
+border-right:1px solid black;
+vertical-align:top;
+text-align:center;
+font-weight: bold;
+font-size: 10pt;
+height:20px;
+}
+.ms-calmid {
+border-left:1px solid black;
+border-right:1px solid black;
+height:20px;
+}
+.ms-CalSpacer {
+border-left:1px solid black;
+border-right:1px solid black;
+height:4px;
+}
+.ms-calbot {
+border-top:none;
+border-left:1px solid black;
+border-right:1px solid black;
+border-bottom:1px solid black;
+height:2px;
+}
+.ms-appt a {
+color: #2D425F;
+}
+.ms-appt a:hover {
+color: red;
+}
+.ms-appt {
+border:2px solid black;
+text-align:center;
+vertical-align: middle;
+font-size:8pt;
+height:18px;
+overflow:hidden;
+background-color: #D2DEEE;
+color: black;
+}
+.ms-apptsingle {
+border-left:1px solid black;
+border-right:1px solid black;
+height:18px;
+text-align:left;
+padding-left:4px;
+padding-right:0px;
+vertical-align: middle;
+font-size:8pt;
+overflow:hidden;
+color: black;
+}
+.ms-caldowdown {
+font-weight: bold;
+text-align: center;
+vertical-align: middle;
+font-size: 10pt;
+}
+.ms-caldown {
+font-size: 8pt;
+text-align: left;
+vertical-align: top;
+}
+.ms-datepickeriframe {
+position:absolute;
+display:none;
+background:white;
+}
+.ms-datepicker {
+font-family: Verdana;
+border: 2 outset activeborder;
+cursor:default;
+}
+.ms-dpdow {
+border:none;
+vertical-align:top;
+text-align:center;
+font-weight: bold;
+font-size: 8pt;
+border-bottom:1px solid black;
+}
+.ms-dpday {
+border:none;
+font-size: 8pt;
+text-align: center;
+cursor:hand;
+}
+.ms-dpselectedday {
+border:none;
+background-color:#e6e6e6;
+font-size: 8pt;
+text-align: center;
+cursor:hand;
+}
+.ms-dpnonmonth {
+color:gray;
+border:none;
+font-size: 8pt;
+text-align: center;
+cursor:hand;
+}
+.ms-dphead {
+border:none;
+text-align:center;
+font-weight: bold;
+font-size: 8pt;
+background-color: #5f8ac5;
+color: white;
+}
+.ms-dpnextprev {
+border:none;
+text-align:center;
+font-weight: bold;
+font-size: 8pt;
+background-color: #5f8ac5;
+color: white;
+cursor:hand;
+}
+.ms-dpfoot {
+text-align:center;
+font-size: 8pt;
+text-align: center;
+font-style: italic;
+border-top:1px solid;
+border-left:none;
+border-bottom:none;
+border-right:none;
+height:24px;
+}
+IMG.ms-button {
+cursor:hand;
+}
+.ms-announcementtitle {
+   font-weight: bold;
+}
+.ms-homepagetitle:Hover {
+   text-decoration: underline;
+   color: #ff3300;
+}
+.ms-discussionseperator {
+   color: #cccccc;
+   height: 1px;
+}

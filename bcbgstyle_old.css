@@ -1,0 +1,156 @@
+body         { font-family: Arial; background-color: #FFFFFF; color: #000000}
+
+/* Creates burgundy background */
+body.bkgrnd	{ font-family: Arial; background-color: brown; color: #000000}
+
+.logo   {width: 625px; height: 100px; margin-bottom: 0px}  /* top logo */
+.title           { font-family: Comic Sans MS; font-size: 14pt; margin-bottom: -20; margin-top: 0px; text-align: Center }
+.title2		{font-family: Comic Sans MS; font-size: 14pt; margin-bottom: -20; text-align: left}
+
+h1           { font-family: Comic Sans MS; font-size: 14pt; text-align: Center; font-style: 
+               italic; margin-top: 12 }               
+h2           { font-family: Arial; font-size: 12pt; font-weight: bold; margin-bottom: -10; margin-top: 0px }
+h2.news     {text-align: left; font-color: brown; margin-bottom: -1px}
+h2.newspage  {text-align: left; font-color: brown; margin-bottom: -5px}
+h3           { font-family: Arial; font-size: 10pt; font-style: italic; font-weight: bold; text-align: left; margin-top: 2; margin-bottom: 5 }
+h4           { font-family: Arial; font-size: 9pt; margin-top: 0; margin-bottom: 0 }
+h5           { font-family: Blackadder ITC }
+p.short		{ font-family: Arial; font-size: 9pt; margin-top: 0; margin-bottom: 0 }
+
+p            { font-family: Arial; font-size: 10pt; text-align: Justify}
+p.serving    { font-family: Comic Sans MS; text-align: Center; font-size: 1.2em; font-style: 
+               italic; margin-bottom: 0 }
+p.guide    { text-align: Center; font-size: 1.2em; margin-bottom: 10 }
+p.lists     {text-align: Center}
+p.return     { font-family: Arial; font-style: italic }
+
+table        { font-size: 12px; font-family: Arial }
+.shell      {align: center; width: 800px; padding: 0px}  /* big table that centers everything */
+hr           { margin-bottom: 0; margin-top: 0 }
+
+a:link            { color: #990000 }
+a:hover      { color: #FF9900; font-weight: bold }
+a:active     { color: #CC3300 }
+a:visited    { color: #CC6600 }
+
+a.new:link		{ color: #990000 }
+a.new:hover  { color: #FFCC00; font-weight: bold }
+a.new:active	{ color: #CC3300 }
+a.new:visited { color: #CC6600 }
+
+
+
+a.tabnav:link		{ color: #990000; text-decoration: none }
+a.tabnav:hover      { font-weight: bold; color: #FFCC00; text-decoration: none}
+a.tabnav:active     { color: #CC3300;  text-decoration: none  }
+a.tabnav:visited { color: #CC6600; text-decoration: none }
+/* special formatting for current page in navigation tabs */
+a.tabpage:link { color: #FFFFFF; font-weight: bold; text-decoration: none }
+a.tabpage:visited { color: #FFFF99; font-weight: bold; text-decoration: none }
+/* for email address at top of page */
+a.mail:link		{ color: #990000; text-decoration: none }
+a.mail:hover      { font-weight: bold; color: #990000; text-decoration: none}
+a.mail:active     { color: #CC3300;  text-decoration: none  }
+a.mail:visited { color: #CC6600; text-decoration: none }
+
+
+/* Divs used for 'new' home page */
+div          { text-align: Justify }
+div.main		{position: relative; width: 800; top: 0px; background-color: white; padding: 10px}
+div.navbar	{background-color: orange; position: relative; width: 800; height: 40px; top: 0px; 
+				border: 2px; border-color: #999999; border-style: outset; border-bottom-style: none}
+
+div.navbar2	{font-family: Arial; font-size: 10pt; background-color: orange; position: relative; 
+				width: 800; height: 40px; top: 0px; 
+				border: 2px; border-color: #999999; border-style: outset; border-bottom-style: none}
+
+    /* Testing nav menu setup */
+
+div.navbar3	{font-family: Arial; font-size: 10pt; background-color: orange; position: relative; 
+				height: 35px; top: 30px; 
+				border: 2px; border-color: #999999; border-style: outset; border-bottom-style: none; z-index: 5}
+
+div.navbarback	{font-family: Arial; font-size: 10pt; background-color: red; position: relative; 
+				height: 35px; top: -35px; z-index: 4}
+
+
+/* Email address user control position */
+span.mail	{font-family: Arial; font-size: 12px; position: relative; 
+				width: 300; height: 30px; top: 4px; left: 15px; z-index:6}
+span.sdate	{font-family: Arial; font-size: 12px; position: relative; 
+				width: 300; height: 30px; top: 4px; left: 300px; z-index:6}
+
+
+/* Navigation tabs in user control */
+.tab1 {
+	font-family: sans-serif; position: absolute; background-color: white; border: 2px; border-color: #999999;
+	 border-style: outset; border-bottom-style: none; text-align: center; width: 90px; height: 22px; top: -24px}
+.tabOn {
+	font-family: sans-serif; position: absolute; background-color: orange; border: 2px; border-color: #999999;
+	 border-style: outset; border-bottom-style: none; text-align: center; width: 90px; height: 25px; top: -25px; padding-top: 2px}
+
+
+/* Table properties for navigation table at top of home page */ 
+.top			{position: relative; width: 800; background-color: white; text-align: center }
+.tabletop		{width: 800; background-color: white; height: 235px; }
+   /* Table at top of regular pages */
+.topreg			{width: 800; padding: 0px; background-color: white }
+   
+/* Directory table at top of home page */
+table.big			{width: 750; text-align: Justify; spacing: 0}
+.directory {width: 350; font-family: Arial; font-size: 12pt; spacing: 0}
+.whatnew		{ width: 400; font-family: Comic Sans MS; font-size: 20px; color: #FF9900}
+.newbox		{ width: 400; font-family: Arial; font-size: 17px; font-weight: bold; text-align: left }
+.forum			{ width: 350; font-family: Arial; font-size: 20px; font-weight: bold; color: #FF9900}
+.forum2		{ font-family: Arial; font-size: 20px; color: #000000}
+
+/* Main page area */
+table.main   { width: 800px; padding: 10px; text-align: justify; font-family: Arial; font-size: 12px; 
+               background-color: #FFFFFF }
+
+/* Main div at top of home page */
+div.mainbox {BORDER-RIGHT: orange 2px outset; PADDING-RIGHT: 10px; BORDER-TOP: orange 0px; PADDING-LEFT: 10px; 
+        LEFT: 0px; PADDING-BOTTOM: 10px; BORDER-LEFT: orange 2px outset; WIDTH: 800px; PADDING-TOP: 10px; 
+        BORDER-BOTTOM: orange 2px outset; POSITION: relative; TOP: 0px; HEIGHT: 200px; BACKGROUND-COLOR: white;
+         TEXT-ALIGN: center}
+  /* As above, but without text centered - used on most pages other than Home */
+div.mainboxL {BORDER-RIGHT: orange 2px outset; PADDING-RIGHT: 10px; BORDER-TOP: orange 0px; PADDING-LEFT: 10px; 
+        LEFT: 0px; PADDING-BOTTOM: 10px; BORDER-LEFT: orange 2px outset; WIDTH: 800px; PADDING-TOP: 10px; 
+        BORDER-BOTTOM: orange 2px outset; POSITION: relative; TOP: 0px; HEIGHT: 200px; BACKGROUND-COLOR: white}
+                        
+/* Table for What's New section on Home */
+.newitems {width: 800px}
+.leftcol {width: 100px; vertical-align: top; text-align: right}
+.rightcol {width: 690px}
+
+/* Narrow used in experimental page defaultnarrow.htm */
+table.narrow		{width: 640; spacing: 0}
+.nav         { font-family: Arial; font-size: 10pt; font-weight: bold }
+dt           { font-family: Arial; font-size: 10pt }
+dd           { font-family: Arial; font-size: 10pt }
+               
+/* Table cells for brewery and brand user comment forms */
+.attop       { vertical-align: top }
+
+/* For Netscape experiment */
+h1.net			{ font-family: Comic Sans MS; font-size: 14pt; text-align: Center; font-style: 
+               italic; margin-top: -5; margin-bottom: -15 }
+
+/* Table with selection buttons on Home page */
+.selection  {width: 770px}
+.criteria  {font-weight: bold}
+
+/* Datalist of Brewery names on brewery.aspx */
+span.sp  {width: 100px}
+span.br  {width: 250px}
+span.ct  {width: 200px}
+span.rg  {width: 100px}
+
+/* News and Events subjects on news.aspx */
+span.subject {font-weight: bold}
+
+/* Showing filter for brands */
+div.filter {align: left; margin-bottom: -15px}
+.shortform {
+	margin-bottom: 0px;
+}

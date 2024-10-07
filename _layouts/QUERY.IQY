@@ -1,0 +1,12 @@
+<ows:SetVar Name="Content-type" Scope="Request">text/x-ms-iqy</SetVar>WEB
+1
+<ows:HttpPath/>&XMLDATA=1&List=<ows:GetVar Name="List"/>&View=<ows:GetVar Name="View"/>&RowLimit=0
+
+Selection=<ows:GetVar Name="List"/>-<ows:GetVar Name="View"/>
+EditWebPage=<ows:GetVar Name="Source"/>
+Formatting=None
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False
+DisableDateRecognition=False
+DisableRedirections=False

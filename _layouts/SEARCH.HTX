@@ -1,0 +1,363 @@
+                                              
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir="ltr">
+<HEAD>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252"> 
+<Script Language="javascript">
+    var strBinUrl="../_vti_bin/";
+    winLoc = new String(window.location);
+    baseHref = winLoc.substring(0,winLoc.indexOf('/_vti_script'));
+    document.write('<BASE HREF="' + baseHref + '/_layouts/">');
+</Script>
+    <META Name="GENERATOR" Content="Microsoft SharePoint">
+    <META Name="ProgId" Content="FrontPage.Editor.Document">
+    <title id="onetidTitle">Search Results</title>
+    <Link REL="stylesheet" Type="text/css" HREF="styles/ows.css">
+<Script SRC="../_vti_bin/owsredir.js"></Script>
+<Script Language="javascript">
+function  getHreffromVpath(url)
+{
+    if ("<%CiCatalog%>" != "OWS_Search_Proxy")
+    {
+	return url;
+    }
+    else
+    {
+    	FileLoc = new String(url);
+    	FileLoc = FileLoc.substring(FileLoc.indexOf('/')+1);
+	newUrl = FileLoc.substring(FileLoc.indexOf('/'));
+	return newUrl;
+    }
+}
+function showHref(url, fName)
+{
+    href = getHreffromVpath(url);
+    document.write("<a href=\"" + href + "\">" + fName + "</a>");
+}
+function showSearchText()
+{
+    if ("<%HighChar%>" == "1") 
+    {
+	var L_HighSearch_Text = "<b>Please renter the search string:</b>";
+        document.write(L_HighSearch_Text);
+    }
+    else
+    {
+	var L_Search_Text = "<b>Search for documents containing text:</b>";
+        document.write(L_Search_Text);
+    }
+}
+function showSize(dSize)
+{
+var L_KB_Text = " KB";
+sSize = dSize.replace(/(\D+)/g,'');
+kbSize = Math.ceil(parseInt(sSize)/1024)
+document.write(kbSize + L_KB_Text);
+}
+function showGif(url, fName)
+{
+var L_DocImageAlt_Text = "Icon";
+sExtension = fName.substring(fName.length-4,fName.length);
+switch (sExtension.toLowerCase()) {
+case ".doc":
+gifPath="icdoc.gif";
+break;
+case ".xls":
+gifPath="icxls.gif";
+break;
+case ".ppt":
+gifPath="icppt.gif";
+break;
+case ".htm":
+gifPath="ichtm.gif";
+break;
+case ".pub":
+gifPath="icpub.gif";
+break;
+case ".asp":
+gifPath="icasp.gif";
+break;
+case ".xml":
+gifPath="icxml.gif";
+break;
+case ".jpg":
+gifPath="icjpg.gif";
+break;
+case ".gif":
+gifPath="icgif.gif";
+break;
+case ".txt":
+gifPath="ictxt.gif";
+break;
+case ".png":
+gifPath="icpng.gif";
+break;
+default:
+gifPath="icgen.gif";
+break;
+}
+    href = getHreffromVpath(url);
+    document.write("<a href=\"" + href + "\"><img alt=\"" + L_DocImageAlt_Text + "\" border=0 src='images/"+gifPath +"'></a>");
+}
+function SubmitSearch()
+{
+    f = document.frmSearch;
+    var searchText = f.elements["SearchString"].value;
+    if ("" == searchText)
+    {
+	var L_Enter_Text = "Please enter one or more search words.";
+	alert(L_Enter_Text);
+    }
+    else
+    {
+	f.elements["SearchString"].value = searchText.replace(/\"/g, "");
+	f.submit();
+    }
+}
+function CheckRedirect()
+{
+    if ( ("<%SearchPage%>" == "1") || ("<%HighChar%>" == "1") )
+	    document.frmSearch.elements["SearchString"].value = "";
+}
+</Script>
+</HEAD>
+<BODY marginwidth=0 marginheight=0 OnLoad="CheckRedirect();">
+<table class="ms-main" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+<!-- Banner -->
+ <TR> 
+  <TD COLSPAN=3 WIDTH=100%> 
+  <!--Top bar-->
+  <table class="ms-bannerframe" border="0" cellspacing="0" cellpadding="3" width="100%">
+   <tr>
+    <td nowrap valign="middle" align="left"><img ID=onetidHeadbnnr0 alt="Logo" src="images/logo.gif" width="28" height="30"></td>
+      <td class=ms-banner width=99% nowrap ID="HBN100" valign="middle" align="left">
+       <!--webbot bot="Navigation" 
+                S-Type="sequence" 
+                S-Orientation="horizontal" 
+                S-Rendering="html" 
+                S-Btn-Nml="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sel="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sep="&amp;nbsp;|&amp;nbsp;"
+                B-Include-Home="FALSE" 
+                B-Include-Up="FALSE" 
+                S-Btn-Nobr="FALSE" 
+                U-Page="sid:1002"
+                S-Target startspan --><a ID='onettopnavbar1007' href='AllLibs.htm'>Documents</a>&nbsp;|&nbsp;<a ID='onettopnavbar1008' href='discusns.htm'>Discussion Boards</a>&nbsp;|&nbsp;<a ID='onettopnavbar1009' href='viewlsts.htm'>Lists</a>&nbsp;|&nbsp;<a ID='onettopnavbar1010' href='create.htm'>Create</a>&nbsp;|&nbsp;<a ID='onettopnavbar1011' href='settings.htm'>Site Settings</a>&nbsp;|&nbsp;<a ID='onettopnavbar1012' href='javascript:HelpWindow()'>Help</a><!--webbot bot="Navigation" i-checksum="39757" endspan -->
+    </td>
+   </tr>
+  </table>
+  </TD> 
+ </TR>
+<tr>
+    <td colspan=3>
+        <table width=100% border=0 class="ms-titleareaframe" cellpadding=3>
+        <tr>
+            <td style="padding-bottom: 0px">
+                <table cellpadding=0 cellspacing=0 border=0>
+                <tr>
+                    <td align=center nowrap width="105" height="40"><img ID=onetidtpweb1 src="images/search.gif" alt="Icon" width="49" height="49"></td>
+                    <td width=27>&nbsp;</td>
+                    <td nowrap>
+                        <table cellpadding=0 cellspacing=0>
+                        <tr>
+                            <td ID=onetidPageTitle nowrap class="ms-pagetitle">Search Documents</td>
+                        </tr>
+                        </table>
+                    </td>
+                    <td>&nbsp</td>
+                </tr>
+                </table>
+                <table cellpadding=0 cellspacing=0 border=0 width=100%>
+                <tr>
+                    <td height=5 colspan=5><img src="images/blank.gif" width="1" height="1"></td>
+                </tr>
+                <tr>
+                    <td class="ms-sectionline" height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td>
+                </tr>
+                <tr>
+                    <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+<!-- Navigation -->
+<TR valign=top> 
+  <TD height=100% class=ms-nav> 
+    <TABLE height=100% class=ms-navframe CELLPADDING=0 CELLSPACING=4 BORDER=0 width=130px> 
+      <tr valign=top>
+        <td width=99%>&nbsp;</td>
+        <td class=ms-verticaldots>&nbsp;</td> 
+      </tr>
+     </TABLE> 
+  </TD>
+    <!-- Contents -->
+    <td><img src="images/blank.gif" height="1" width="5"></td>
+    <td valign="top" width=100%>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td>
+                <form action="../_vti_script/search.idq" method="GET" name="frmSearch" OnSubmit="SubmitSearch();return false;">
+                    <INPUT ID="search200" TYPE=HIDDEN NAME=CiCodePage VALUE="windows-1252">
+                    <INPUT TYPE=HIDDEN NAME=Template VALUE="search">
+                    <INPUT TYPE=HIDDEN NAME=DocLibDir VALUE="<%DocLibDir%>">
+          	    <INPUT TYPE=HIDDEN NAME=HighChar VALUE="0">
+          	    <INPUT TYPE=HIDDEN NAME=SearchPage VALUE="0">
+                    <table width="100%">
+                    <tr>
+                        <td valign="baseline" class="ms-vb">
+			    <script>showSearchText();</script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ms-vb">
+                            <input class="ms-input" name="SearchString" id="SearchString" type="TEXT" size="40" accesskey=s maxlength=255 value="<%SearchString%>">
+                            &nbsp;&nbsp;
+                            <a href="javascript:SubmitSearch()" id="btnSearch"><img border=0 alt="Search" src="images/gosearch.gif" width="13" height="15"><LocID ID="searchGO">Go</LocID></a>
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <tr>
+                    <td>
+                        <table width=100% border=0 cellpadding=0 cellspacing=0>
+                        <tr>
+                            <td class="ms-sectionline"><img height=1 src="images/blank.gif"></td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+<%if CiMatchedRecordCount eq 0%>
+                <tr class="ms-vb">
+                    <td><br><b><LocID ID="tpweb2">No records were found matching your query.</LocID></b></td>
+	            </tr>
+<%else%>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing=1 border=0 width="100%">
+	                    <tr>
+                            <th></tH>
+	                    <th width=85% class="ms-vh" ID="search010">File Name</th>
+                            <th width=15% class="ms-vh" ID="search011">File Size</th>
+	                    </tr>
+<%endif%>
+<%begindetail%>
+<script>
+if ("<%SearchPage%>" != "1")
+{
+document.write ('                        <tr>');
+document.write ('                            <td class="ms-vb">');
+showGif("<%EscapeURL vpath%>","<%filename%>");
+document.write ('&nbsp;</td>');
+document.write ('                            <td class="ms-vb" width=85%>');
+showHref("<%EscapeURL vpath%>", "<%filename%>");
+document.write ('</td>');
+document.write ('	                    <td class="ms-vb" width=15%>');
+showSize("<%size%>");
+document.write ('</td>');
+document.write ('                        </tr>');
+document.write ('                        <tr>');
+summaryStr = "<%characterization%>";
+summaryStr.replace(/\'/g, "\\\'");
+document.write ('                            <td colspan=3 class="ms-vb" >' + summaryStr + '</td>');
+document.write ('                        </tr>');
+document.write ('                        <tr>');
+document.write ('                            <td height=10 colspan=3><img src=images/blank.gif width="1" height="1"></td>');
+document.write ('                        </tr>');
+document.write ('');
+}
+</script>
+<%enddetail%>
+<%if CiMatchedRecordCount ne 0%>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border=0 cellpadding="4" width="100%">
+                        <tr class="ms-descriptiontext">
+                            <td nowrap valign=top width=90% align=right ID="align01">
+                                (<LocID ID="search012">Documents</LocID> <%CiFirstRecordNumber%> <LocID ID="search013">to</LocID> <%CiLastRecordNumber%>)
+                            </td>
+<%if CiContainsFirstRecord eq 0%>
+                            <td nowrap>
+                                <FORM name="FormPrevious" ACTION="../_vti_script/search.idq" METHOD="GET">
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiCatalog" VALUE="<%CiCatalog%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiBookMark" VALUE="<%CiBookMark%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiBookmarkSkipCount" VALUE="-<%EscapeRAW CiMaxRecordsPerPage%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiMaxRecordsInResultSet" VALUE="<%EscapeRAW CiMaxRecordsInResultSet%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="SearchString" VALUE="<%SearchString%>" >
+                                   <INPUT TYPE="HIDDEN"
+                                        NAME="Template" VALUE="<%Template%>" >
+                                    <a href="javascript:document.FormPrevious.submit()"><LocID ID="search015">(Previous</LocID> <%CiMaxRecordsPerPage%><LocID ID="search016">)</LocID></a>
+                                    <INPUT TYPE=HIDDEN
+                                        NAME=CiCodePage VALUE="<%CiCodePage%>">
+                                    <INPUT TYPE=HIDDEN
+                                        NAME=Template VALUE="<%Template%>">
+                                    <INPUT TYPE=HIDDEN
+                                        NAME=DocLibDir VALUE="<%DocLibDir%>">
+          	                    <INPUT TYPE=HIDDEN 
+                                        NAME=HighChar VALUE="0">
+          	                    <INPUT TYPE=HIDDEN 
+                                        NAME=SearchPage VALUE="0">
+                                </FORM>
+                            </td>
+<%endif%>
+    <!-- Define a "next" button if this isn't the last page -->
+<%if CiContainsLastRecord eq 0%>
+                	        <td nowrap>
+                                <FORM name="FormNext"  ACTION="../_vti_script/search.idq" METHOD="GET">
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiCatalog" VALUE="<%CiCatalog%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiBookMark" VALUE="<%CiBookMark%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiBookmarkSkipCount" VALUE="<%EscapeRAW CiMaxRecordsPerPage%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="CiMaxRecordsInResultSet" VALUE="<%EscapeRAW CiMaxRecordsInResultSet%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="SearchString" VALUE="<%SearchString%>" >
+                                    <INPUT TYPE="HIDDEN"
+                                        NAME="Template" VALUE="<%Template%>" >
+                                    <a href="javascript:document.FormNext.submit()"><LocID ID="search015">(Next</LocID> <%CiRecordsNextPage%><LocID ID="search017">)</LocID></a>
+                                    <INPUT TYPE=HIDDEN
+                                        NAME=CiCodePage VALUE="<%CiCodePage%>">
+                                    <INPUT TYPE=HIDDEN
+                                        NAME=Template VALUE="<%Template%>">
+                                    <INPUT TYPE=HIDDEN
+                                        NAME=DocLibDir VALUE="<%DocLibDir%>">
+          	                    <INPUT TYPE=HIDDEN 
+                                        NAME=HighChar VALUE="0">
+          	                    <INPUT TYPE=HIDDEN 
+                                        NAME=SearchPage VALUE="0">
+                                </FORM>
+                            </td>
+<%endif%>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+<%endif%>
+                <tr>
+                    <td class="ms-formdescription"><LocID ID="tpweb1">It may take several minutes for recently saved documents to appear in the search results.</LocID></td>
+                </tr>
+            </td>
+        </tr>
+	    </table>
+	  <!-- End of search table -->
+    </td>
+</tr>
+</table>
+</body>
+</html>

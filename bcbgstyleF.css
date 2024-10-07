@@ -1,0 +1,23 @@
+/* Separate Style Sheet for Firefox
+/* used as source of substitute styles when conflict between IE and Firefox (usually in regard to placement)
+/* use sparingly - try to work out solutions in the main stylesheet
+
+/* DIV for Main Content Area */
+div.mainbox {
+				Margin-top: 0px;
+				Padding-top: 5px;
+				Margin-bottom: 4px;  /* To create room for footer */
+				TOP: 38px; 
+				}
+
+/* Table with selection buttons on Home page */
+.selection  {width: 775px; margin-top: 12px; left: 0px}
+
+/* Holds datalists such as on breweryselection page */
+.dlmain  {top: 0px; }
+
+/* Holds brewery logo on breweryselection page */
+div.blogo {top: 20px; }
+
+
+               

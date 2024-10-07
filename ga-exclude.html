@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Google Analytics Exclusion Page</title>
+</head>
+<body onLoad="javascript:pageTracker._setVar('exclude_visitor');">
+
+<h1>Google Analytics Exclusion</h1>
+
+<p>Visiting this page will set a cookie on the visitor's browser. This works in combination with a filter set up in Google Analytics to exclude traffic from anyone visiting this page.  It is a persistent cookie, so a person only need visit this page once for the cookie to be effective for future visits. </p> 
+
+<h2>Technical Details</h2>
+
+<h3>Setting the cookie</h3>
+
+<p>The cookie is set by a combination of:</p>
+
+<p>a) javascript in the body tag that includes: pageTracker._setVar('exclude_visitor') <br />
+b) same Google Analytics tracking code used throughout the site inserted at the end of this page.</p> 
+
+
+<h3>GA Exclude Filter:</h3>
+
+<p>Filter Type: Custom filter &gt Exclude<br />
+Filter Field: User Defined<br />
+Filter Pattern: exclude_visitor (must match the name of the _setVar)<br />
+Case Sensitive: No</p>
+
+<!-- Insert regular Google Analytics Tracking Code used on site here: -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3371059-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

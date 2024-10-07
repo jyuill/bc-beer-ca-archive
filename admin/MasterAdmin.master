@@ -1,0 +1,48 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <meta content="no index,no follow" name="robots"  />
+    <link href="../bcbgstyle.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- DIV for outer shell to set width of page -->
+    <div id="outeradmin">
+        <div class="top"> <img src="../images/bcbg_logo2.jpg" alt="BC Beer Guide" />
+            <div>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/brewery.aspx">Breweries</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/brands.aspx">Beers</asp:HyperLink>
+                <hr />
+            </div>
+            <div>ADMIN:
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="default.aspx">Add Brewery/Beer</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="NewsEvents.aspx">Add News</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="newsedit.aspx">Edit News</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="feature.aspx">Features</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="links.aspx">Links</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="brewerycomment.aspx">Brewery Comments</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="brandcomment.aspx">Beer Comments</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="featurecomment.aspx">Feature Comments</asp:HyperLink>
+            </div>
+            <asp:ContentPlaceHolder ID="LinksContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:contentplaceholder id="MainContent" runat="server">
+        
+            </asp:contentplaceholder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

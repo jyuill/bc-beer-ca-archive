@@ -1,0 +1,460 @@
+<html dir="ltr">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" FP_GENERATED="TRUE">
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+document.write('<ows:HTMLBase/>');
+var strBinUrl="../_vti_bin/";
+</Script>
+    <META Name="GENERATOR" Content="Microsoft SharePoint">
+    <META Name="ProgId" Content="FrontPage.Editor.Document">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <Title ID=onetidTitle>Home Page Layout</Title>
+    <SCRIPT src="../_vti_bin/owsbrows.js"></SCRIPT>
+    <Link REL="stylesheet" Type="text/css" HREF="styles/ows.css">
+<script><!--
+if (browseris.mac && !browseris.ie5up)
+{
+    var ms_maccssfpfixup = "styles/owsmac.css";
+    document.write("<link rel='stylesheet' Type='text/css' href='" + ms_maccssfpfixup + "'>");
+}
+//--></script>
+<STYLE type=text/css>
+.ElementFrame
+{
+	border:0px none;
+	width:100%;
+	font-size: 8pt;
+	font-family: Verdana;
+}
+.LayoutMainElement
+{
+	background-color:	#CED7EF;
+	text-align:center;
+	cursor:hand;
+	border:1px solid #3169ce;
+	color:black;
+}
+.LayoutWellElement
+{
+	background-color:	#A0A0A0;
+	text-align:center;
+	cursor:hand;
+	border:1px solid #000000;
+	color:black;
+}
+.LayoutIBeam
+{
+	display:none;
+	border-collapse: collapse;
+	table-layout:fixed;
+	height:20px;
+	width:50px;
+	position:absolute;
+}
+.LayoutIBeamTDTop
+{
+	border-left: 2px solid #ffae31;
+	border-right: 2px solid #ffae31;
+	border-bottom: 2px solid #ffae31;
+}
+.LayoutIBeamTDBottom
+{
+	border-left: 2px solid #ffae31;
+	border-right: 2px solid #ffae31;
+}
+.LayoutIBeamTR
+{
+	height: 5px;
+}
+.LayoutWell
+{
+	border: 1px solid black;
+    background-color:	#DDDDDD;
+	text-align: left;
+    vertical-align: top;
+}
+.LayoutContainer
+{
+	WIDTH: 100%;
+    HEIGHT: 4in;
+	font-size: 8pt;
+	font-family: Verdana;    
+}
+.LayoutMainColumn
+{
+	border: 1px solid silver;
+	text-align: left;
+    vertical-align: top;
+}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	var m_fMouseDown = false;	
+	var m_cxOffset = 0;			
+	var m_cyOffset = 0;			
+	var m_prtSrc = null;		
+	var m_prtDrag = null;		
+	var m_zoneLast = null;		
+	var m_idxInsert = 0;		
+	var m_prtChildDrag = null;
+	function Document_OnMouseDown()
+	{
+		if  (window.event.button == 1 &&
+		    (window.event.srcElement.className == 'LayoutMainElement' || 
+		     window.event.srcElement.className == 'LayoutWellElement'))
+		{
+			m_fMouseDown = true;
+			m_cxOffset = window.event.clientX - GetAbsoluteLeft(window.event.srcElement);
+			m_cyOffset = window.event.clientY - GetAbsoluteTop(window.event.srcElement);
+			m_prtChildDrag = window.event.srcElement;
+			m_prtSrc = GetPartElement(window.event.srcElement);
+			m_prtDrag = m_prtSrc.cloneNode(true);
+			m_prtDrag.style.position = 'absolute';
+			m_prtDrag.style.filter = 'alpha(opacity=50)';
+			m_prtDrag.style.left = (window.event.x - m_cxOffset) + 'px';
+			m_prtDrag.style.top = (window.event.y - m_cyOffset) + 'px';
+			m_prtDrag.style.width = m_prtSrc.offsetWidth;
+			document.body.insertAdjacentElement('beforeEnd', m_prtDrag);
+			divMouse.setCapture();
+		}
+	}
+	function DivMouse_OnMouseMove()
+	{
+		if (m_fMouseDown)
+		{
+			var zoneTarget;
+			m_prtDrag.style.left = window.event.x - m_cxOffset + 'px';
+			m_prtDrag.style.top = window.event.y - m_cyOffset + 'px';
+			zoneTarget = GetZoneFromPoint(window.event.x, window.event.y, m_prtDrag, tblIBeam);
+			if (FIsZone(zoneTarget))
+			{
+				if (m_zoneLast)
+				{
+					SetAsDropTarget(m_zoneLast, false);
+				}
+				SetAsDropTarget(zoneTarget, true);
+				PositionIBeam(window.event.x + document.body.scrollLeft,
+				              window.event.y + document.body.scrollTop, tblIBeam, zoneTarget);
+			}
+			else
+			{
+				
+				if (m_zoneLast)
+				{
+					SetAsDropTarget(m_zoneLast, false);
+				}
+				tblIBeam.style.display = 'none';
+			}
+		}
+	}
+	function DivMouse_OnMouseUp()
+	{
+		if (m_fMouseDown)
+		{
+			var zoneTarget;
+			var prtTemp;
+			
+			zoneTarget = GetZoneFromPoint(window.event.x, window.event.y, m_prtDrag, tblIBeam);
+			if (zoneTarget)
+			{
+				
+				
+				PositionIBeam(window.event.x + document.body.scrollLeft,
+				              window.event.y + document.body.scrollTop, tblIBeam, zoneTarget);
+				if (m_idxInsert == -1)
+					zoneTarget.insertAdjacentElement('afterBegin', m_prtSrc.removeNode(true));
+                else if (m_idxInsert == zoneTarget.children.length)
+				{
+                    
+					prtTemp = zoneTarget.children(zoneTarget.children.length - 1);
+					
+					if (prtTemp != m_prtSrc)
+						prtTemp.insertAdjacentElement('afterEnd', m_prtSrc.removeNode(true));
+				} else
+				{
+					
+					prtTemp = zoneTarget.children(m_idxInsert);
+					
+					if (prtTemp != m_prtSrc)
+						prtTemp.insertAdjacentElement('beforeBegin', m_prtSrc.removeNode(true));
+				}
+				
+				if((m_prtChildDrag.className = 'LayoutMainElement') && (zoneTarget.className == 'LayoutWell'))
+					m_prtChildDrag.className = 'LayoutWellElement';
+				else if((m_prtChildDrag.className = 'LayoutWellElement') && (zoneTarget.className.indexOf('LayoutMainColumn') != -1))
+					m_prtChildDrag.className = 'LayoutMainElement';
+			}
+			m_prtDrag.style.position = '';
+			m_prtDrag.removeNode(true);
+			m_prtDrag = null;
+			if (m_zoneLast)
+			{
+				SetAsDropTarget(m_zoneLast, false);
+			}
+			tblIBeam.style.display = 'none';
+			divMouse.releaseCapture();
+			m_fMouseDown = false;
+		}
+	}
+	
+	function PositionIBeam(x, y, elemIBeam, zoneTarget)
+	{
+		var nParts;
+		var prtFirst;
+		var prtTemp;
+		var idxPart;
+		nParts = zoneTarget.children.length;
+		if (nParts > 0)
+		{
+			
+			prtFirst = zoneTarget.children(0);
+			
+			elemIBeam.style.width = prtFirst.offsetWidth + 1
+			
+			for(m_idxInsert = 0; m_idxInsert < nParts; m_idxInsert++)
+				{
+					prtTemp = zoneTarget.children(m_idxInsert);
+					if (y <= (GetAbsoluteTop(prtTemp) + ((prtTemp.offsetHeight + (parseInt(prtTemp.cellSpacing) * 2)) / 2)))
+					{
+						break;
+					}
+				}
+			
+			
+			if (m_idxInsert >= nParts)
+			{
+				m_idxInsert = nParts;
+				prtTemp = zoneTarget.children(m_idxInsert - 1);
+				elemIBeam.style.top = String(((GetAbsoluteTop(prtTemp) + (prtTemp.offsetHeight + (parseInt(prtTemp.cellSpacing) * 2))) - (elemIBeam.offsetHeight / 2))) + 'px';
+				elemIBeam.style.left = String(GetAbsoluteLeft(prtTemp)) + 'px';
+			}
+			else
+			{
+				prtTemp = zoneTarget.children(m_idxInsert);
+				elemIBeam.style.top = String((GetAbsoluteTop(prtTemp) - (elemIBeam.offsetHeight / 2) + 1)) + 'px';
+				elemIBeam.style.left = String(GetAbsoluteLeft(prtTemp)) + 'px'
+			}
+			
+			elemIBeam.style.display = 'inline';
+		}
+		else
+		{
+			elemIBeam.style.display = 'none';
+			m_idxInsert = -1;
+		}
+	}
+	
+	
+	function GetPartElement(subElem)
+	{
+		var partFrame = subElem
+		while (partFrame.className != 'ElementFrame')
+		{
+			partFrame = partFrame.parentElement;
+		}
+		return partFrame;
+	}
+	
+	function GetAbsoluteTop(elem)
+	{
+		var topPosition = 0;
+		while (elem)
+		{
+			if (elem.tagName == 'BODY')
+			{
+				break;
+			}
+			topPosition += elem.offsetTop;
+			elem = elem.offsetParent;
+		}
+		return topPosition;
+	}
+	
+	function GetAbsoluteLeft(elem)
+	{
+		var leftPosition = 0;
+		while (elem)
+		{
+			if (elem.tagName == 'BODY')
+			{
+				break;
+			}
+			leftPosition += elem.offsetLeft;
+			elem = elem.offsetParent;
+		}
+		return leftPosition;
+	}
+	
+	function FIsZone(elem)
+	{
+		var fRet = false;
+		var strClass;
+		var ich;
+		if (elem)
+		{
+			strClass = elem.className;
+			ich = strClass.indexOf(' ');
+			if (ich != -1)
+			{
+				strClass = strClass.substr(0, ich);
+			}
+			fRet = ((strClass == 'LayoutMainColumn') || (strClass == 'LayoutWell'));
+		}
+		return fRet;
+	}
+	
+	function SetAsDropTarget(elem, fSet)
+	{
+		if (fSet)
+		{
+			m_zoneLast = elem;
+			elem.style.origBorderColor = elem.style.borderColor;
+			elem.style.borderColor = '#ffae31';
+		}
+		else
+		{
+			m_zoneLast = null;
+			elem.style.borderColor = elem.style.origBorderColor;
+		}
+	}
+	
+	function GetZoneFromPoint(x, y, prtDrag, elemIBeam)
+	{
+		var prtDragZIndexOld = prtDrag.style.zIndex;
+		var elemIBeamZIndexOld = elemIBeam.style.zIndex;
+		prtDrag.style.zIndex = -1;
+		elemIBeam.style.zIndex = -1;
+		var zone = document.elementFromPoint(x, y);
+		prtDrag.style.zIndex = prtDragZIndexOld;
+		elemIBeam.style.zIndex = elemIBeamZIndexOld;
+		
+		if (x < 0 || x > document.body.clientWidth || 
+		    y < 0 || y > document.body.clientHeight)
+		{
+		    zone = null;
+		}
+		else if ((zone.className == 'LayoutWellElement') || 
+		         (zone.className == 'LayoutMainElement') || 
+		         (zone.className == 'ElementFrame'))
+		{
+			
+			
+			
+			while ((!FIsZone(zone)) && (zone.tagName != 'BODY'))
+			{
+				zone = zone.parentElement;
+			}
+		}
+		if (!FIsZone(zone))
+		{
+			zone = null;
+		}
+		return zone;
+	}
+	function prepareLayoutForServer()
+	{
+		saveToServer.homePageLayout.value = '<Layout>';
+		var numColumns = layoutColumns.children.length;
+		var ix, iy, numLists;
+		var currentColumn;
+		for(ix = 0; ix < numColumns; ix++)
+		{
+			saveToServer.homePageLayout.value += '<Column>';
+			currentColumn = layoutColumns.children[ix];
+			numLists = currentColumn.children.length;
+			for(iy =0; iy < numLists; iy++)
+				saveToServer.homePageLayout.value += '<List Name=\"' + currentColumn.children[iy].id + '\"/>';
+			saveToServer.homePageLayout.value += '</Column>';
+		}
+		saveToServer.homePageLayout.value += '</Layout>';
+		saveToServer.submit();
+	}
+</SCRIPT>
+<meta name="Microsoft Theme" content="none, default">
+<meta name="Microsoft Border" content="none, default">
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/owsredir.js"></Script>
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+RedirectToFrame("%5flayouts%2fHOMECHGE%2eHTM","../_vti_bin/owssvr.dll");
+</Script>
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/ows.js"></Script>
+</HEAD>
+<BODY marginwidth=0 marginheight=0 onmousedown="Document_OnMouseDown();" scroll="yes">
+<DIV id="divMouse" style="display:none" onmousemove="DivMouse_OnMouseMove();" onmouseup="DivMouse_OnMouseUp();"></DIV>
+  <TABLE class="ms-main" CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="100%" HEIGHT="100%">
+    <!-- Banner -->
+    
+ <TR> 
+  <TD COLSPAN=3 WIDTH=100%> 
+  <!--Top bar-->
+  <table class="ms-bannerframe" border="0" cellspacing="0" cellpadding="3" width="100%">
+   <tr>
+    <td nowrap valign="middle" align="left"><img ID=onetidHeadbnnr0 alt="Logo" src="images/logo.gif" width="28" height="30"></td>
+      <td class=ms-banner width=99% nowrap ID="HBN100" valign="middle" align="left">
+       <!--webbot bot="Navigation" 
+                S-Type="sequence" 
+                S-Orientation="horizontal" 
+                S-Rendering="html" 
+                S-Btn-Nml="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sel="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sep="&amp;nbsp;|&amp;nbsp;"
+                B-Include-Home="FALSE" 
+                B-Include-Up="FALSE" 
+                S-Btn-Nobr="FALSE" 
+                U-Page="sid:1002"
+                S-Target startspan --><a ID='onettopnavbar1007' href='AllLibs.htm'>Documents</a>&nbsp;|&nbsp;<a ID='onettopnavbar1008' href='discusns.htm'>Discussion Boards</a>&nbsp;|&nbsp;<a ID='onettopnavbar1009' href='viewlsts.htm'>Lists</a>&nbsp;|&nbsp;<a ID='onettopnavbar1010' href='create.htm'>Create</a>&nbsp;|&nbsp;<a ID='onettopnavbar1011' href='settings.htm'>Site Settings</a>&nbsp;|&nbsp;<a ID='onettopnavbar1012' href='javascript:HelpWindow()'>Help</a><!--webbot bot="Navigation" i-checksum="39757" endspan -->
+    </td>
+   </tr>
+  </table>
+  </TD> 
+ </TR>
+    <!-- Item Title -->
+    <tr> <td colspan=3> <table width=100% border=0 class="ms-titleareaframe" cellpadding=0> <tr> <td style="padding-bottom: 0px"> <table cellpadding=0 cellspacing=0 border=0> <tr> <td align=center nowrap width="105" height="46"> <img ID=onetidtpweb1 src="images/settings.gif" alt="Icon" width="49" height="49"> </td> <td width=27>&nbsp;</td> <td nowrap> <table cellpadding=0 cellspacing=0> <tr> <td nowrap class="ms-titlearea"> <!--webbot bot="ProjectProperty" S-Select="Title" preview="&lt;em&gt;[ProjectProperty]&lt;/em&gt;" startspan --><ows:XML><ProjectProperty Select="Title" HTMLEncode="TRUE"/></ows:XML><!--webbot bot="ProjectProperty" i-checksum="63261" endspan --> </td> </tr> <tr> <td ID=onetidPageTitle class="ms-pagetitle">Home Page Layout</td> </tr> </table> </td> <td>&nbsp</td> </tr> </table> <table cellpadding=0 cellspacing=0 border=0 width=100%> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td class="ms-sectionline" height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> </table> </td> </tr> </table> </td> </tr> 
+    <!-- Navigation -->
+    
+<TR valign=top> 
+  <TD height=100% class=ms-nav> 
+    <TABLE height=100% class=ms-navframe CELLPADDING=0 CELLSPACING=4 BORDER=0 width=130px> 
+      <tr valign=top>
+        <td width=99%>&nbsp;</td>
+        <td class=ms-verticaldots>&nbsp;</td> 
+      </tr>
+     </TABLE> 
+  </TD>
+    <!-- Contents -->
+    <TD>&nbsp;</TD>
+    <TD width=100%>
+     <table border="0" width="99%" cellspacing="4" cellpadding="0">
+      <!--Page description-->
+	  	<TR><TD class=ms-descriptiontext ID="100">The two columns on the right show in blue the components currently displayed on the home page, including their relative position. The gray column on the left shows components that are currently not displayed on the home page. To move a component, click and drag to the desired position.</TD></TR>
+       <TR>
+	   	<table class=ms-descriptiontext cellspacing="0" border="0" cellpadding="0" width="99%">
+		<tr valign="center">
+			<td width="20%" id="tdWellContainer">
+ 				<table cellpadding="2" cellspacing="4" border="0" class="LayoutContainer">
+					<!--webbot bot="ListXML" S-XML="<HomepageAbstract/>" startspan --><ows:XML><HomepageAbstract/></ows:XML><!--webbot bot="ListXML" i-checksum="37287" endspan -->
+		<tr>
+          <td colspan=4 align=right ID="align01">
+           <HR>
+          <FORM METHOD="POST" id="saveToServer" ACTION="<ows:HttpPath/>&Project=<ows:Project/>">
+          <INPUT ID=onetidCreateList  Type="submit" Value="    Save    " onclick="prepareLayoutForServer();">
+          <INPUT ID=onetidClose  Type="button" onclick="window.parent.history.back()" Value="  Cancel  ">
+		  <input type="hidden" name="Cmd" value="REORDERHOMEPAGE">
+		  <INPUT TYPE="hidden" name="homePageLayout" value="">
+		  </form>
+          </td>
+        </tr>
+	   	</table>
+       </TR>
+     </table>
+  </table>
+  <TABLE CLASS="LayoutIBeam" ID="tblIBeam" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+	<TR CLASS="LayoutIBeamTR"><TD></TD></TR>
+	<TR CLASS="LayoutIBeamTR">
+		<TD CLASS="LayoutIBeamTDTop"></TD>
+	</TR>
+	<TR CLASS="LayoutIBeamTR">
+		<TD CLASS="LayoutIBeamTDBottom"></TD>
+	</TR>
+	<TR CLASS="LayoutIBeamTR"><TD></TD></TR>
+	</TABLE>
+</body>
+</html>

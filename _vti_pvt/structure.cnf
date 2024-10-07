@@ -1,0 +1,18 @@
+3.0.0.507
+1013
+1001,sid:1001,0,SharePoint Left Quick Launch Navbar,0,1110981769,2
+vti_globalpage:BW|true
+vti_navsequence:BW|true
+1002,sid:1002,0,SharePoint Top Navbar,0,1110981769,2
+vti_globalpage:BW|true
+vti_navsequence:BW|true
+1003,Shared Documents/Forms/AllItems.htm,0,Shared Documents,1001,1110981773,0
+1004,Lists/General Discussion/AllItems.htm,0,General Discussion,1001,1110981773,0
+1005,Lists/Contacts/AllItems.htm,0,Contacts,1001,1110981773,0
+1006,Lists/Tasks/AllItems.htm,0,Tasks,1001,1110981773,0
+1007,_layouts/AllLibs.htm,0,Documents,1002,1110981773,0
+1008,_layouts/discusns.htm,0,Discussion Boards,1002,1110981773,0
+1009,_layouts/viewlsts.htm,0,Lists,1002,1110981773,0
+1010,_layouts/create.htm,0,Create,1002,1110981773,0
+1011,_layouts/settings.htm,0,Site Settings,1002,1110981773,0
+1012,javascript:HelpWindow(),1,Help,1002,1110981773,0

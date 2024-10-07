@@ -1,0 +1,459 @@
+<html dir="ltr">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" FP_GENERATED="TRUE">
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+document.write('<ows:HTMLBase/>');
+var strBinUrl="../_vti_bin/";
+</Script>
+    <META Name="GENERATOR" Content="Microsoft SharePoint">
+    <META Name="ProgId" Content="FrontPage.Editor.Document">
+    <META Name="Microsoft SharePoint Content Type" Content="Dynamic">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <Title ID=onetidTitle>Change General Settings</Title>
+    <SCRIPT src="../_vti_bin/owsbrows.js"></SCRIPT>
+    <Link REL="stylesheet" Type="text/css" HREF="styles/ows.css">
+<script><!--
+if (browseris.mac && !browseris.ie5up)
+{
+    var ms_maccssfpfixup = "styles/owsmac.css";
+    document.write("<link rel='stylesheet' Type='text/css' href='" + ms_maccssfpfixup + "'>");
+}
+//--></script>
+<meta name="Microsoft Theme" content="none, default">
+<meta name="Microsoft Border" content="none, default">
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/owsredir.js"></Script>
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+RedirectToFrame("%5flayouts%2fLSTSETNG%2eHTM","../_vti_bin/owssvr.dll");
+</Script>
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/ows.js"></Script>
+</HEAD>
+<BODY marginwidth="0" marginheight="0" scroll="yes" onload="window.focus();document.frmNewList['NewListTitle'].focus();">
+<!--webbot bot="ListMiscXML" ID="webbot01" clientside PREVIEW="List XML - Do not remove" startspan -->
+<ows:SetVar Name="vTitle" Scope="Request"><ows:ListProperty Select="Title" HTMLEncode="TRUE"/></ows:SetVar>
+<ows:SetVar Name="vDescription" Scope="Request"><ows:ListProperty Select="Description" HTMLEncode="TRUE"/></ows:SetVar>
+<ows:SetVar Name="vBaseType" Scope="Request"><ows:ListProperty Select="BaseType"/></ows:SetVar>
+<ows:SetVar Name="vTemplateUrl" Scope="Request"><ows:ListProperty Select="TemplateUrl" HTMLEncode="TRUE"/></ows:SetVar>
+<!--webbot bot="ListMiscXML" endspan -->
+<!--webbot bot="ListMiscXML" ID="webbot03" clientside PREVIEW="List XML - Do not remove" tag="BODY" startspan -->
+<ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb001">Document Library</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb002">document library</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb002a">this document library</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"><HTML ID="tpweb003">This document library will be removed and all its files will be permanently deleted. </HTML></ows:SetVar> </Case> <Case Value="3"> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb004">Discussion Board</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb005">discussion board</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb005a">this discussion board</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"></ows:SetVar> </Case> <Case Value="4"> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb006">Survey</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb007">survey</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb007a">this survey</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"></ows:SetVar> </Case> <Default> <ows:SetVar Name="sTypeUpper" Scope="Request"><HTML ID="tpweb008">List</HTML></ows:SetVar> <ows:SetVar Name="sType" Scope="Request"><HTML ID="tpweb009">list</HTML></ows:SetVar> <ows:SetVar Name="thisListType" Scope="Request"><HTML ID="tpweb009a">this list</HTML></ows:SetVar> <ows:SetVar Name="sDelWarn" Scope="Request"></ows:SetVar> </Default> </ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+<script language=JavaScript>
+var fSpreadsheetLauncher = false;
+</script>
+<script language=VBScript>
+    On Error Resume Next
+    Set SpreadsheetLauncherButton = CreateObject("SharePoint.SpreadsheetLauncher.1")
+    fSpreadsheetLauncher = IsObject(SpreadsheetLauncherButton)
+</script>
+<script language=JavaScript>
+    if (fSpreadsheetLauncher)
+    {
+        var launcherCLSID = SpreadsheetLauncherButton.GetCLSID();
+        var objectTag = '<object classid="clsid:' + launcherCLSID + '" id="SpreadsheetLauncherObj" style="display:none;"></object>';
+        document.write(objectTag);
+    }
+</script>
+<script language=JavaScript>
+var L_alert1_Text = "This feature requires Microsoft Internet Explorer version 5.0 or later, and Windows 95 or later.";
+var L_alert2_Text = "To import a list, you must have a SharePoint-compatible spreadsheet application.";
+var L_alert3_Text = "Please enter a name.";
+var L_alert4_Text = 'You must provide a name for this list.';
+var L_alert5_Text = 'You must select a valid spreadsheet to import.';
+var L_alert6_Text = 'To import a list, you must have a SharePoint-compatible spreadsheet application.';
+var L_alert7_Text = 'An unexpected error has occurred.';
+var L_alert8_Text = 'The specified file is not a valid spreadsheet or contains no data to import.';
+var L_alert9_Text = 'The specified file is not a valid spreadsheet or there is no SharePoint-compatible spreadsheet application installed on this machine.';
+function DoValidateAndSubmit()
+{
+    var form = document.frmNewList;
+    form["NewListTitle"].value = TrimSpaces(form["NewListTitle"].value);
+    if (form["NewListTitle"].value.length < 1)
+    {
+        window.alert(L_alert3_Text);
+        form["NewListTitle"].focus();
+        return false;
+    }
+    return true;
+}
+</script>
+    <TABLE class="ms-main" CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="100%" HEIGHT="100%">
+    <!-- Banner -->
+    
+ <TR> 
+  <TD COLSPAN=3 WIDTH=100%> 
+  <!--Top bar-->
+  <table class="ms-bannerframe" border="0" cellspacing="0" cellpadding="3" width="100%">
+   <tr>
+    <td nowrap valign="middle" align="left"><img ID=onetidHeadbnnr0 alt="Logo" src="images/logo.gif" width="28" height="30"></td>
+      <td class=ms-banner width=99% nowrap ID="HBN100" valign="middle" align="left">
+       <!--webbot bot="Navigation" 
+                S-Type="sequence" 
+                S-Orientation="horizontal" 
+                S-Rendering="html" 
+                S-Btn-Nml="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sel="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sep="&amp;nbsp;|&amp;nbsp;"
+                B-Include-Home="FALSE" 
+                B-Include-Up="FALSE" 
+                S-Btn-Nobr="FALSE" 
+                U-Page="sid:1002"
+                S-Target startspan --><a ID='onettopnavbar1007' href='AllLibs.htm'>Documents</a>&nbsp;|&nbsp;<a ID='onettopnavbar1008' href='discusns.htm'>Discussion Boards</a>&nbsp;|&nbsp;<a ID='onettopnavbar1009' href='viewlsts.htm'>Lists</a>&nbsp;|&nbsp;<a ID='onettopnavbar1010' href='create.htm'>Create</a>&nbsp;|&nbsp;<a ID='onettopnavbar1011' href='settings.htm'>Site Settings</a>&nbsp;|&nbsp;<a ID='onettopnavbar1012' href='javascript:HelpWindow()'>Help</a><!--webbot bot="Navigation" i-checksum="39757" endspan -->
+    </td>
+   </tr>
+  </table>
+  </TD> 
+ </TR>
+    <!-- Item Title -->
+    <tr> <td colspan=3> <table width=100% border=0 class="ms-titleareaframe" cellpadding=0> <tr> <td style="padding-bottom: 0px"> <table cellpadding=0 cellspacing=0 border=0> <tr> <td align=center nowrap width="105" height="46"> <img ID=onetidtpweb1 src="images/blank.gif" alt="Icon" width="1" height="1"> </td> <td width=27>&nbsp;</td> <td nowrap> <table cellpadding=0 cellspacing=0> <tr> <td nowrap class="ms-titlearea"> <!--webbot bot="ProjectProperty" S-Select="Title" preview="&lt;em&gt;[ProjectProperty]&lt;/em&gt;" startspan --><ows:XML><ProjectProperty Select="Title" HTMLEncode="TRUE"/></ows:XML><!--webbot bot="ProjectProperty" i-checksum="63261" endspan --> </td> </tr> <tr> <td ID=onetidPageTitle class="ms-pagetitle"><!--webbot bot="ListMiscXML" ID="webbot11" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="tpweb014">Document Library Settings:</LocID></Case> <Case Value="3"><LocID ID="tpweb015">Discussion Board Settings:</LocID></Case> <Case Value="4"><LocID ID="tpweb016">Survey Settings:</LocID></Case> <Default><LocID ID="tpweb017">List Settings:</LocID></Default></ows:Switch> <A id=onetidListHlink HREF="<ows:ListProperty Select='DefaultViewUrl'/>"><ows:ListProperty Select="Title" HTMLEncode="TRUE"/></A><!--webbot bot="ListMiscXML" endspan --></td> </tr> </table> </td> <td>&nbsp</td> </tr> </table> <table cellpadding=0 cellspacing=0 border=0 width=100%> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td class="ms-sectionline" height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> </table> </td> </tr> </table> </td> </tr>
+    <!-- Navigation -->
+    
+<TR valign=top> 
+  <TD height=100% class=ms-nav> 
+    <TABLE height=100% class=ms-navframe CELLPADDING=0 CELLSPACING=4 BORDER=0 width=130px> 
+      <tr valign=top>
+        <td width=99%>&nbsp;</td>
+        <td class=ms-verticaldots>&nbsp;</td> 
+      </tr>
+     </TABLE> 
+  </TD>
+    <!-- Page overview -->
+    <TD><img src="images/blank.gif" height=1 width=3></TD>
+    <TD width=100%>
+     <TABLE  border="0" cellpadding="0" cellspacing="0" width="100%" id="diidPageOverview">
+          <TR>
+       <TD valign=top colspan="3" height="36">
+             <TABLE cellpadding=0 border=0><TR><TD class="ms-descriptiontext" >
+<!--webbot bot="ListMiscXML" ID="webbot04" clientside PREVIEW="List XML - Do not remove" startspan -->
+<ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="400">Use this page to change the general settings of this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="400">Use this page to change the general settings of this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="400">Use this page to change the general settings of this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="400">Use this page to change the general settings of this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="500">. You can change the name, description, security, </LocID><ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="501">and whether a link to this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="501">and whether a link to this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="501">and whether a link to this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="501">and whether a link to this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="600">&#032;appears in the Quick Launch bar on the home page.</LocID>
+<!--webbot bot="ListMiscXML" endspan -->
+<br></TD></TR></TABLE>
+            </TD>
+         </TR>
+<!--New form UI-->
+<TR>
+ <TD>
+<Form Name="frmNewList" ID="tpItem" Action="<ows:HttpPath/>" Method=POST onsubmit="return DoValidateAndSubmit();">
+<!-- Name and Description-->
+    <TABLE  border="0" width="100%" cellspacing="0" cellpadding="0">
+        <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="5"></TD>
+            <TD class="ms-descriptiontext" rowspan="5" valign="top" align="left" ID="align02">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top ID="700">Name and Description</TD></TR>
+                    <TR><TD id=onetidListDescription class="ms-descriptiontext">
+		  <!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan -->
+					<LocID ID="705">Type a new name as you want it to
+          appear in headings and links throughout the site. </LocID>
+          <ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="710">Type descriptive text that will help site visitors use this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="710">Type descriptive text that will help site visitors use this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="710">Type descriptive text that will help site visitors use this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="710">Type descriptive text that will help site visitors use this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="p10">.</LocID>
+		  <!--webbot bot="ListMiscXML" endspan -->
+		  </TD></TR>
+                </TABLE>
+            </TD>
+        <TR><TD height=3 colspan=2 class="ms-authoringcontrols"><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" ID="800">Name:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD>
+<!--webbot bot="ListMiscXML" ID="webbot06" clientside PREVIEW="List XML - Do not remove" startspan -->
+<INPUT id=onetidListTitle Type=Text Title="Name" Name="NewListTitle" value="<ows:GetVar Name='vTitle'/>" maxLength="255">
+<!--webbot bot="ListMiscXML" endspan -->
+                                        </TD>
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+<tr>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" ID="900">Description:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD>
+<!--webbot bot="ListMiscXML" ID="webbot07" clientside PREVIEW="List XML - Do not remove" startspan -->
+<TEXTAREA ID=onetidListDescription rows="5" cols="35" title="Description" name="Description"><ows:GetVar Name="vDescription"/></TEXTAREA>
+<!--webbot bot="ListMiscXML" endspan -->
+                                        </TD>
+                </TR>
+            </TABLE>
+        </TD>
+</tr>
+<TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+<!--Template-->
+<!--webbot bot="ListMiscXML" ID="webbot08" clientside PREVIEW="List XML - Do not remove" startspan -->
+<ows:Switch>
+    <Expr>
+        <ows:ListProperty Select="BaseType"/>
+    </Expr>
+    <Case Value="1">
+<HTML><![CDATA[
+    <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="3"></TD>
+            <TD class="ms-descriptiontext" rowspan="3" valign="top" align="left" ID="align03">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top id="102">Document Template</TD></TR>
+                    <TR><TD id=onetidDocTemplateDescription class="ms-propertysheet">Type the address of a template to use
+										as the basis for all new files created in this document library.
+										<A HREF="/_vti_bin/help/wspTemp.htm" TARGET=_blank>Show me more information.</A></TD></TR>
+                </TABLE>
+            </TD>
+        <TR><TD height=3 colspan=2 class="ms-authoringcontrols"><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id="103">Template URL:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD><INPUT id=onetidNewListTemplate class="ms-long" Type=Text Name="NewListTemplate" value="]]></HTML><ows:GetVar Name='vTemplateUrl'/><HTML><![CDATA["></TD>
+                    <TD>&nbsp;</TD>
+                    <TD>&nbsp;</TD>
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+<TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+    ]]></HTML>
+    </Case>
+    <Default>
+    </Default>
+</ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+<!--Spreadsheet file picker -->
+<!--webbot bot="ListMiscXML" clientside PREVIEW="List XML - Do not remove" startspan -->
+     <ows:Switch>
+        <Expr><ows:GetVar Name="ListTemplate" /></Expr>
+        <Case Value="SpreadsheetImport"><HTML><![CDATA[
+    <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="3"></TD>
+            <TD class="ms-descriptiontext" rowspan="3" valign="top" align="left" ID="align04">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top id="1000">Import from Spreadsheet</TD></TR>
+                    <TR><TD id=onetidSpreadsheetImportDescription class="ms-descriptiontext">Locate the spreadsheet you want to use as the basis for a list.</TD></TR>
+                </TABLE>
+            </TD>
+        <TR><TD height=3 colspan=2 class="ms-authoringcontrols"><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id="1100">File Location:<FONT size=3>&nbsp;</FONT><BR>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT id=onetidSpreadsheetFile Type="file" Name="SpreadsheetFile" style="behavior: url(#SpreadsheetLauncherObj);"></TD>
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+<TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+    ]]></HTML>
+        </Case>
+    </ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+<!-- Navigation Settings-->
+    <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="3"></TD>
+            <TD class="ms-descriptiontext" rowspan="3" valign="top" align="left" ID="align05">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top id="1200">Navigation</TD></TR>
+                    <TR><TD id=onetidNavigationDescription class="ms-descriptiontext">
+					<!--webbot bot="ListMiscXML" ID="webbot12" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan -->
+					<ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="720">Specify whether a link to this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="720">Specify whether a link to this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="720">Specify whether a link to this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="720">Specify whether a link to this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="725">&#032;appears in the Quick Launch section.</LocID>
+					<!--webbot bot="ListMiscXML" endspan -->
+					</TD></TR>
+                </TABLE>
+            </TD>
+        <TR><TD height=3 colspan=2 class="ms-authoringcontrols"><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidOnNavBar><table border=0 cellpadding=0 cellspacing=0><tr><td><img border="0" src="images/leftnav.gif" width="31" height="26">&nbsp;&nbsp;</td ><td class="ms-authoringcontrols">
+		<!--webbot bot="ListMiscXML" ID="webbot13" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan -->
+		<ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="2000">Display this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="2000">Display this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="2000">Display this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="2000">Display this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="2001">&#032;on the&#032;</LocID><b><LocID ID="2002">Quick Launch</LocID></b><LocID ID="2003">&#032;bar?</LocID><FONT size=3>&nbsp;</FONT>
+		<!--webbot bot="ListMiscXML" endspan -->
+		</td></tr></table>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+<TD class="ms-authoringcontrols"><!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:InNavBar/></Expr1> <Expr2>TRUE</Expr2> <Then><HTML><![CDATA[ <INPUT id=onetidDisplayOnLeftYes type="radio" value="on" Name="displayOnLeft" CHECKED> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT id=onetidDisplayOnLeftYes type="radio" value="on" Name="displayOnLeft"> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan --><LocID ID="020">Yes&nbsp;&nbsp;&nbsp;</LocID></td>
+<TD class="ms-authoringcontrols"><!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --> <ows:IfEqual> <Expr1><ows:InNavBar/></Expr1> <Expr2>TRUE</Expr2> <Then><HTML><![CDATA[ <INPUT id=onetidDisplayOnLeftNo type="radio" value="off" Name="displayOnLeft"> ]]></HTML></Then> <Else><HTML><![CDATA[ <INPUT id=onetidDisplayOnLeftNo type="radio" value="off" Name="displayOnLeft" CHECKED> ]]></HTML></Else> </ows:IfEqual><!--webbot bot="ListMiscXML" endspan --><LocID ID="021">No</LocID></td>
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+<TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+<!--Survey settings-->
+<!--webbot bot="ListMiscXML" ID="webbot09" clientside PREVIEW="List XML - Do not remove" startspan -->
+    <ows:Switch>
+            <Expr>
+                <ows:ListProperty Select="BaseType"/>
+            </Expr>
+    <Case Value="4"><HTML><![CDATA[
+        <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="3"></TD>
+            <TD class="ms-descriptiontext" rowspan="3" valign="top" align="left" ID="align06">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top id="3000">Survey Options</TD></TR>
+                    <TR><TD id=onetidSurveyDescription class="ms-descriptiontext">You can specify options for this survey.</TD></TR>
+                </TABLE>
+            </TD>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidHideUsername>Show user names in survey results?<FONT size=3>&nbsp;</FONT><br>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+					]]></HTML>
+					<ows:SetVar Name="Field">Author</ows:SetVar>
+					<ows:ForEach Select="/FIELDS/Field" MatchVar="Field" ExpandXML="True">
+					<ows:Switch><Expr><Property Select="ForcedDisplay"/></Expr>
+					<Case Value="***">
+						<HTML><![CDATA[
+						<TD class="ms-authoringcontrols"><INPUT id=onetidShowUser type="radio" value="on" Name="showUsernames">Yes&nbsp;&nbsp;&nbsp;</td>
+						<TD class="ms-authoringcontrols"><INPUT id=onetidShowUser type="radio" value="off" Name="showUsernames" checked>No</td>
+						]]></HTML>
+					</Case>
+					<Default>
+						<HTML><![CDATA[
+						<TD class="ms-authoringcontrols"><INPUT id=onetidShowUser type="radio" value="on" Name="showUsernames" checked>Yes&nbsp;&nbsp;&nbsp;</td>
+						<TD class="ms-authoringcontrols"><INPUT id=onetidShowUser type="radio" value="off" Name="showUsernames">No</td>
+						]]></HTML>
+					</Default>
+					</ows:Switch>
+					</ows:ForEach>
+					<HTML><![CDATA[
+                </TR>
+            </TABLE>
+        </TD>
+        </tr>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <tr>
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" id=onetidHideUsername>Allow multiple responses?<FONT size=3>&nbsp;</FONT><br>
+            <TABLE border=0 cellspacing=1>
+                <TR>
+					]]></HTML>
+					<ows:ForEach Select="/FIELDS/Field" MatchVar="Field" ExpandXML="True">
+					<ows:Switch><Expr><ows:Property Select="AllowMultiVote"/></Expr>
+					<Case Value="TRUE">
+						<HTML><![CDATA[
+						<TD class="ms-authoringcontrols"><INPUT id=onetidAllowMultiVoteYes type="radio" value="on" Name="AllowMultiVote" checked>Yes&nbsp;&nbsp;&nbsp;</td>
+						<TD class="ms-authoringcontrols"><INPUT id=onetidAllowMultiVoteNo type="radio" value="off" Name="AllowMultiVote">No</td>
+						]]></HTML>
+					</Case>
+					<Default>
+						<HTML><![CDATA[
+						<TD class="ms-authoringcontrols"><INPUT id=onetidAllowMultiVoteYes type="radio" value="on" Name="AllowMultiVote">Yes&nbsp;&nbsp;&nbsp;</td>
+						<TD class="ms-authoringcontrols"><INPUT id=onetidAllowMultiVoteNo type="radio" value="off" Name="AllowMultiVote" checked>No</td>
+						]]></HTML>
+					</Default>
+					</ows:Switch>
+					</ows:ForEach>
+					<HTML><![CDATA[
+                </TR>
+            </TABLE>
+        </TD>
+        </TR>
+    <TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+           <Input ID=onetidNextUsing Type=Hidden Name="NextUsing" Value="_layouts/SurvEdit.htm">
+          ]]></HTML>
+		</Case>
+    <Default></Default>
+    </ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+<!-- Security Settings -->
+    <TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <TR>
+            <TD nowrap rowspan="7"></TD>
+            <TD class="ms-descriptiontext" rowspan="7" valign="top" align="left" ID="align07">
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top><ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="tpweb014">Document Library <LocID ID="022">Security</LocID></LocID></Case> <Case Value="3"><LocID ID="tpweb015">Discussion Board <LocID ID="022">Security</LocID></LocID></Case> <Case Value="4"><LocID ID="tpweb016">Survey <LocID ID="022">Security</LocID></LocID></Case> <Default><LocID ID="tpweb017">List <LocID ID="022">Security</LocID></LocID></Default></ows:Switch></TD></TR>
+                    <TR><TD id=onetidNewColumnDescription class="ms-propertysheet">
+					<!--webbot bot="ListMiscXML" ID="webbot14" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan -->
+					<ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="730">Set permissions for working with this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="730">Set permissions for working with this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="730">Set permissions for working with this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="730">Set permissions for working with this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="p11">.</LocID>
+					<A HREF="/_vti_bin/help/wscListP.htm" TARGET=_blank><LocID ID="735">Show me more information.</LocID></A>
+					<!--webbot bot="ListMiscXML" endspan -->
+					</TD></TR>
+                </TABLE>
+            </TD>
+        <TR><TD height=3 colspan=2 class="ms-authoringcontrols"><img src="images/blank.gif" height=1 width=1></TD></TR>
+			
+<!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" startspan -->
+				<ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr>
+				<Case Value="1"><HTML><![CDATA[<tr style="display:none;">]]></HTML></Case>
+				<Default><HTML><![CDATA[<TR>]]></HTML></Default></ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+                <TD class="ms-authoringcontrols" id=onetidReadSecurity><b>Read access:</b>&nbsp;&nbsp;Specify which <ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="0500">responses</HTML></Case><Default><HTML ID="0520">items</HTML></Default></ows:Switch><LocID ID="736">&#032;users can read</LocID><br>
+                <INPUT id=onetidReadSecurity type="radio" value="1" Name="ReadSecurity" >All <ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="0500">responses</HTML></Case><Default><HTML ID="0520">items</HTML></Default></ows:Switch><br>
+                <INPUT id=onetidReadSecurity type="radio" value="2" Name="ReadSecurity" >Only their own
+        </TD>
+        </TR>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+<!--webbot bot="ListMiscXML" ID="webbot11" clientside PREVIEW="List XML - Do not remove" startspan -->
+				<ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr>
+				<Case Value="1"><HTML><![CDATA[<tr style="display:none;">]]></HTML></Case>
+				<Default><HTML><![CDATA[<TR>]]></HTML></Default></ows:Switch>
+<!--webbot bot="ListMiscXML" endspan -->
+        <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+                 <TD class="ms-authoringcontrols" id=onetidEditSecurity><b>Edit access:</b>&nbsp;&nbsp;Specify which <ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="0500">responses</HTML></Case><Default><HTML ID="0520">items</HTML></Default></ows:Switch><LocID ID="737">&#032;users can edit</LocID><br>
+                 <INPUT id=onetidWriteSecurity1 type="radio" value="1" Name="WriteSecurity">All <ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="0500">responses</HTML></Case><Default><HTML ID="0520">items</HTML></Default></ows:Switch><br>
+                 <INPUT id=onetidWriteSecurity2 type="radio" value="2" Name="WriteSecurity">Only their own<br>
+                 <INPUT id=onetidWriteSecurity4 type="radio" value="4" Name="WriteSecurity">None
+                 </TD>
+        </tr>
+        <TR><TD class="ms-authoringcontrols" colspan=2 height=6><img src="images/blank.gif" height=1 width=1></TD></TR>
+        <tr>
+         <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+                 <TD class="ms-authoringcontrols" id=onetidSchemaSecurity><b>Design access:</b>&nbsp;&nbsp;<LocID ID="740">Specify who can modify the </LocID><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="0510">questions</HTML></Case><Default><HTML ID="0530">columns</HTML></Default></ows:Switch> <ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="738">of this </LocID><LocID ID="tpweb014">Document Library</LocID></Case> <Case Value="3"><LocID ID="738">of this </LocID><LocID ID="tpweb015">Discussion Board</LocID></Case> <Case Value="4"><LocID ID="738">of this </LocID><LocID ID="tpweb016">Survey</LocID></Case> <Default><LocID ID="738">of this </LocID><LocID ID="tpweb017">List</LocID></Default></ows:Switch><LocID ID="739">&nbsp;</LocID><br>
+                <INPUT id=onetidSchemaSecurity1 type="radio" value="1" Name="SchemaSecurity">Everyone<br>
+                <INPUT id=onetidSchemaSecurity2 type="radio" value="2" Name="SchemaSecurity"><ows:Switch> <Expr><ows:GetVar Name="vBaseType"/></Expr> <Case Value="1"><LocID ID="750">Only the creator of this </LocID><LocID ID="tpweb010">document library</LocID></Case> <Case Value="3"><LocID ID="750">Only the creator of this </LocID><LocID ID="tpweb011">discussion board</LocID></Case> <Case Value="4"><LocID ID="750">Only the creator of this </LocID><LocID ID="tpweb012">survey</LocID></Case> <Default><LocID ID="750">Only the creator of this </LocID><LocID ID="tpweb013">list</LocID></Default></ows:Switch><LocID ID="751">&nbsp;</LocID>
+        </TD>
+        </tr>
+<TR><TD colspan=2>&nbsp;</TD><TD class="ms-authoringcontrols" colspan=2 height=21>&nbsp;</TD></TR>
+<script>
+var readSecurity = '<ows:ListProperty Select="ReadSecurity"/>';
+var writeSecurity = '<ows:ListProperty Select="WriteSecurity"/>';
+var schemaSecurity = '<ows:ListProperty Select="SchemaSecurity"/>';
+<ows:Switch><Expr><ows:ListProperty Select="ReadSecurity"/></Expr>
+<Case Value="1"><HTML><![CDATA[
+document.frmNewList.SchemaSecurity[schemaSecurity -1].checked = true;
+document.frmNewList.ReadSecurity[readSecurity -1].checked = true;
+document.frmNewList.WriteSecurity[(writeSecurity < 3) ? writeSecurity - 1 : writeSecurity - 2].checked = true;]]></HTML>
+</Case>
+<Case Value="2"><HTML><![CDATA[
+document.frmNewList.SchemaSecurity[schemaSecurity -1].checked = true;
+document.frmNewList.ReadSecurity[readSecurity -1].checked = true;
+document.frmNewList.WriteSecurity[(writeSecurity < 3) ? writeSecurity - 1 : writeSecurity - 2].checked = true;]]></HTML>
+</Case>
+</ows:Switch>
+</script>
+<!--OK/Cancel-->
+    <TR><TD colspan=4 valign=top height=25><hr size=1></TD></TD>
+    <TR>
+     <TD align=right colspan=4 ID="align01">
+           <INPUT ID=onetidCreateList  Type="submit" Value="      OK      ">
+           <INPUT ID=onetidClose  Type="button" onclick="window.parent.history.back()" Value="   Cancel   ">
+           <INPUT ID=onetidCmd Type=Hidden Name="Cmd" Value="MODLISTSETTINGS">
+           <INPUT ID=onetidList Type=Hidden Name="List" Value="<ows:ListProperty Select='Name' HTMLEncode='TRUE'/>">
+<!--webbot bot="ListMiscXML" ID="webbot14" clientside PREVIEW="List XML - Do not remove" startspan -->
+           <INPUT Type=Hidden Name="OldListTitle" value="<ows:ListProperty Select='Title' HTMLEncode='TRUE'/>">
+<!--webbot bot="ListMiscXML" endspan -->
+           <INPUT ID=onetidVersion Type=Hidden Name="owshiddenversion" Value="<ows:ListProperty Select='Version'/>">
+          </TD>
+    </TR>
+    <tr>
+     <td colspan=4 height=60>&nbsp;</td>
+    </tr>
+</table>
+</Form>
+<TD width=10px>&nbsp;</TD>
+</TR>
+<!--End form's table-->
+</TABLE>
+        <!-- FooterBanner closes the TD, TR, TABLE, BODY, And HTML regions opened above -->
+        
+&nbsp;
+        <!-- Close the TD, TR, TABLE, BODY, And HTML from Header -->
+    </TD>
+    </TR>
+    </TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,15 @@
+[Names]
+[Query]
+CiCodePage=windows-1252
+CiLocale=En-US
+CiCatalog=<ows:SubCatalogName/>
+CiColumns=filename,size,rank,characterization,vpath,DocTitle,write
+CiFlags=DEEP
+CiRestriction= $contents "%SearchString%" AND NOT #vpath \iisadmin* AND NOT #vpath \iishelp* AND NOT #vpath \iissamples* AND NOT #vpath *\_vti_*
+CiMaxRecordsInResultSet=300
+CiMaxRecordsPerPage=20
+CiScope=<ows:SubSearchVdir/><ows:SubServerRelativeUrl/>/%DocLibDir%
+CiTemplate=<ows:SubServerRelativeUrl/>/_layouts/%Template%.htx
+CiSort=rank[d]
+CiForceUseCi=true
+CiDialect=1

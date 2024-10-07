@@ -1,0 +1,201 @@
+<html dir="ltr">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" FP_GENERATED="TRUE">
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+document.write('<ows:HTMLBase/>');
+var strBinUrl="../_vti_bin/";
+</Script>
+    <META Name="GENERATOR" Content="Microsoft SharePoint">
+    <META Name="ProgId" Content="FrontPage.Editor.Document">
+    <META Name="Microsoft SharePoint Content Type" Content="Dynamic">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <Title ID=onetidTitle>Change Field Order</Title>
+    <SCRIPT src="../_vti_bin/owsbrows.js"></SCRIPT>
+    <Link REL="stylesheet" Type="text/css" HREF="styles/ows.css">
+<script><!--
+if (browseris.mac && !browseris.ie5up)
+{
+    var ms_maccssfpfixup = "styles/owsmac.css";
+    document.write("<link rel='stylesheet' Type='text/css' href='" + ms_maccssfpfixup + "'>");
+}
+//--></script>
+<script language="JavaScript">
+	
+	
+	function Reorder(eSelect, iCurrentField, numSelects)
+	{
+        var eForm = eSelect.form;
+        var iNewOrder = eSelect.selectedIndex + 1;
+        var iPrevOrder;
+        
+        
+        
+        var positions = new Array(numSelects);
+        var ix;
+        for (ix = 0; ix < numSelects; ix++)
+        {
+                positions[ix] = 0;
+        }
+        for (ix = 0; ix < numSelects; ix++)
+        {
+                positions[eSelect.form["FormPosition" + ix].selectedIndex] = 1;
+        }
+        for (ix = 0; ix < numSelects; ix++)
+        {
+                if (positions[ix] == 0)
+                {
+                        iPrevOrder = ix + 1;
+                        break;
+                }
+        }
+        
+        if (iNewOrder != iPrevOrder)
+        {
+                var iInc = iNewOrder > iPrevOrder? -1:1
+                var iMin = Math.min(iNewOrder, iPrevOrder);
+                var iMax = Math.max(iNewOrder, iPrevOrder);
+                for (var iField = 0; iField < numSelects; iField++)
+                {
+                        if (iField != iCurrentField)
+                        {
+                                if (eSelect.form["FormPosition" + iField].selectedIndex + 1 >= iMin && eSelect.form["FormPosition" + iField].selectedIndex + 1<= iMax)
+                                {
+                                        eSelect.form["FormPosition" + iField].selectedIndex += iInc;
+                                }
+                        }
+                }
+        }
+	}
+	function DoBuildAndSubmit()
+	{
+		var numFound, currentSelect, selectValue;
+		var form = document.frmLayoutEdit;
+		var numFields = form["numSelects"].value;
+		var xml = "<Fields>";
+		numFound = 0;
+		while(numFound < numFields)
+		{
+			for(x = 0; x < numFields; x++)
+			{
+				currentSelect = form["FormPosition" + x];
+				if(currentSelect.selectedIndex == numFound)
+				{
+					selectValue = currentSelect.options[numFound].value;
+					xml = xml + "<Field Name=\"" + selectValue + "\"/>";
+					numFound++;
+				}
+			}
+		}
+		for(x = numFields ; x < form.length - 3; x++)
+			xml  = xml + "<Field Name=\"" + form["FormPosition" + x].value + "\"/>";
+		xml = xml + "</Fields>";
+		document.frmLayoutSubmit["ReorderedFields"].value=xml;
+		document.frmLayoutSubmit.submit();
+	}
+</script>
+<meta name="Microsoft Theme" content="none, default">
+<meta name="Microsoft Border" content="none, default">
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/owsredir.js"></Script>
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+RedirectToFrame("%5flayouts%2fFORMEDT%2eHTM","../_vti_bin/owssvr.dll");
+</Script>
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/ows.js"></Script>
+</HEAD>
+<!--webbot bot="ListXML" S-XML="<ows:SetVar Name='vBaseType' Scope='Request'><ows:ListProperty Select='BaseType'/></ows:SetVar>" tag="BODY" startspan --><ows:XML><ows:SetVar Name='vBaseType' Scope='Request'><ows:ListProperty Select='BaseType'/></ows:SetVar></ows:XML><!--webbot bot="ListXML" i-checksum="56396" endspan -->
+<BODY marginwidth=0 marginheight=0 scroll="yes">
+  <TABLE class="ms-main" CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="100%" HEIGHT="100%">
+    <!-- Banner -->
+    
+ <TR> 
+  <TD COLSPAN=3 WIDTH=100%> 
+  <!--Top bar-->
+  <table class="ms-bannerframe" border="0" cellspacing="0" cellpadding="3" width="100%">
+   <tr>
+    <td nowrap valign="middle" align="left"><img ID=onetidHeadbnnr0 alt="Logo" src="images/logo.gif" width="28" height="30"></td>
+      <td class=ms-banner width=99% nowrap ID="HBN100" valign="middle" align="left">
+       <!--webbot bot="Navigation" 
+                S-Type="sequence" 
+                S-Orientation="horizontal" 
+                S-Rendering="html" 
+                S-Btn-Nml="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sel="<a ID='onettopnavbar#LABEL_ID#' href='#URL#'>#LABEL#</a>"
+                S-Btn-Sep="&amp;nbsp;|&amp;nbsp;"
+                B-Include-Home="FALSE" 
+                B-Include-Up="FALSE" 
+                S-Btn-Nobr="FALSE" 
+                U-Page="sid:1002"
+                S-Target startspan --><a ID='onettopnavbar1007' href='AllLibs.htm'>Documents</a>&nbsp;|&nbsp;<a ID='onettopnavbar1008' href='discusns.htm'>Discussion Boards</a>&nbsp;|&nbsp;<a ID='onettopnavbar1009' href='viewlsts.htm'>Lists</a>&nbsp;|&nbsp;<a ID='onettopnavbar1010' href='create.htm'>Create</a>&nbsp;|&nbsp;<a ID='onettopnavbar1011' href='settings.htm'>Site Settings</a>&nbsp;|&nbsp;<a ID='onettopnavbar1012' href='javascript:HelpWindow()'>Help</a><!--webbot bot="Navigation" i-checksum="39757" endspan -->
+    </td>
+   </tr>
+  </table>
+  </TD> 
+ </TR>
+    <tr> <td colspan=3> <table width=100% border=0 class="ms-titleareaframe" cellpadding=0> <tr> <td style="padding-bottom: 0px"> <table cellpadding=0 cellspacing=0 border=0> <tr> <td align=center nowrap width="105" height="46"> <img ID=onetidtpweb1 src="images/desview.gif" alt="Icon" width="34" height="22"> </td> <td width=27>&nbsp;</td> <td nowrap> <table cellpadding=0 cellspacing=0> <tr> <td nowrap class="ms-titlearea"> <!--webbot bot="ProjectProperty" S-Select="Title" preview="&lt;em&gt;[ProjectProperty]&lt;/em&gt;" startspan --><ows:XML><ProjectProperty Select="Title" HTMLEncode="TRUE"/></ows:XML><!--webbot bot="ProjectProperty" i-checksum="63261" endspan --> </td> </tr> <tr> <td ID=onetidPageTitle class="ms-pagetitle"><!--webbot bot="ListMiscXML" ID="webbot10" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><A ID=onetidFormEdt0 HREF="<ows:ListProperty Select='DefaultViewUrl'/>">"<ows:ListProperty Select="Title" HTMLEncode="TRUE"/>"</A><!--webbot bot="ListMiscXML" endspan -->:&nbsp;<!--webbot bot="ListMiscXML" ID="webbot03" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="500">Change Question Order</HTML></Case><Default><HTML ID="510">Change Field Order</HTML></Default></ows:Switch><!--webbot bot="ListMiscXML" endspan --></td> </tr> </table> </td> <td>&nbsp</td> </tr> </table> <table cellpadding=0 cellspacing=0 border=0 width=100%> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td class="ms-sectionline" height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> <tr> <td height=2 colspan=5><img src="images/blank.gif" width="1" height="1"></td> </tr> </table> </td> </tr> </table> </td> </tr>
+    <!-- Navigation -->
+    
+<TR valign=top> 
+  <TD height=100% class=ms-nav> 
+    <TABLE height=100% class=ms-navframe CELLPADDING=0 CELLSPACING=4 BORDER=0 width=130px> 
+      <tr valign=top>
+        <td width=99%>&nbsp;</td>
+        <td class=ms-verticaldots>&nbsp;</td> 
+      </tr>
+     </TABLE> 
+  </TD>
+    <!-- Contents -->
+    <TD>&nbsp;</TD>
+    <TD style="width:100%">
+  <!-- Table Title -->
+  <FORM name="frmLayoutEdit">
+  <TABLE class=ms-propertysheet border=0 cellPadding=0 cellSpacing=1 >
+        <!--Page description-->
+        <TR valign=top>
+                <TD class="ms-descriptiontext" height=20 colspan=5 ID="100"><!--webbot bot="ListMiscXML" ID="webbot04" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><LocID ID="550">Use this page to change the order of the </LocID><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="500">questions.</HTML></Case><Default><HTML ID="510">fields that site visitors fill out when they add items.</HTML></Default></ows:Switch><!--webbot bot="ListMiscXML" endspan --></TD>
+        </TR>
+	 	<TR><TD class=ms-sectionline height=1 colspan=4><img src="images/blank.gif" height=1 width=1></TD></TR>
+	  	<TR>
+            <TD class="ms-descriptiontext" valign="top" align="left" ID=align100>
+                <TABLE border=0 cellpadding=1 cellspacing=0>
+                    <TR><TD class="ms-sectionheader" height=28 valign=top ID="700"><!--webbot bot="ListMiscXML" ID="webbot03" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="500">Question</HTML></Case><Default><HTML ID="510">Field</HTML></Default></ows:Switch><!--webbot bot="ListMiscXML" endspan --> <HTML ID="560">Order</HTML></TD></TR>
+                    <TR><TD id=onetidFieldOrderDescription class="ms-descriptiontext"> <LocID ID="580">Choose the order of the</LocID> <!--webbot bot="ListMiscXML" ID="webbot01" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="500">questions</HTML></Case><Default><HTML ID="510">fields</HTML></Default></ows:Switch><!--webbot bot="ListMiscXML" endspan --> <LocID ID="581">by selecting a number for each</LocID> <!--webbot bot="ListMiscXML" ID="webbot02" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="500">question</HTML></Case><Default><HTML ID="510">field</HTML></Default></ows:Switch><!--webbot bot="ListMiscXML" endspan --> <LocID ID="582">under "Position from Top".</LocID> <br><img src="images/blank.gif" height=1 width=200px></TD><td>&nbsp;</td></TR>
+                </TABLE>
+            </TD>
+    		<TD class=ms-authoringControls height=40 vAlign=top align=right ID="align00">
+       		<TABLE border=0 cellPadding=3 cellSpacing=0>
+           		<TR>
+               		<TD nowrap align=left class=ms-authoringcontrols vAlign=bottom ID="200"><b><!--webbot bot="ListMiscXML" ID="webbot03" clientside PREVIEW="List XML - Do not remove" tag="TBODY" startspan --><ows:Switch><Expr><ows:GetVar Name="vBaseType"/></Expr><Case Value="4"><HTML ID="500">Question</HTML></Case><Default><HTML ID="510">Field</HTML></Default></ows:Switch><!--webbot bot="ListMiscXML" endspan --> <LocID ID="570">Name</LocID></b> &nbsp;</td>
+              		<TD align=right ID="align01" class=ms-authoringcontrols noWrap vAlign=bottom ID="300">&nbsp;  		<B>Position from Top</B>&nbsp;</TD>
+            	</TR>
+<!--webbot bot="ListMiscXML" ID="webbot05" clientside PREVIEW="List XML - Do not remove" startspan -->
+            	<ows:FormLayoutEdit TextHTML="&lt;tr&gt;&lt;td class=ms-authoringcontrols nowrap&gt;&lt;p&gt;" SelectHTML="&lt;/td&gt;&lt;TD align=right  borderColor=#c0c0c0 class=ms-authoringcontrols width=&quot;100%&quot;&gt;"/>
+<!--webbot bot="ListMiscXML" endspan -->
+       	   </TABLE>
+       	   </TD>
+ 	   </TR>
+<!--OK/Cancel-->
+    <TR><TD colspan=4 valign=top height=25><hr size=1></TD></TD>
+    <TR>
+     <TD align=right colspan=4 ID="align03">
+     	<INPUT ID=onetidSaveItem Type="button" Value="       OK       " onclick="javascript:DoBuildAndSubmit()">
+     	<INPUT ID=onetidCancel   Type="reset"  Value="   Cancel   " onclick="javascript:window.parent.history.back()"></TD>
+    </TR>
+</TABLE>
+</FORM>
+</td>
+</tr>
+<TR>
+<TD>
+<FORM name="frmLayoutSubmit" Action="<ows:HttpPath/>" METHOD=Post>
+<input type="hidden" name="NextUsing" value="<ows:Switch><Expr><GetVar Name="vBaseType"/></Expr><Case Value="4"><ows:HttpVDir/><HTML><![CDATA[/_layouts/SurvEdit.htm?List=]]></HTML><ows:List/></Case></ows:Switch>">
+<input type="hidden" name="Cmd" value="REORDERFIELDS">
+<!--webbot bot="ListMiscXML" ID="webbot06" clientside PREVIEW="List XML - Do not remove" startspan -->
+<INPUT type="hidden" name="List" value="<ows:List/>">
+<INPUT type="hidden" name="owshiddenversion" value="<ows:ListProperty Select='Version'/>">
+<!--webbot bot="ListMiscXML" endspan -->
+<input type="hidden" name="ReorderedFields" value="">
+</FORM>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

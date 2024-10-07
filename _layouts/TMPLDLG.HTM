@@ -1,0 +1,121 @@
+<html dir="ltr">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" FP_GENERATED="TRUE">
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+document.write('<ows:HTMLBase/>');
+var strBinUrl="../_vti_bin/";
+</Script>
+    <META Name="GENERATOR" Content="Microsoft SharePoint">
+    <META Name="ProgId" Content="FrontPage.Editor.Document">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <Title ID=onetidTitle>Microsoft SharePoint</Title>
+    <SCRIPT src="../_vti_bin/owsbrows.js"></SCRIPT>
+    <Link REL="stylesheet" Type="text/css" HREF="styles/ows.css">
+<STYLE>
+    A {behavior: url("#default#AnchorClick");}
+</STYLE>
+<script><!--
+if (browseris.mac && !browseris.ie5up)
+{
+    var ms_maccssfpfixup = "styles/owsmac.css";
+    document.write("<link rel='stylesheet' Type='text/css' href='" + ms_maccssfpfixup + "'>");
+}
+//--></script>
+<meta name="Microsoft Theme" content="none, default">
+<meta name="Microsoft Border" content="none">
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/owsredir.js"></Script>
+<Script FP_GENERATED="TRUE" Language="JavaScript">
+RedirectToFrame("%5flayouts%2fTMPLDLG%2eHTM","../_vti_bin/owssvr.dll");
+</Script>
+<Script FP_GENERATED="TRUE" SRC="../_vti_bin/ows.js"></Script>
+</HEAD>
+<script language="JavaScript">
+L_tooltipfile_Text = "Double-click to open this template";
+L_tooltipfolder_Text = "Double-click to look for templates on this website that are not associated with document libraries";
+selectedElement = null
+inChangeSelection = false
+slElem = null;
+function selectrow()
+{
+    if (slElem) {
+	    slElem.className="";
+	    slElem.title="";
+	    }
+    selectedElement = window.event.srcElement;
+    while (selectedElement.tagName!="TR") {
+    	   selectedElement=selectedElement.parentElement;
+           }
+    slElem = selectedElement;
+    slElem.className="ms-selected";
+    if (slElem.getAttribute("fileattribute") == "file")
+        slElem.title=L_tooltipfile_Text;
+    else
+        slElem.title=L_tooltipfolder_Text;
+    document.selection.empty();
+}
+function checkScroll()
+{
+    if (document.body.scrollHeight > document.body.offsetHeight ||
+		document.body.scrollWidth > document.body.offsetWidth)
+       document.body.scroll="yes";
+}
+</script>
+<BODY topmargin=5 leftmargin=5 scroll=no serverType=OWS
+    onload="checkScroll()" onresize="checkScroll()">
+<!-- Banner -->
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="100%">
+ <TR> 
+  <TD COLSPAN=3 STYLE="width:100%"> 
+   <TABLE class=ms-bannerframe CELLPADDING=0 CELLSPACING=0 BORDER=0 STYLE="width:100%"> 
+    <TR> 
+     <TD VALIGN=BOTTOM WITDH=25> 
+     <font size=1>&nbsp;</font>
+     </TD> 
+    </TR> 
+   </TABLE> 
+  </TD> 
+ </TR>
+</TABLE>
+<table width=100% cellpadding=4 cellspacing=0>
+ <tr>
+  <td>
+   <TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="100%" >
+    <tr>
+     <td>
+      <!-- Title Area -->
+      <table cellpadding=0 cellspacing=0 style="margin-left: 3px;margin-bottom:2px"> 
+       <tr> 
+        <td nowrap class="ms-titlearea"><!--webbot bot=ProjectProperty S-Select="Title" tag="TBODY" startspan --><ows:XML><ProjectProperty Select="Title" HTMLEncode="TRUE"/></ows:XML><!--webbot bot="ProjectProperty" i-checksum="63261" endspan --></td> 
+       </tr> 
+       <tr> 
+        <td ID=onetidPageTitle nowrap class="ms-pagetitle">Document Library Templates</td> 
+       </tr> 
+      </table> 
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <table border=0 width=100% cellpadding=0 cellspacing=0 style="margin-left: 3px;margin-bottom: 3px">
+       <tr>
+        <td class="ms-sectionline" height=1><img src="images/blank.gif" width="1" height="1"></td> 
+       </tr>
+      </table>
+     </td>
+    </tr> 
+    <tr>
+     <td>
+      <!-- View table -->
+      <table cellpadding=0 cellspacing=1 border="0" width="100%">
+       <tr height=1><td></td><td>
+        <!--webbot bot="ListView" S-List="Lists" S-View="FileDialogViewTemplates" B-ReadOnly="TRUE"  preview="&lt;em&gt;[ListView]&lt;/em&gt;" startspan --><ows:XML><SetList>Lists</SetList><SetVar Scope="Request" Name="ViewEmpty"></SetVar><View Name="FileDialogViewTemplates"/></ows:XML><!--webbot bot="ListView" i-checksum="36278" endspan -->
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,4 @@
+AuthName {DOMAIN}
+AuthType Basic
+AuthUserFile {PATHTOSITE}\_vti_log\.htpasswd
+Require valid-user

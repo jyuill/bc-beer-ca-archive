@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagedata>
+<month val="jun 2005" total="47">
+<item str="Microsoft Internet Explorer 6.0" cnt="22" />
+<item str="Firefox 1.0" cnt="18" />
+<item str="Googlebot 2.1" cnt="3" />
+<item str="Netscape 7.1" cnt="2" />
+<item str="Yahoo! Slurp" cnt="2" />
+</month>
+<month val="jul 2005" total="5086">
+<item str="Microsoft Internet Explorer 6.0" cnt="2337" />
+<item str="msnbot 1.0" cnt="717" />
+<item str="Yahoo! Slurp" cnt="460" />
+<item str="Firefox 1.0" cnt="442" />
+<item str="Googlebot 2.1" cnt="331" />
+<item str="Netscape Navigator 4.0" cnt="122" />
+<item str="ConveraCrawler 0.9" cnt="85" />
+<item str="AppleWebKit 312.1" cnt="79" />
+<item str="Netscape 7.2" cnt="74" />
+<item str="Ask Jeeves Teoma" cnt="48" />
+<item str="Microsoft Internet Explorer 5.5" cnt="47" />
+<item str="Lynx 2.8" cnt="31" />
+<item str="AppleWebKit 412" cnt="30" />
+<item str="Firefox 0.1" cnt="21" />
+<item str="Opera 8.0" cnt="20" />
+<item str="Microsoft Internet Explorer 5.1" cnt="20" />
+<item str="Firefox 0.9" cnt="16" />
+<item str="Microsoft Internet Explorer 5.0" cnt="15" />
+<item str="Microsoft Internet Explorer 5.2" cnt="14" />
+<item str="AppleWebKit 412.6" cnt="13" />
+<item str="Konqueror 3.1" cnt="12" />
+<item str="Konqueror 3.0" cnt="10" />
+<item str="psbot 0.1" cnt="10" />
+<item str="AppleWebKit 125.5" cnt="8" />
+<item str="ScSpider 0.2" cnt="8" />
+</month>
+<month val="aug 2005" total="6377">
+<item str="Microsoft Internet Explorer 6.0" cnt="2955" />
+<item str="msnbot 1.0" cnt="1014" />
+<item str="Googlebot 2.1" cnt="488" />
+<item str="Yahoo! Slurp" cnt="460" />
+<item str="Firefox 1.0" cnt="406" />
+<item str="ConveraCrawler 0.9" cnt="217" />
+<item str="Netscape Navigator 4.0" cnt="123" />
+<item str="AppleWebKit 312.1" cnt="104" />
+<item str="Microsoft Internet Explorer 5.0" cnt="52" />
+<item str="Ask Jeeves Teoma" cnt="42" />
+<item str="Microsoft Internet Explorer 5.5" cnt="37" />
+<item str="Firefox 0.9" cnt="37" />
+<item str="AppleWebKit 412.6" cnt="35" />
+<item str="Microsoft Internet Explorer 5.2" cnt="30" />
+<item str="Netscape 7.1" cnt="26" />
+<item str="Konqueror 3.1" cnt="25" />
+<item str="Konqueror 3.0" cnt="25" />
+<item str="NextGenSearchBot 1" cnt="25" />
+<item str="Firefox 0.1" cnt="20" />
+<item str="AppleWebKit 85.8" cnt="19" />
+<item str="Netscape 7.2" cnt="17" />
+<item str="ia_archiver" cnt="13" />
+<item str="Microsoft Internet Explorer 5.1" cnt="12" />
+<item str="findlinks 0.9" cnt="11" />
+<item str="00000000000000000 0000000" cnt="11" />
+</month>
+<month val="sep 2005" total="7457">
+<item str="Microsoft Internet Explorer 6.0" cnt="3110" />
+<item str="msnbot 1.0" cnt="913" />
+<item str="Googlebot 2.1" cnt="824" />
+<item str="OmniExplorer_Bot 3.9" cnt="623" />
+<item str="Yahoo! Slurp" cnt="535" />
+<item str="Firefox 1.0" cnt="497" />
+<item str="ConveraCrawler 0.9" cnt="167" />
+<item str="Ask Jeeves Teoma" cnt="89" />
+<item str="AppleWebKit 312.1" cnt="51" />
+<item str="Mizzu Labs 2.2" cnt="51" />
+<item str="AppleWebKit 412.7" cnt="47" />
+<item str="Microsoft Internet Explorer 5.2" cnt="42" />
+<item str="Firefox 0.9" cnt="37" />
+<item str="Netscape 7.2" cnt="36" />
+<item str="Microsoft Internet Explorer 5.0" cnt="34" />
+<item str="Microsoft Internet Explorer 5.5" cnt="32" />
+<item str="Konqueror 3.0" cnt="26" />
+<item str="Konqueror 3.1" cnt="25" />
+<item str="Gecko 20050511" cnt="21" />
+<item str="Gecko 20050319" cnt="20" />
+<item str="Firefox 0.1" cnt="14" />
+<item str="Gigabot 2.0" cnt="12" />
+<item str="AppleWebKit 412" cnt="11" />
+<item str="AppleWebKit 412.6" cnt="10" />
+<item str="ejupiter.com" cnt="10" />
+</month>
+<month val="oct 2005" total="7526">
+<item str="Microsoft Internet Explorer 6.0" cnt="2961" />
+<item str="Googlebot 2.1" cnt="1563" />
+<item str="msnbot 1.0" cnt="1023" />
+<item str="Yahoo! Slurp" cnt="634" />
+<item str="Firefox 1.0" cnt="388" />
+<item str="LinkWalker" cnt="248" />
+<item str="ConveraCrawler 0.9" cnt="87" />
+<item str="Ask Jeeves Teoma" cnt="76" />
+<item str="Netscape Navigator 4.0" cnt="62" />
+<item str="Microsoft Internet Explorer 6.1" cnt="45" />
+<item str="AppleWebKit 412.7" cnt="38" />
+<item str="Konqueror 3.1" cnt="34" />
+<item str="Netscape 7.2" cnt="33" />
+<item str="Microsoft Internet Explorer 5.0" cnt="30" />
+<item str="Konqueror 3.0" cnt="26" />
+<item str="Microsoft Internet Explorer 4.5" cnt="20" />
+<item str="AppleWebKit 312.5" cnt="18" />
+<item str="Opera 7.5" cnt="16" />
+<item str="psbot 0.1" cnt="16" />
+<item str="Gigabot 2.0" cnt="16" />
+<item str="Firefox 1.4" cnt="14" />
+<item str="Mediapartners-Google 2.1" cnt="11" />
+<item str="Microsoft Internet Explorer 5.2" cnt="10" />
+<item str="Camino 0.8" cnt="8" />
+<item str="Linspire 1.6" cnt="7" />
+</month>
+<month val="nov 2005" total="6443">
+<item str="Microsoft Internet Explorer 6.0" cnt="2554" />
+<item str="Googlebot 2.1" cnt="1337" />
+<item str="msnbot 1.0" cnt="915" />
+<item str="Yahoo! Slurp" cnt="409" />
+<item str="Firefox 1.0" cnt="374" />
+<item str="Netscape Navigator 4.0" cnt="114" />
+<item str="Ask Jeeves Teoma" cnt="62" />
+<item str="AppleWebKit 412.7" cnt="61" />
+<item str="AppleWebKit 312.5" cnt="59" />
+<item str="AppleWebKit 416.1" cnt="52" />
+<item str="Netscape 7.1" cnt="48" />
+<item str="msnbot 0.9" cnt="44" />
+<item str="Konqueror 3.1" cnt="32" />
+<item str="Konqueror 3.0" cnt="30" />
+<item str="Microsoft Internet Explorer 5.5" cnt="28" />
+<item str="RufusBot " cnt="27" />
+<item str="Firefox 1.5" cnt="26" />
+<item str="Microsoft Internet Explorer 5.1" cnt="25" />
+<item str="Xenu Link Sleuth 1.2g" cnt="20" />
+<item str="Microsoft Internet Explorer 5.0" cnt="20" />
+<item str="Netscape 7.2" cnt="19" />
+<item str="Gigabot 2.0" cnt="17" />
+<item str="Microsoft Internet Explorer 5.2" cnt="14" />
+<item str="fetch libfetch 2.0" cnt="13" />
+<item str="TurnitinBot 2.0" cnt="13" />
+</month>
+<month val="dec 2005" total="76">
+<item str="Googlebot 2.1" cnt="30" />
+<item str="Netscape 7.2" cnt="12" />
+<item str="Microsoft Internet Explorer 6.0" cnt="11" />
+<item str="msnbot 1.0" cnt="7" />
+<item str="NimbleCrawler 1.1" cnt="6" />
+<item str="Yahoo! Slurp" cnt="6" />
+<item str="Firefox 1.0" cnt="3" />
+<item str="Konqueror 3.0" cnt="1" />
+</month>
+<month val="jan 2006" total="7743">
+<item str="Microsoft Internet Explorer 6.0" cnt="3063" />
+<item str="Googlebot 2.1" cnt="1379" />
+<item str="Yahoo! Slurp" cnt="942" />
+<item str="msnbot 1.0" cnt="936" />
+<item str="Firefox 1.0" cnt="258" />
+<item str="Firefox 1.5" cnt="178" />
+<item str="Ask Jeeves Teoma" cnt="87" />
+<item str="AppleWebKit 416.1" cnt="87" />
+<item str="NimbleCrawler 1.1" cnt="84" />
+<item str="Camino 0.8" cnt="78" />
+<item str="AppleWebKit 312.8" cnt="67" />
+<item str="msnbot 0.9" cnt="67" />
+<item str="AppleWebKit 417.9" cnt="52" />
+<item str="Netscape 7.1" cnt="47" />
+<item str="Netscape 7.2" cnt="44" />
+<item str="Microsoft Internet Explorer 5.0" cnt="42" />
+<item str="AppleWebKit 312.5" cnt="37" />
+<item str="Gecko 20050915" cnt="28" />
+<item str="AppleWebKit 312.1" cnt="24" />
+<item str="Microsoft Internet Explorer 5.2" cnt="21" />
+<item str="ia_archiver-web.archive.org" cnt="19" />
+<item str="Gigabot 2.0" cnt="18" />
+<item str="Konqueror 3.1" cnt="17" />
+<item str="Konqueror 3.0" cnt="15" />
+<item str="Microsoft Internet Explorer 5.5" cnt="13" />
+</month>
+<month val="feb 2006" total="8411">
+<item str="Microsoft Internet Explorer 6.0" cnt="3256" />
+<item str="Yahoo! Slurp" cnt="1260" />
+<item str="Googlebot 2.1" cnt="1224" />
+<item str="msnbot 1.0" cnt="954" />
+<item str="Firefox 1.0" cnt="382" />
+<item str="Firefox 1.5" cnt="296" />
+<item str="LinkWalker" cnt="230" />
+<item str="AppleWebKit 417.9" cnt="136" />
+<item str="AppleWebKit 312.5" cnt="79" />
+<item str="ia_archiver" cnt="69" />
+<item str="Gigabot 2.0" cnt="66" />
+<item str="Ask Jeeves Teoma" cnt="63" />
+<item str="msnbot 0.9" cnt="37" />
+<item str="Netscape Navigator 4.0" cnt="32" />
+<item str="AppleWebKit 312.8" cnt="30" />
+<item str="Netscape 7.0" cnt="21" />
+<item str="psbot 0.1" cnt="17" />
+<item str="Microsoft Internet Explorer 5.1" cnt="16" />
+<item str="Microsoft Internet Explorer 5.2" cnt="14" />
+<item str="Netscape 7.2" cnt="14" />
+<item str="Exabot 2.0" cnt="14" />
+<item str="findlinks 1.1" cnt="13" />
+<item str="Konqueror 3.1" cnt="12" />
+<item str="AppleWebKit 416.1" cnt="12" />
+<item str="Microsoft Internet Explorer 5.0" cnt="11" />
+</month>
+<month val="mar 2006" total="4933">
+<item str="Microsoft Internet Explorer 6.0" cnt="1526" />
+<item str="Yahoo! Slurp" cnt="869" />
+<item str="Googlebot 2.1" cnt="685" />
+<item str="OmniExplorer_Bot 6.4" cnt="663" />
+<item str="msnbot 1.0" cnt="554" />
+<item str="Firefox 1.0" cnt="118" />
+<item str="Firefox 1.5" cnt="102" />
+<item str="TurnitinBot 2.0" cnt="74" />
+<item str="Netscape Navigator 4.0" cnt="65" />
+<item str="msnbot 0.9" cnt="49" />
+<item str="AppleWebKit 417.9" cnt="30" />
+<item str="Microsoft Internet Explorer 5.2" cnt="27" />
+<item str="Ask Jeeves Teoma" cnt="24" />
+<item str="Netscape 8.0" cnt="20" />
+<item str="Konqueror 3.0" cnt="12" />
+<item str="Netscape 7.0" cnt="11" />
+<item str="Microsoft Internet Explorer 5.0" cnt="8" />
+<item str="Netscape Navigator 3.0" cnt="7" />
+<item str="Gecko 20050915" cnt="7" />
+<item str="Microsoft Internet Explorer 7.0" cnt="6" />
+<item str="Konqueror 3.1" cnt="6" />
+<item str="Microsoft Internet Explorer 5.1" cnt="6" />
+<item str="AppleWebKit 312.5" cnt="5" />
+<item str="Gigabot 2.0" cnt="5" />
+<item str="AppleWebKit 412.6" cnt="4" />
+<item str="Yahoo-MMCrawler 3." cnt="4" />
+<item str="webcollage 1.1" cnt="4" />
+<item str="Exabot 2.0" cnt="3" />
+<item str="NutchCVS 0.7" cnt="3" />
+<item str="www.petitsage.fr site detector 0.4" cnt="2" />
+<item str="SBIder 0.8" cnt="2" />
+<item str="voyager 1.0" cnt="2" />
+<item str="findlinks 1.1" cnt="2" />
+<item str="Trend Micro tmdr 1.2-1003" cnt="2" />
+<item str="AppleWebKit 312.8" cnt="2" />
+<item str="larbin_2.6.3 " cnt="1" />
+<item str="IP*Works! V5 HTTP S Component - by /n software - www.nsoftware.com" cnt="1" />
+<item str="Netscape 7.2" cnt="1" />
+<item str="larbin_2.6.3 larbin2.6.3@unspecified.mail" cnt="1" />
+<item str="FAST-WebCrawler 2.2" cnt="1" />
+<item str="Scooter 3.3" cnt="1" />
+</month>
+</usagedata>

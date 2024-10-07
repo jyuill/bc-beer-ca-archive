@@ -1,0 +1,4 @@
+AuthName bcbeer.ca
+AuthType Basic
+AuthUserFile e:\web\public_html\figure4\bcbeer\_vti_cnf\.htpasswd
+Require valid-user
